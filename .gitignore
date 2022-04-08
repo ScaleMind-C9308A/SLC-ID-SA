@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+*.h5
+!spec/*.h5
+*.hdf5
+!spec/*.hdf5
