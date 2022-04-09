@@ -1,6 +1,9 @@
 # Skin Disease Detection using CNN based model + SoftAttention layer and HAM100000 dataset
 
 ## Dataset
+- https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
+- Tschandl, Philipp, 2018, "The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions", https://doi.org/10.7910/DVN/DBW86T, Harvard Dataverse, V3, UNF:6:/APKSsDGVDhwPBWzsStU5A== [fileUNF]
+
 ## Model
 
 ### DenseNet201 + SoftAtt
@@ -35,3 +38,7 @@
 ### SeNET
 
 ### MobileNet
+
+### AlexNet
+
+### GoogleNet
