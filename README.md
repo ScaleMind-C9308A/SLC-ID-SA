@@ -18,7 +18,7 @@
 #### Resnet34 + SoftAtt - 15 split
 #### Resnet34 + SoftAtt - 20 split
 
-### Resnet50 + SoftAtt
+### Resnet50 + SoftAttb
 #### Resnet50 + SoftAtt - 10 split
 #### Resnet50 + SoftAtt - 15 split
 #### Resnet50 + SoftAtt - 20 split
@@ -31,3 +31,7 @@
 ### ImageNet
 
 ### EfficienNet
+
+### SeNET
+
+### MobileNet
