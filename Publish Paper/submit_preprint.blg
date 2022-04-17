@@ -5,38 +5,64 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: bib/references.bib
+Warning--empty journal in 03358
+Warning--empty year in 03358
+Warning--empty journal in 11872
+Warning--empty year in 11872
+Warning--empty journal in 06993
+Warning--empty year in 06993
+Warning--empty journal in 11946
+Warning--empty year in 11946
+Warning--empty journal in 00567
+Warning--empty year in 00567
+Warning--empty journal in 04861
+Warning--empty year in 04861
+Warning--empty journal in 04381
+Warning--empty year in 04381
+Warning--empty journal in 02244
+Warning--empty year in 02244
+Warning--empty journal in 03385
+Warning--empty year in 03385
+Warning--empty journal in 05027
+Warning--empty year in 05027
+Warning--empty journal in 1556
+Warning--empty year in 1556
+Warning--empty journal in 02357
+Warning--empty year in 02357
+Warning--empty journal in 10417
+Warning--empty year in 10417
 Warning--empty journal in 08332
 Warning--empty year in 08332
-You've used 1 entry,
+You've used 14 entries,
             1791 wiz_defined-function locations,
-            449 strings with 3753 characters,
-and the built_in function-call counts, 171 in all, are:
-= -- 11
-> -- 8
+            500 strings with 6411 characters,
+and the built_in function-call counts, 2547 in all, are:
+= -- 153
+> -- 207
 < -- 0
-+ -- 3
-- -- 2
-* -- 10
-:= -- 35
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 1
++ -- 74
+- -- 60
+* -- 188
+:= -- 471
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 8
-empty$ -- 15
-format.name$ -- 2
-if$ -- 32
+cite$ -- 42
+duplicate$ -- 112
+empty$ -- 197
+format.name$ -- 60
+if$ -- 497
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 5
+int.to.str$ -- 14
+missing$ -- 14
+newline$ -- 73
+num.names$ -- 14
+pop$ -- 70
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4
+skip$ -- 44
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -44,8 +70,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 1
-width$ -- 2
-write$ -- 11
-(There were 2 warnings)
+warning$ -- 28
+while$ -- 14
+width$ -- 16
+write$ -- 128
+(There were 28 warnings)
