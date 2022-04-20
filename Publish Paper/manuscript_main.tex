@@ -1,22 +1,57 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Main Text
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{ACKNOWLEDGMENT} \\ 
+I would like to express my special thanks of gratitude to my teacher, Dr.Nguyen Viet Dung() who gave me the golden support to do this wonderful project. He gave a chance to use High GPU computing computer for AI Training. Otherwise, he also gave me recommendation on how to implement experiment to make a good conclusion such as what I should focus on, what I need to investigate, which metrics I should consider.  
 \section{Introduction}
-
-%The Need of Medical Engioneering
-
-%The Need of Medical Engineering in Skin Lesion Clasification
-
+%The Need of AI-enabled computer-aided diagnostics
+Skin cancer is one of the most common cancer leading causes of death worldwide. Every day, more than 9500\cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6\cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase\cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States\cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99\%. However, once disease progresses beyond the skin, survival is poor\cite{11872}. Moreover, with the increasing
+incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need of effective solution. \newline
+%The Need of AI-enabled computer-aided diagnostics in Skin Lesion Clasification
+Recently, deep learning particularly, and machine learning in generally algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis and Medical Treatment. Medical imaging, including ultrasound, computed tomography, and magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosed results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history medical data. In Medical Treatment, AI models are applied for building solution for a specific disease, medicine revolutionize is an example. In various studies, AI algorithms has provided various end-to-end solutions in the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging\cite{11872}. \newline
 %The Success in AI - especially in CNN - some model based CNN
+In order to adapt the increase in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{11946}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, VGG\cite{1556}, and Xception\cite{02357}. Some of these models have been used as a backbone model in other studies that I will discuss more in the Related Work section. 
 
-%Related Work
+\section{Related Work}
 
-%My Approach
+\section{Objective}
+In this paper, my objectives are: \newline
+- Building a model that has ability to classify in a balanced way between classes instead of specifying almost classes except one or two classes. \newline
+- Investigate the performance of the combination of different backbone model and SoftAttention. \\
+- Identifying whether the metadata can make the performance of model better. \\
 
-\section{The Model}
+\section{Implementation}
 
-\section{Data}
+\subsection{Data}
+The dataset used in this paper is the HAM10000 dataset published by Havard University Dataverse\cite{10417}. There are total 7 classes in this dataset containing Actinic keratoses and intraepithelial carcinoma or Bowen's disease (AKIEC), Basal cell Carcinoma (BCC),  benign keratosis-like lesions (solar lentigines / seborrheic keratoses and lichen-planus like keratoses, BKL), dermatofibroma (DF), melanoma (MEL), melanocytic nevi (NV), and vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage, VASC). The distribution of the dataset is shown in the table below:
+\begin{center}
+	\begin{tabular}{|c c c c c c c c c|} 
+		\hline
+		Class & AKIEC & BCC & BKL & DF & MEL & NV & VASC & Total \\ 
+		\hline
+		No. Sample & 327 & 514 & 1099 & 115 & 1113 & 6705 & 142 & 10015 \\
+		\hline
+	\end{tabular}
+\end{center}
+More than 50 percent of lesions are confirmed through histopathology (HISTO), the ground truth for the rest of the cases is either follow-up examination (FOLLOWUP), expert consensus (CONSENSUS), or confirmation by in-vivo confocal microscopy (CONFOCAL).
+\subsection{Model Schema}
+\subsubsection{Input Schema}
+\subsubsection{Backbone Model}
+\subsubsection{SoftAttention}
+\subsubsection{Output Schema}
+\subsubsection{Model}
 
+\subsection{Training}
+\subsubsection{Data Division}
+\subsubsection{Loss Function}
+The loss function used in this paper is categorical cross-entropy. Consider $X = [x_1, x_2, \dots, x_n]$ as the input feature, $W = [w_1, w_2, \dots, w_n]$. Let $n$ is the number of class in the dataset. The categorical cross-entropy loss is presented as:
+\[L(w, x_i) = -\sum_{i=1}^{n}y_i\log(\hat{y}_i)\]
+where $\hat{y}_i$  is the output of model and $y_i$ is the target that the model should return. \\
+Since the dataset face the imbalanced problem then I applied the class weight for the loss. This formula below is used to calculate the class weight:
+\[CLassWeight = N \odot D\]
+\[D = [\frac{1}{C \times  N_1}  \frac{1}{C \times  N_2}  \dots \frac{1}{C \times  N_n}]\]
+where $N$ is the number of sample in dataset, $C$ is the number of class in the dataset, $N_i$ is the number of sample in each class $i$. $D$ is the matrix contain the inverse of $C \times N_i$.
+\subsubsection{Optimizer}
 \section{Results}
 
 \section{Conclusion}
