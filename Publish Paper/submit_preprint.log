@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.16)  16 APR 2022 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.16)  16 APR 2022 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -827,11 +827,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 {C:/Users/ADMIN/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}] (manuscr
 ipt_main.tex
-
-LaTeX Warning: Citation `arxiv.org/abs/1807.08332' on page 1 undefined on input
- line 23.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -840,9 +835,20 @@ l.24 \clearpage
                 [1
 
 ]) (submit_preprint.bbl
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
+(C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
 )
 
 Package caption Warning: Unused \captionsetup[figure] on input line 35.
@@ -851,26 +857,25 @@ See the caption package documentation for explanation.
 [2
 
 ] (submit_preprint.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
 (rerunfilecheck)             Checksum: EB7E7FCC82120C2030F5EAE8AB399D20;428.
  ) 
 Here is how much of TeX's memory you used:
- 17912 strings out of 478541
- 296426 string characters out of 2849516
- 664167 words of memory out of 3000000
- 35650 multiletter control sequences out of 15000+600000
- 524454 words of font info for 194 fonts, out of 8000000 for 9000
+ 17979 strings out of 478541
+ 297757 string characters out of 2849516
+ 664194 words of memory out of 3000000
+ 35700 multiletter control sequences out of 15000+600000
+ 527878 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,7n,134p,1282b,398s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/times/utmr8a.pfb>
-Output written on submit_preprint.pdf (3 pages, 41922 bytes).
+ 88i,7n,134p,1282b,437s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
+8a.pfb>
+Output written on submit_preprint.pdf (3 pages, 71707 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 79913 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 85545 words of extra memory for PDF output out of 89155 (max. 10000000)
 

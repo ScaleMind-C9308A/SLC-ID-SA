@@ -1,3 +1,9 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{08332}
+Katherine~M. Li and Evelyn~C. Li.
+\newblock Skin lesion analysis towards melanoma detection via end-to-end deep
+  learning of convolutional neural networks.
+\newblock Available at \url{https://arxiv.org/abs/1807.08332}, 22 June 2018.
 
 \end{thebibliography}
