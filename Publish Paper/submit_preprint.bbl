@@ -75,6 +75,11 @@ Philipp Tschandl, Cliff Rosendahl, and Harald Kittler.
   dermatoscopic images of common pigmented skin lesions.
 \newblock Available at \url{https://arxiv.org/abs/1803.10417}, 25 Nov 2018.
 
+\bibitem{6980}
+Jimmy~Ba Diederik P.~Kingma.
+\newblock Adam: A method for stochastic optimization.
+\newblock Available at \url{https://arxiv.org/abs/1412.6980}, 30 Jan 2017.
+
 \bibitem{08332}
 Katherine~M. Li and Evelyn~C. Li.
 \newblock Skin lesion analysis towards melanoma detection via end-to-end deep

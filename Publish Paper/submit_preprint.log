@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  17 APR 2022 17:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  17 APR 2022 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,11 +905,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--22
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 [2] [3] [4]) (submit_preprint.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 .
@@ -931,14 +931,14 @@ See the caption package documentation for explanation.
 
 [6] (submit_preprint.aux)
 Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
-(rerunfilecheck)             Checksum: 6B2BB309237EC92BEAE206180E50EAEE;1894.
+(rerunfilecheck)             Checksum: ABEA49F284783646F026B8A38F594360;1532.
  ) 
 Here is how much of TeX's memory you used:
- 17876 strings out of 478550
- 300646 string characters out of 2839911
- 663043 words of memory out of 3000000
- 35539 multiletter control sequences out of 15000+600000
- 524037 words of font info for 204 fonts, out of 8000000 for 9000
+ 17880 strings out of 478550
+ 300552 string characters out of 2839911
+ 663067 words of memory out of 3000000
+ 35538 multiletter control sequences out of 15000+600000
+ 524297 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,7n,134p,1295b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
@@ -953,9 +953,9 @@ Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb
 8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on submit_preprint.pdf (7 pages, 139337 bytes).
+Output written on submit_preprint.pdf (7 pages, 140336 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 63113 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 63097 words of extra memory for PDF output out of 74296 (max. 10000000)
 
