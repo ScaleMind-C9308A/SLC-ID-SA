@@ -49,7 +49,6 @@ Since the dataset face the imbalanced problem then I applied the class weight fo
 \[CLassWeight = N \odot D\]
 \[D = [\frac{1}{C \times  N_1}  \frac{1}{C \times  N_2}  \dots \frac{1}{C \times  N_n}]\]
 where $N$ is the number of sample in dataset, $C$ is the number of class in the dataset, $N_i$ is the number of sample in each class $i$. $D$ is the matrix contain the inverse of $C \times N_i$.
-\subsection{Evaluation Metric}
 
 \section{Results}
 All the model in this paper is trained with Adam Optimizer\cite{6980}. The initial learning rate is set to $0.001$, an learning rate reduction schedule is setup with the minimum learning rate is $0.0000001$ with the factor of $0.2$. Otherwise, the epsilon argument of the optimizer is set to $0.1$. The performance of all model is presented in the figure below:

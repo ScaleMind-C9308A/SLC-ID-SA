@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  17 APR 2022 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  23 APR 2022 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,14 +931,14 @@ See the caption package documentation for explanation.
 
 [6] (submit_preprint.aux)
 Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
-(rerunfilecheck)             Checksum: ABEA49F284783646F026B8A38F594360;1532.
+(rerunfilecheck)             Checksum: 99519FE18436B3EC0C324CE3ED3F826D;1502.
  ) 
 Here is how much of TeX's memory you used:
- 17880 strings out of 478550
- 300552 string characters out of 2839911
- 663067 words of memory out of 3000000
- 35538 multiletter control sequences out of 15000+600000
- 524297 words of font info for 208 fonts, out of 8000000 for 9000
+ 17873 strings out of 478550
+ 300481 string characters out of 2839911
+ 663039 words of memory out of 3000000
+ 35536 multiletter control sequences out of 15000+600000
+ 524167 words of font info for 206 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,7n,134p,1295b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
@@ -953,9 +953,9 @@ Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb
 8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on submit_preprint.pdf (7 pages, 140336 bytes).
+Output written on submit_preprint.pdf (7 pages, 140346 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 63097 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 63089 words of extra memory for PDF output out of 74296 (max. 10000000)
 
