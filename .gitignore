@@ -3,3 +3,17 @@
 !spec/*.h5
 *.hdf5
 !spec/*.hdf5
+*.aux
+!spec/*.aux
+*.log
+!spec/*.log
+*.gz
+!spec/*.gz
+*.tex
+!spec/*.tex
+*.blg
+!spec/*.blg
+*.bbl
+!spec/*.bbl
+*.vsdx
+!spec/*.vsdx
