@@ -1,0 +1,84 @@
+\begin{thebibliography}{10}
+
+\bibitem{03358}
+Soumyya~Kanti Datta, Mohammad~Abuzar Shaikh, Sargur~N. Srihari, and Mingchen
+  Gao.
+\newblock Soft-attention improves skin cancer classification performance.
+\newblock Available at \url{https://arxiv.org/abs/2105.03358}, 4 Jun 2021.
+
+\bibitem{11872}
+Manu Goyal, Thomas Knackstedt, Shaofeng Yan, and Saeed Hassanpour.
+\newblock Artificial intelligence-based image classification for diagnosis of
+  skin cancer: Challenges and opportunities.
+\newblock Available at \url{https://arxiv.org/abs/1911.11872}, 20 Jun 2020.
+
+\bibitem{06993}
+Gao Huang, Zhuang Liu, Laurens van~der Maaten, and Kilian~Q. Weinberger.
+\newblock Densely connected convolutional networks.
+\newblock Available at \url{https://arxiv.org/abs/1608.06993}, 28 Jan 2018.
+
+\bibitem{11946}
+Mingxing Tan and Quoc~V. Le.
+\newblock Efficientnet: Rethinking model scaling for convolutional neural
+  networks.
+\newblock Available at \url{https://arxiv.org/abs/1905.11946}, 11 Sep 2020.
+
+\bibitem{00567}
+Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and
+  Zbigniew Wojna.
+\newblock Rethinking the inception architecture for computer vision.
+\newblock Available at \url{https://arxiv.org/abs/1512.00567}, 11 Dec 2015.
+
+\bibitem{04861}
+Andrew~G. Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
+  Tobias Weyand, Marco Andreetto, and Hartwig Adam.
+\newblock Mobilenets: Efficient convolutional neural networks for mobile vision
+  applications.
+\newblock Available at \url{https://arxiv.org/abs/1704.04861}, 17 Apr 2017.
+
+\bibitem{04381}
+Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, and Liang-Chieh
+  Chen.
+\newblock Mobilenetv2: Inverted residuals and linear bottlenecks.
+\newblock Available at \url{https://arxiv.org/abs/1801.04381}, 13 Jan 2018.
+
+\bibitem{02244}
+Andrew Howard, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo~Chen, Mingxing
+  Tan, Weijun Wang, Yukun Zhu, Ruoming Pang, Vijay Vasudevan, Quoc~V. Le, and
+  Hartwig Adam.
+\newblock Searching for mobilenetv3.
+\newblock Available at \url{https://arxiv.org/abs/1905.02244}, 20 Nov 2019.
+
+\bibitem{03385}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock Available at \url{https://arxiv.org/abs/1512.03385}, 10 Dec 2015.
+
+\bibitem{05027}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Identity mappings in deep residual networks.
+\newblock Available at \url{https://arxiv.org/abs/1603.05027}, 25 Jul 2016.
+
+\bibitem{1556}
+Karen Simonyan and Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock Available at \url{https://arxiv.org/abs/1409.1556}, 10 Apr 2015.
+
+\bibitem{10417}
+Philipp Tschandl, Cliff Rosendahl, and Harald Kittler.
+\newblock The ham10000 dataset, a large collection of multi-source
+  dermatoscopic images of common pigmented skin lesions.
+\newblock Available at \url{https://arxiv.org/abs/1803.10417}, 25 Nov 2018.
+
+\bibitem{6980}
+Jimmy~Ba Diederik P.~Kingma.
+\newblock Adam: A method for stochastic optimization.
+\newblock Available at \url{https://arxiv.org/abs/1412.6980}, 30 Jan 2017.
+
+\bibitem{08332}
+Katherine~M. Li and Evelyn~C. Li.
+\newblock Skin lesion analysis towards melanoma detection via end-to-end deep
+  learning of convolutional neural networks.
+\newblock Available at \url{https://arxiv.org/abs/1807.08332}, 22 June 2018.
+
+\end{thebibliography}
