@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  23 APR 2022 10:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  2 MAY 2022 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -659,6 +659,10 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count324
 \c@blind@pangrammax=\count325
 )
+(C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/comment\comment.s
+ty
+\CommentStream=\write3
+ Excluding comment 'comment')
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaptio
 n.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
@@ -839,8 +843,8 @@ LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
  (submit_preprint.out) (submit_preprint.out)
-\@outlinefile=\write3
-\openout3 = `submit_preprint.out'.
+\@outlinefile=\write4
+\openout4 = `submit_preprint.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -896,21 +900,59 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14 
+l.15 
       [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+<img/DataDistribution.png, id=95, 395.22656pt x 83.5622pt>
+File: img/DataDistribution.png Graphic file (type png)
+<use img/DataDistribution.png>
+Package pdftex.def Info: img/DataDistribution.png  used on input line 32.
+(pdftex.def)             Requested size: 452.9679pt x 95.7719pt.
+ [2]
+<Diagram/Input Schema.png, id=122, 996.72375pt x 267.24844pt>
+File: Diagram/Input Schema.png Graphic file (type png)
+<use Diagram/Input Schema.png>
+Package pdftex.def Info: Diagram/Input Schema.png  used on input line 50.
+(pdftex.def)             Requested size: 317.07614pt x 85.01558pt.
+ [3 <./img/DataDistribution.png>] [4 <./Diagram/Input Schema.png>]
+<Diagram/SoftAttention.png, id=147, 1349.04pt x 394.47375pt>
+File: Diagram/SoftAttention.png Graphic file (type png)
+<use Diagram/SoftAttention.png>
+Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 63.
+(pdftex.def)             Requested size: 452.9679pt x 132.45198pt.
+<Diagram/SoftAttentionBlock.png, id=149, 619.56468pt x 384.6872pt>
+File: Diagram/SoftAttentionBlock.png Graphic file (type png)
+<use Diagram/SoftAttentionBlock.png>
+Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 70.
 
+(pdftex.def)             Requested size: 226.48395pt x 140.61803pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./Diagram/SoftAttention.png>] [6 <./Diagram/SoftAttentionBlock.png>]
+<img/Confusion-matrix.png, id=166, 483.8075pt x 295.1025pt>
+File: img/Confusion-matrix.png Graphic file (type png)
+<use img/Confusion-matrix.png>
+Package pdftex.def Info: img/Confusion-matrix.png  used on input line 101.
+(pdftex.def)             Requested size: 239.16624pt x 145.8803pt.
+
+Overfull \hbox (21.74359pt too wide) in paragraph at lines 101--102
+ [][] 
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-[2] [3] [4]) (submit_preprint.bbl
+<img/AUC.png, id=167, 235.88126pt x 215.80624pt>
+File: img/AUC.png Graphic file (type png)
+<use img/AUC.png>
+Package pdftex.def Info: img/AUC.png  used on input line 106.
+(pdftex.def)             Requested size: 152.19519pt x 139.245pt.
+[7 <./img/Confusion-matrix.png> <./img/AUC.png>] [8]) (submit_preprint.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 .
 
@@ -922,40 +964,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[5
+[9
 
-])
-
-Package caption Warning: Unused \captionsetup[figure] on input line 35.
-See the caption package documentation for explanation.
-
-[6] (submit_preprint.aux)
+] [10]) [11] (submit_preprint.aux)
 Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
-(rerunfilecheck)             Checksum: 99519FE18436B3EC0C324CE3ED3F826D;1502.
+(rerunfilecheck)             Checksum: 51467DBFF18A9D499251DC30E9FA31FA;1773.
  ) 
 Here is how much of TeX's memory you used:
- 17873 strings out of 478550
- 300481 string characters out of 2839911
- 663039 words of memory out of 3000000
- 35536 multiletter control sequences out of 15000+600000
- 524167 words of font info for 206 fonts, out of 8000000 for 9000
+ 18089 strings out of 478550
+ 304420 string characters out of 2839911
+ 665402 words of memory out of 3000000
+ 35669 multiletter control sequences out of 15000+600000
+ 533265 words of font info for 244 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,7n,134p,1295b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,9n,134p,1295b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
 cm-super-t1.enc}{C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/base/8r.enc}<C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/KhoiDOO/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/KhoiDOO/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/
-Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb
-><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb
-8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
-s/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on submit_preprint.pdf (7 pages, 140346 bytes).
+1/public/amsfonts/cm/cmex10.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/KhoiDOO/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/KhoiDOO/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+tt1200.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
+symbol/usyr.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/urw/symbol/usyr.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on submit_preprint.pdf (12 pages, 349908 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 63089 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 67231 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -17,24 +17,18 @@ Gao Huang, Zhuang Liu, Laurens van~der Maaten, and Kilian~Q. Weinberger.
 \newblock Densely connected convolutional networks.
 \newblock Available at \url{https://arxiv.org/abs/1608.06993}, 28 Jan 2018.
 
-\bibitem{11946}
-Mingxing Tan and Quoc~V. Le.
-\newblock Efficientnet: Rethinking model scaling for convolutional neural
-  networks.
-\newblock Available at \url{https://arxiv.org/abs/1905.11946}, 11 Sep 2020.
-
-\bibitem{00567}
-Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and
-  Zbigniew Wojna.
-\newblock Rethinking the inception architecture for computer vision.
-\newblock Available at \url{https://arxiv.org/abs/1512.00567}, 11 Dec 2015.
-
 \bibitem{04861}
 Andrew~G. Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
   Tobias Weyand, Marco Andreetto, and Hartwig Adam.
 \newblock Mobilenets: Efficient convolutional neural networks for mobile vision
   applications.
 \newblock Available at \url{https://arxiv.org/abs/1704.04861}, 17 Apr 2017.
+
+\bibitem{00567}
+Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and
+  Zbigniew Wojna.
+\newblock Rethinking the inception architecture for computer vision.
+\newblock Available at \url{https://arxiv.org/abs/1512.00567}, 11 Dec 2015.
 
 \bibitem{04381}
 Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, and Liang-Chieh
@@ -59,16 +53,62 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
 \newblock Identity mappings in deep residual networks.
 \newblock Available at \url{https://arxiv.org/abs/1603.05027}, 25 Jul 2016.
 
-\bibitem{1556}
-Karen Simonyan and Andrew Zisserman.
-\newblock Very deep convolutional networks for large-scale image recognition.
-\newblock Available at \url{https://arxiv.org/abs/1409.1556}, 10 Apr 2015.
+\bibitem{07012}
+Jonathon Shlens Quoc V.~Le Barret~Zoph, Vijay~Vasudevan.
+\newblock Learning transferable architectures for scalable image recognition.
+\newblock Available at \url{https://arxiv.org/abs/1707.07012}, 21 Jul 2017.
 
 \bibitem{10417}
 Philipp Tschandl, Cliff Rosendahl, and Harald Kittler.
 \newblock The ham10000 dataset, a large collection of multi-source
   dermatoscopic images of common pigmented skin lesions.
 \newblock Available at \url{https://arxiv.org/abs/1803.10417}, 25 Nov 2018.
+
+\bibitem{11946}
+Mingxing Tan and Quoc~V. Le.
+\newblock Efficientnet: Rethinking model scaling for convolutional neural
+  networks.
+\newblock Available at \url{https://arxiv.org/abs/1905.11946}, 11 Sep 2020.
+
+\bibitem{03910}
+Nils Gessert, Maximilian Nielsen, Mohsin Shaikh, René Werner, and Alexander
+  Schlaefer.
+\newblock Skin lesion classification using ensembles of multi-resolution
+  efficientnets with meta data.
+\newblock Available at \url{https://arxiv.org/abs/1910.03910}, 9 Oct 2019.
+
+\bibitem{08375}
+Abien~Fred Agarap.
+\newblock Deep learning using rectified linear units (relu).
+\newblock Available at \url{https://arxiv.org/abs/1803.08375}, 7 Feb 2019.
+
+\bibitem{03044}
+Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan
+  Salakhutdinov, Richard Zemel, and Yoshua Bengio.
+\newblock Show, attend and tell: Neural image caption generation with visual
+  attention.
+\newblock Available at \url{https://arxiv.org/abs/1502.03044}, 19 Apr 2016.
+
+\bibitem{202017}
+Mohammad~Abuzar Shaikh, Tiehang Duan, Mihir Chauhan, and Sargur~N. Srihari.
+\newblock 2020 17th international conference on frontiers in handwriting
+  recognition.
+\newblock Sep 2020.
+
+\bibitem{08513}
+Naofumi Tomita, Behnaz Abdollahi, Jason Wei, Bing Ren, Arief Suriawinata, and
+  Saeed Hassanpour.
+\newblock Attention-based deep neural networks for detection of cancerous and
+  precancerous esophagus tissue on histopathological slides.
+\newblock Available at \url{https://arxiv.org/abs/1811.08513}, 3 Dec 2019.
+
+\bibitem{8943952}
+YAOSHIANG HO and SAMUEL WOOKEY.
+\newblock The real-world-weight cross-entropy loss function: Modeling the costs
+  of mislabeling.
+\newblock Available at
+  \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8943952}, January 8
+  2020.
 
 \bibitem{6980}
 Jimmy~Ba Diederik P.~Kingma.
