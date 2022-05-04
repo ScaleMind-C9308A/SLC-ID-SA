@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  2 MAY 2022 09:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  3 MAY 2022 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,49 +910,54 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
-<img/DataDistribution.png, id=95, 395.22656pt x 83.5622pt>
+<img/DataDistribution.png, id=91, 395.22656pt x 83.5622pt>
 File: img/DataDistribution.png Graphic file (type png)
 <use img/DataDistribution.png>
 Package pdftex.def Info: img/DataDistribution.png  used on input line 32.
 (pdftex.def)             Requested size: 452.9679pt x 95.7719pt.
  [2]
-<Diagram/Input Schema.png, id=122, 996.72375pt x 267.24844pt>
+<Diagram/Input Schema.png, id=118, 996.72375pt x 267.24844pt>
 File: Diagram/Input Schema.png Graphic file (type png)
 <use Diagram/Input Schema.png>
 Package pdftex.def Info: Diagram/Input Schema.png  used on input line 50.
 (pdftex.def)             Requested size: 317.07614pt x 85.01558pt.
  [3 <./img/DataDistribution.png>] [4 <./Diagram/Input Schema.png>]
-<Diagram/SoftAttention.png, id=147, 1349.04pt x 394.47375pt>
+<Diagram/SoftAttention.png, id=142, 1349.04pt x 394.47375pt>
 File: Diagram/SoftAttention.png Graphic file (type png)
 <use Diagram/SoftAttention.png>
 Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 63.
 (pdftex.def)             Requested size: 452.9679pt x 132.45198pt.
-<Diagram/SoftAttentionBlock.png, id=149, 619.56468pt x 384.6872pt>
+<Diagram/SoftAttentionBlock.png, id=144, 619.56468pt x 384.6872pt>
 File: Diagram/SoftAttentionBlock.png Graphic file (type png)
 <use Diagram/SoftAttentionBlock.png>
 Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 70.
 
 (pdftex.def)             Requested size: 226.48395pt x 140.61803pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
+
+ []
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./Diagram/SoftAttention.png>] [6 <./Diagram/SoftAttentionBlock.png>]
-<img/Confusion-matrix.png, id=166, 483.8075pt x 295.1025pt>
+<img/Confusion-matrix.png, id=170, 483.8075pt x 295.1025pt>
 File: img/Confusion-matrix.png Graphic file (type png)
 <use img/Confusion-matrix.png>
-Package pdftex.def Info: img/Confusion-matrix.png  used on input line 101.
+Package pdftex.def Info: img/Confusion-matrix.png  used on input line 128.
 (pdftex.def)             Requested size: 239.16624pt x 145.8803pt.
 
-Overfull \hbox (21.74359pt too wide) in paragraph at lines 101--102
+Overfull \hbox (21.74359pt too wide) in paragraph at lines 128--129
  [][] 
  []
 
-<img/AUC.png, id=167, 235.88126pt x 215.80624pt>
+<img/AUC.png, id=171, 235.88126pt x 215.80624pt>
 File: img/AUC.png Graphic file (type png)
 <use img/AUC.png>
-Package pdftex.def Info: img/AUC.png  used on input line 106.
+Package pdftex.def Info: img/AUC.png  used on input line 133.
 (pdftex.def)             Requested size: 152.19519pt x 139.245pt.
-[7 <./img/Confusion-matrix.png> <./img/AUC.png>] [8]) (submit_preprint.bbl
+[7] [8 <./img/Confusion-matrix.png> <./img/AUC.png>] [9]) (submit_preprint.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 .
 
@@ -964,18 +969,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[9
+[10
 
-] [10]) [11] (submit_preprint.aux)
+] [11]) [12] (submit_preprint.aux)
 Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
-(rerunfilecheck)             Checksum: 51467DBFF18A9D499251DC30E9FA31FA;1773.
+(rerunfilecheck)             Checksum: A1EB4DAEBDB96A459364D3C956FE50C7;1647.
  ) 
 Here is how much of TeX's memory you used:
- 18089 strings out of 478550
- 304420 string characters out of 2839911
- 665402 words of memory out of 3000000
- 35669 multiletter control sequences out of 15000+600000
- 533265 words of font info for 244 fonts, out of 8000000 for 9000
+ 18091 strings out of 478550
+ 304424 string characters out of 2839911
+ 667402 words of memory out of 3000000
+ 35668 multiletter control sequences out of 15000+600000
+ 533395 words of font info for 246 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,9n,134p,1295b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
@@ -992,9 +997,9 @@ symbol/usyr.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on submit_preprint.pdf (12 pages, 349908 bytes).
+Output written on submit_preprint.pdf (13 pages, 353007 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
+ 293 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
- 67231 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 67223 words of extra memory for PDF output out of 74296 (max. 10000000)
 

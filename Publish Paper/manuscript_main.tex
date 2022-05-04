@@ -10,7 +10,7 @@ incidence of skin cancers, low awareness among a growing population, and a lack 
 %The Need of AI-enabled computer-aided diagnostics in Skin Lesion Clasification
 Recently, deep learning particularly, and machine learning in generally algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis and Medical Treatment. Medical imaging, including ultrasound, computed tomography, and magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosed results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history medical data. In Medical Treatment, AI models are applied for building solution for a specific disease, medicine revolutionize is an example. In various studies, AI algorithms has provided various end-to-end solutions in the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging\cite{11872}. \\
 %The Success in AI - especially in CNN - some model based CNN
-In order to adapt the increase in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{04861}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, NasNet\cite{07012}. Some of these models have been used as a backbone model in other studies that I will discuss more in the Related Work section. \\
+In order to adapt the increase in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{04861}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. Some of these models have been used as a backbone model in other studies that I will discuss more in the Related Work section. \\
 In this paper, I will analyze the effect of the metadata on classifying skin disease. On the other hand, by analyzing the combination of several backbone models, I will also construct an optimized model that has ability to classify in a balanced way between classes instead of well identifying the majority of classes. 
 
 \section{Related Work} 
@@ -44,14 +44,14 @@ Using metadata as another input is not new. In paper\cite{03910}, they decide to
 %My proprocessed input%
 In this paper, the unknowns is kept as a type as discussed in Metadata section. Sex, anatomical site and age are also category encoded and numerical normalized, respectively. After processing, the metadata is then concatenated and fed into a dense layer of 4096 neurons. Finally, this this dense layer is then concatenate with the output of Soft-Attention which is then discussed in Soft-Attention section. \\
 %Figure%
-The Input schema is described as follow:
+The Input schema is described as follow:\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{"Diagram/Input Schema"}
 	\caption{Input Schema}
 	\label{fig:input-schema}
-\end{figure}
-
+\end{figure}\\
+Image data, on the other hand after being preprocessed, is fed directly into the backbone model. 
 \subsection{Soft-Attention}
 Applying Soft-Attention layer in deep learning is not a new approach. Soft-Attention have been used in various application: image caption generation in \cite{03044} and handwriting verification in \cite{202017} respectively. In skin lesion classification, Soft-Attention is used to increase the performance of the model as described in \cite{03358}. Soft-Attention has ability to ignore irrelevant areas of the image by multiplying the corresponding feature maps with low weights. The function below describe the flow of Soft-Attention module:
 \[
@@ -70,17 +70,47 @@ In this paper, the Soft-Attention layer is applied in the same way in this paper
 	\includegraphics[width=0.5\linewidth]{Diagram/SoftAttentionBlock}
 	\caption{Soft-Attention Module}
 	\label{fig:softattentionblock}
-\end{figure}
+\end{figure}\\
 
 
 \subsection{Backbone Model Architecture}
-\subsection{Output Schema}
+In this paper, the backbone models that have been used are DenseNet201\cite{06993}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. The combination of DenseNet201, InceptionResNetV2 and Soft-Attention layer are both test by the previous paper\cite{03358} with a great performance. Otherwise, Resnet50 also well classify but with much less number of parameter and depth than based on its f1-score and precision stated. Therefore, in this paper, I will analyze the performance of the model Resnet152 and NasnetLarge which has the larger number of parameter and depth. On the other hand, three version of MobileNet and the NasnetMobile will also be analyzed which has a small number of parameter and depth.  
+\begin{center}
+	\begin{tabular}{|c | c c c|} 
+		\hline
+		Model & Size(MB) & Parameters & Depth \\ 
+		\hline
+		Resnet50 & 98 & 25.6M & 107 \\ 
+		\hline
+		Resnet152 & 232 & 60.4M & 311 \\ 
+		\hline
+		DenseNet201 & 80 & 20.2M & 402 \\
+		\hline
+		InceptionResNetV2 & 215 & 55.9M & 449 \\
+		\hline
+		MobileNet & 16 & 4.3M & 55 \\ 
+		\hline
+		MobileNetV2 & 14 & 3.5M & 105 \\ 
+		\hline
+		MobileNetV3Small & Unknown & 2.5M & 88 \\ 
+		\hline
+		MobileNetV3Large & Unknown & 5.5M & 118 \\
+		\hline
+		NasnetMobile & 23 & 5.3M & 308 \\
+		\hline
+		NasnetLarge & 343 & 88.9M & 533 \\ 
+		\hline
+	\end{tabular}
+\end{center}
+
 \subsection{Model}
+The whole architecture of the model used for image feature extraction is applied in the same way in paper \cite{03358}. Metadata branch, otherwise is preprocessed before feeding into a dense layer then concatenate with the output of Soft-Attention layer. It is described in the figure below:
+
 
 \section{Training}
 \subsection{Loss Function}
 The loss function used in this paper is categorical cross-entropy. Consider $X = [x_1, x_2, \dots, x_n]$ as the input feature, $\theta = [\theta_1, \theta_2, \dots, \theta_n]$. Let $N$, and $C$ is the number of training examples and number of class respectively. The categorical cross-entropy loss is presented as:
-\[L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N}y^c_n\log(\hat{y}^c_i)\]
+\[L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N}y^c_n\log(\hat{y}^c_n)\]
 where $\hat{y}^c_i$  is the output of model and $y^c_i$ is the target that the model should return. \\
 Since the dataset face the imbalanced problem then I applied the class weight for the loss. This formula below is used to calculate the class weight:
 \[W = N \odot D\]
@@ -91,7 +121,7 @@ Since the dataset face the imbalanced problem then I applied the class weight fo
 \end{bmatrix}\]
 where $N$ is the number of training sample, $C$ is the number of class, $N_i$ is the number of sample in each class $i$. $D$ is the matrix contain the inverse of $C \times N_i$. The overall loss function is then become\cite{8943952}:
 \[
-	L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N} W_c \times y^c_n \times \log(h_\theta(x_n, \theta, c))
+	L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N} W_c \times y^c_n \times \log(h_\theta(x_n, c))
 \]
 where $W_c$ is the weight of class $c$, $y^c_n$ is the expected output of class $c$ at training example $n$. Otherwise, $h_\theta$ is the model with weight $\theta$.
 \subsection{Evaluation Metrics}
