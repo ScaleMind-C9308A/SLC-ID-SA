@@ -105,8 +105,12 @@ In this paper, the backbone models that have been used are DenseNet201\cite{0699
 
 \subsection{Model}
 The whole architecture of the model used for image feature extraction is applied in the same way in paper \cite{03358}. Metadata branch, otherwise is preprocessed before feeding into a dense layer then concatenate with the output of Soft-Attention layer. It is described in the figure below:
-
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Diagram/MainModel}
+	\caption{Overall Model}
+	\label{fig:mainmodel}
+\end{figure}
 \section{Training}
 \subsection{Loss Function}
 The loss function used in this paper is categorical cross-entropy. Consider $X = [x_1, x_2, \dots, x_n]$ as the input feature, $\theta = [\theta_1, \theta_2, \dots, \theta_n]$. Let $N$, and $C$ is the number of training examples and number of class respectively. The categorical cross-entropy loss is presented as:
@@ -160,10 +164,9 @@ Then, the model is evaluated by the following metrics:
 \[\text{Precision} = \frac{TP}{TP + FP} \hspace{1cm} \text{F1 Score} = \frac{2 \times TP}{2 \times TP + FP + FN + TN}\]
 \[\text{Accuracy} = \frac{TP + TN}{TP + FP + FN + TN} \hspace{1cm} \text{Balanced Accuracy} = \frac{\text{Sens} + \text{Spec}}{2}\]
 The last metric is the $AUC$ score standing for Area Under the Curve which is the Receiver Operating Curve(ROC) that indicate the probability of TP versus the probability of FP.  
-\section{Results}
+\section{Experiment}
 All the model in this paper is trained with Adam Optimizer\cite{6980}. The initial learning rate is set to $0.001$, an learning rate reduction schedule is setup with the minimum learning rate is $0.0000001$ with the factor of $0.2$. Otherwise, the epsilon argument of the optimizer is set to $0.1$. The performance of all model is presented in the figure below:
 \section{Conclusion}
-\cite{08332}
 \clearpage
 \pagebreak
 
