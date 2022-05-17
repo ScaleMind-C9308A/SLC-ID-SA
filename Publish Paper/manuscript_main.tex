@@ -2,23 +2,33 @@
 % Main Text
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{ACKNOWLEDGMENT} \\ 
+<<<<<<< Updated upstream
 I would like to express my special thanks of gratitude to my teacher, Dr.Nguyen Viet Dung (dung.nguyenviet1@hust.edu.vn) who gave me the golden support to do this wonderful project. He gave a chance to use High GPU computing computer for AI Training. Otherwise, he also gave me recommendation on how to implement experiment to make a good conclusion such as what I should focus on, what I need to investigate, which metrics I should consider.  
+=======
+I would like to express my special thanks of gratitude to my teacher, Dr.Nguyen Viet Dung(dung.nguyenviet1@hust.edu.vn) who gave me the golden support to do this wonderful project. He gave me a chance to use High GPU computing computers for AI Training. Furthermore, he also gave me recommendations on how to implement experiments to make a good conclusion such as what I should focus on, what I need to investigate, and which metrics I should consider.  
+>>>>>>> Stashed changes
 \section{Introduction}
 %The Need of AI-enabled computer-aided diagnostics
-Skin cancer is one of the most common cancer leading causes of death worldwide. Every day, more than 9500\cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6\cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase\cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States\cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99\%. However, once disease progresses beyond the skin, survival is poor\cite{11872}. Moreover, with the increasing
-incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need of effective solution. \newline
+Skin cancer is one of the most common cancers leading to worldwide death. Every day, more than 9500\cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6\cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase\cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States\cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99\%. However, once the disease progresses beyond the skin, survival is poor\cite{11872}. Moreover, with the increasing incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need for effective solution. \newline
 %The Need of AI-enabled computer-aided diagnostics in Skin Lesion Clasification
-Recently, deep learning particularly, and machine learning in generally algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis and Medical Treatment. Medical imaging, including ultrasound, computed tomography, and magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosed results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history medical data. In Medical Treatment, AI models are applied for building solution for a specific disease, medicine revolutionize is an example. In various studies, AI algorithms has provided various end-to-end solutions in the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging\cite{11872}. \\
+Recently, deep learning particularly, and machine learning in general algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis, and Medical Treatment. Medical imaging, including ultrasound, computed tomography, magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosis results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history and medical data. In Medical Treatment, AI models are applied to building solutions for a specific disease, medicine revolution is an example. In various studies, AI algorithms have provided various end-to-end solutions in the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging\cite{11872}. \\
 %The Success in AI - especially in CNN - some model based CNN
 In order to adapt the increase in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{04861}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. Some of these models have been used as a backbone model in other studies that I will discuss more in the Related Work section. \\
-In this paper, I will analyze the effect of the metadata on classifying skin disease. On the other hand, by analyzing the combination of several backbone models, I will also construct an optimized model that has ability to classify in a balanced way between classes instead of well identifying the majority of classes. 
+In this paper, I will analyze the effect of metadata on classifying skin disease. On the other hand, by analyzing the combination of several backbone models, I will also construct an optimized model that has the ability to classify in a balanced way between classes instead of well identifying the majority of classes. 
 
-\section{Related Work} 
-
+\section{Literature Review}
+Skin lesion classification is not a new area, since there are many great performance models constructed. One of the most cutting-edge technologies that have been used is Soft-Attention as stated in\cite{03358}. Soumyya and his team construct several models formed by the combination of a backbone model including DenseNet201\cite{06993}, InceptionResNetV2\cite{00567}, ResNet50\cite{03385}\cite{05027}, VGG16\cite{1556} and Soft-Attention layer. Using those above backbones has been tried by many previous papers including \cite{03798} which uses transfer learning approach with CNN based model, \cite{10348} which does not only use those above backbone model but also used InceptionV3\cite{00567} model. Another paper that uses the backbone models is \cite{09418}. Hemanth and his team decide to use EfficientNet\cite{11946} and SeNET\cite{01507} instead and CutOut\cite{04552v2} method which involves creating
+holes of different sizes on the images i.e. technically making a random portion of image inactive during data augmentation process. \cite{01284} also used Deep Convolution Neural Network. However, that paper used RandArgument which crops an image into several images from a fixed size, DropBlock which is used for regularization, Multi-Weighted New Loss which is used for dealing with the imbalanced data problem, end-to-end Cumulative
+Learning Strategy which can more effectively balance representation learning and
+classifier learning without additional computational cost. Another state of the art is GradCam and Kernel SHAP\cite{06612}, which are both model agnostic, local interpretability methods that can highlight pixels that the trained network deems
+relevant for the final classification.\\
+Otherwise, the Student and Teacher Model is also a state of the art in 2021\cite{03225}. The student and teacher model is the combination of two-mode which share the memory with each other. Therefore, they can take full advantage of what others learn. SkinLinkNet\cite{12602} and WonderM\cite{03426} are both tested the effect of segmentation on skin lesion classification problem. Another approach is using metadata including gender, age, and capturing position as stated in \cite{03910}. \\
+On the other hand, skin lesion classification problems are not only applied by Deep Learning but also Machine Learning. Random Forest, XGBoost, and Support Vector Machines are tested by \cite{03798}. Besides, Isolation Forest is applied before the soft-max activation of the deep learning model to detect out of distribution skin lesion images as stated in\cite{10348}. Matrix Transformation, besides is also applied before the soft-max activation function in \cite{05045}. 
 \section{Data}
 \subsection{Image Data}
 The dataset used in this paper is the HAM10000 dataset published by Havard University Dataverse\cite{10417}. There are total 7 classes in this dataset containing Actinic keratoses and intraepithelial carcinoma or Bowen's disease (AKIEC), Basal cell Carcinoma (BCC),  benign keratosis-like lesions (solar lentigines / seborrheic keratoses andchen-planus like keratoses, BKL), dermatofibroma (DF), melanoma (MEL), melanocytic nevi (NV), and vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage, VASC). The distribution of the dataset is shown in the table below:
-\begin{center}
+\begin{table}
+	\centering
 	\begin{tabular}{|c c c c c c c c c|} 
 		\hline
 		Class & AKIEC & BCC & BKL & DF & MEL & NV & VASC & Total \\ 
@@ -26,8 +36,10 @@ The dataset used in this paper is the HAM10000 dataset published by Havard Unive
 		No. Sample & 327 & 514 & 1099 & 115 & 1113 & 6705 & 142 & 10015 \\
 		\hline
 	\end{tabular}
-\end{center}
-\begin{figure}
+	\caption{Data Distribution in HAM10000}
+	\label{table:1}
+\end{table}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{img/DataDistribution}
 	\caption{Example image of each class}
@@ -53,11 +65,11 @@ The Input schema is described as follow:\\
 \end{figure}\\
 Image data, on the other hand after being preprocessed, is fed directly into the backbone model. 
 \subsection{Soft-Attention}
-Applying Soft-Attention layer in deep learning is not a new approach. Soft-Attention have been used in various application: image caption generation in \cite{03044} and handwriting verification in \cite{202017} respectively. In skin lesion classification, Soft-Attention is used to increase the performance of the model as described in \cite{03358}. Soft-Attention has ability to ignore irrelevant areas of the image by multiplying the corresponding feature maps with low weights. The function below describe the flow of Soft-Attention module:
+Applying the Soft-Attention layer in deep learning is not a new approach. Soft-Attention has been used in various applications: image caption generation in \cite{03044} and handwriting verification in \cite{202017} respectively. In skin lesion classification, Soft-Attention is used to increase the performance of the model as described in \cite{03358}. Soft-Attention can ignore irrelevant areas of the image by multiplying the corresponding feature maps with low weights. The function below describes the flow of the Soft-Attention module:
 \[
-	f_{sa} = \gamma t\sum_{k=1}^{K}softmax(W_k * t)
+f_{sa} = \gamma t\sum_{k=1}^{K}softmax(W_k * t)
 \]
-In order to apply Soft-Attention, there are two main steps. Firstly, the input tensor is put in a grid-based feature extraction from the high-resolution image, where each grid cell is analyzed in the whole slide to generate a feature map\cite{08513}. This feature map called $t \in R^{h \times w \times d}$ where $h, w, and d$ is the shape of tensor generate by a Convolution Neural Network(CNN), is then input to a 3D convolution layer whose weights is $W_k \in R^{h \times w \times d \times K}$. The output of this convolution is normalized using softmax function to generate K = 16 attention maps. These $16$ attention maps are aggregated to produce a weight function called $\alpha$. This $\alpha$ function is then multiplied with feature tensor $t$ and scaled by $\gamma$, a learnable scalar. Finally, the out of Soft-Attention function $f_{sa}$ is the concatenation of the beginning feature tensor $t$ and the scaled attention maps. 
+In order to apply Soft-Attention, there are two main steps. Firstly, the input tensor is put in grid-based feature extraction from the high-resolution image, where each grid cell is analyzed in the whole slide to generate a feature map\cite{08513}. This feature map called $t \in R^{h \times w \times d}$ where $h, w, and d$ is the shape of tensor generated by a Convolution Neural Network(CNN), is then input to a 3D convolution layer whose weights is $W_k \in R^{h \times w \times d \times K}$. The output of this convolution is normalized using the softmax function to generate K = 16 attention maps. These $16$ attention maps are aggregated to produce a weight function called $\alpha$. This $\alpha$ function is then multiplied with feature tensor $t$ and scaled by $\gamma$, a learnable scalar. Finally, the out of Soft-Attention function $f_{sa}$ is the concatenation of the beginning feature tensor $t$ and the scaled attention maps. 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{Diagram/SoftAttention}
@@ -74,8 +86,9 @@ In this paper, the Soft-Attention layer is applied in the same way in this paper
 
 
 \subsection{Backbone Model Architecture}
-In this paper, the backbone models that have been used are DenseNet201\cite{06993}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. The combination of DenseNet201, InceptionResNetV2 and Soft-Attention layer are both test by the previous paper\cite{03358} with a great performance. Otherwise, Resnet50 also well classify but with much less number of parameter and depth than based on its f1-score and precision stated. Therefore, in this paper, I will analyze the performance of the model Resnet152 and NasnetLarge which has the larger number of parameter and depth. On the other hand, three version of MobileNet and the NasnetMobile will also be analyzed which has a small number of parameter and depth.  
-\begin{center}
+In this paper, the backbone models that have been used are DenseNet201\cite{06993}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. The combination of DenseNet201, InceptionResNetV2 and Soft-Attention layer are both tested by the previous paper\cite{03358} with a great performance. Otherwise, Resnet50 also well classify but with much less number of parameter and depth than based on its f1-score and precision stated. Therefore, in this paper, I will analyze the performance of the model Resnet152 and NasnetLarge which has the larger number of parameter and depth. On the other hand, three version of MobileNet and the NasnetMobile will also be analyzed which has a small number of parameter and depth.  
+\begin{table}
+	\centering
 	\begin{tabular}{|c | c c c|} 
 		\hline
 		Model & Size(MB) & Parameters & Depth \\ 
@@ -101,14 +114,16 @@ In this paper, the backbone models that have been used are DenseNet201\cite{0699
 		NasnetLarge & 343 & 88.9M & 533 \\ 
 		\hline
 	\end{tabular}
-\end{center}
+\caption{Size and Parameters and Depth of backbone model used in this paper}
+\label{table:2}
+\end{table}
 
 \subsection{Model}
 The whole architecture of the model used for image feature extraction is applied in the same way in paper \cite{03358}. Metadata branch, otherwise is preprocessed before feeding into a dense layer then concatenate with the output of Soft-Attention layer. It is described in the figure below:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{Diagram/MainModel}
-	\caption{Overall Model}
+	\caption{Overall Model Architecture}
 	\label{fig:mainmodel}
 \end{figure}
 \section{Training}
@@ -165,8 +180,80 @@ Then, the model is evaluated by the following metrics:
 \[\text{Accuracy} = \frac{TP + TN}{TP + FP + FN + TN} \hspace{1cm} \text{Balanced Accuracy} = \frac{\text{Sens} + \text{Spec}}{2}\]
 The last metric is the $AUC$ score standing for Area Under the Curve which is the Receiver Operating Curve(ROC) that indicate the probability of TP versus the probability of FP.  
 \section{Experiment}
-All the model in this paper is trained with Adam Optimizer\cite{6980}. The initial learning rate is set to $0.001$, an learning rate reduction schedule is setup with the minimum learning rate is $0.0000001$ with the factor of $0.2$. Otherwise, the epsilon argument of the optimizer is set to $0.1$. The performance of all model is presented in the figure below:
+All the model in this paper is trained with Adam Optimizer\cite{6980}. The initial learning rate is set to $0.001$, an learning rate reduction schedule is setup with the minimum learning rate is $0.0000001$ with the factor of $0.2$. Otherwise, the epsilon argument of the optimizer is set to $0.1$. The accuracy of all model is presented in the figure below:\\
+\begin{table}[h]
+	\centering
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+		InceptionResNetV2 & DenseNet201 & ResNet50 & VGG16 \\
+		\hline
+		0.93 & 0.91 & 0.92 & 0.88\\
+		\hline
+	\end{tabular}
+\caption{Accuracy of the model with augmented data}
+\label{table:3}
+\end{table}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{| c | c | c | c | c |}
+		\hline
+		InceptionResNetV2 & DenseNet201 & ResNet50 & Resnet152 & MobileNetV2\\
+		\hline
+		0.89 & 0.89 & 0.70 & 0.57 & 0.81\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+		MobileNetV3Large & MobileNetV3Small & NasNetLarge & NasNetMobile\\
+		0.84 & 0.78 & 0.86 & 0.86\\
+		\hline
+	\end{tabular}
+\caption{Accuracy of the model with metadata}
+\label{table:4}
+\end{table}\\
+According to the Table 3 and 4, it is clear that the model trained with augmented data has a higher accuracy than the model trained with metadata only.  While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.93$ and $0.91$ respectively, their training with metadata has both the accuracy of $0.89$. On the other hand, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. 
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l | c | c | c | c | c | c | c | c|} 
+		\hline
+		Model & akiec & bcc & bkl & df & mel & nv & vasc & $\sigma$ \\
+		\hline
+		DenseNet201 + Augmented Data & 0.67 & 0.78 & 0.64 & 0.67 & 0.61 & 0.96 & 0.91 & 0.128 \\ 
+		\hline
+		InceptionResNetV2 + Augmented Data & 0.69 &	0.88 & 0.77 & 0.29 & 0.66 & 0.98 & 1 & 0.225\\
+		\hline
+		Resnet50 + Augmented Data & 0.53 & 0.86 & 0.68 & 0.67 & 0.57 & 0.97 & 0.95 & 0.165\\
+		\hline 	
+		VGG16 + Augmented Data & 0.65 & 0.7 & 0.52 & 0.4 & 0.53 & 0.95 & 0.95 & 0.197\\ 
+		\hline		
+		DenseNet201 + Metadata & \textbf{0.84} & 0.77 & \textbf{0.81} & \textbf{0.83} & \textbf{0.69} & 0.94 & 0.97 & \textbf{0.088}\\
+		\hline
+		InceptionResNetV2 + Metadata & 0.77 & 0.83 & \textbf{0.83} & 0.64 & \textbf{0.75} & 0.94 & 0.7 & \textbf{0.09}\\
+		\hline
+		Resnet50 + Metadata & 0.49 & 0.59 & 0.55 & 0.36 & 0.45 & 0.83 & 0.8 & 0.162\\
+		\hline
+		Resnet152 + Metadata & 0.42 & 0.38 & 0.41 & 0.15 & 0.4 & 0.75 & 0.75 & 0.199\\
+		\hline
+		MobileNetV2 + Metadata & 0.68 & 0.79 & 0.66 & 0.78 & 0.54 & 0.9 & 0.9 & 0.122\\
+		\hline
+		MobileNetV3Large + Metadata & 0.72 & 0.76 & 0.75 & 0.92 & 0.58 & 0.92 & 0.92 & 0.12\\
+		\hline
+		MobileNetV3Small + Metadata & 0.6 & 0.72 & 0.61 & 0.75 & 0.47 & 0.89 & 0.89 & 0.144\\
+		\hline
+		NasNetLarge + Metadata & 0.79 & 0.79 & 0.8 & 0.74 & 0.65 & 0.92 & 0.92 & \textbf{0.088}\\
+		\hline
+		NasNetMobile + Metadata & 0.76 & 0.74 & 0.78 & 0.73 & 0.63 & 0.93 & 0.93 & 0.101\\
+		\hline
+	\end{tabular}
+	\caption{F1-Score of each class and the standard deviation of each model}
+	\label{table:5}
+\end{table}
+
 \section{Conclusion}
+
 \clearpage
 \pagebreak
 

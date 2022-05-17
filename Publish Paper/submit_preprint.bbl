@@ -58,11 +58,27 @@ Jonathon Shlens Quoc V.~Le Barret~Zoph, Vijay~Vasudevan.
 \newblock Learning transferable architectures for scalable image recognition.
 \newblock Available at \url{https://arxiv.org/abs/1707.07012}, 21 Jul 2017.
 
-\bibitem{10417}
-Philipp Tschandl, Cliff Rosendahl, and Harald Kittler.
-\newblock The ham10000 dataset, a large collection of multi-source
-  dermatoscopic images of common pigmented skin lesions.
-\newblock Available at \url{https://arxiv.org/abs/1803.10417}, 25 Nov 2018.
+\bibitem{1556}
+Karen Simonyan and Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock Available at \url{https://arxiv.org/abs/1409.1556}, 10 Apr 2015.
+
+\bibitem{03798}
+Rishu Garg, Saumil Maheshwari, and Anupam Shukla.
+\newblock Decision support system for detection and classification of skin
+  cancer using cnn.
+\newblock Available at \url{https://arxiv.org/abs/1912.03798}, 9 Dec 2019.
+
+\bibitem{10348}
+Amirreza Rezvantalab, Habib Safigholi, and Somayeh Karimijeshni.
+\newblock Dermatologist level dermoscopy skin cancer classification using
+  different deep learning convolutional neural networks algorithms.
+\newblock Available at \url{https://arxiv.org/abs/1810.10348}, 21 Oct 2018.
+
+\bibitem{09418}
+Hemanth Nadipineni.
+\newblock Method to classify skin lesions using dermoscopic images.
+\newblock Available at \url{https://arxiv.org/abs/2008.09418}, 21 Aug 2020.
 
 \bibitem{11946}
 Mingxing Tan and Quoc~V. Le.
@@ -70,12 +86,66 @@ Mingxing Tan and Quoc~V. Le.
   networks.
 \newblock Available at \url{https://arxiv.org/abs/1905.11946}, 11 Sep 2020.
 
+\bibitem{01507}
+Samuel Albanie Gang Sun Enhua~Wu Jie~Hu, Li~Shen.
+\newblock Squeeze-and-excitation networks.
+\newblock Available at \url{https://arxiv.org/abs/1709.01507}, 16 May 2019.
+
+\bibitem{04552v2}
+Improved~Regularization of~Convolutional Neural Networks~with Cutout.
+\newblock Improved regularization of convolutional neural networks with cutout.
+\newblock Available at \url{https://arxiv.org/abs/1708.04552v2}, 29 Nov 2017.
+
+\bibitem{01284}
+Peng Yao, Mengjuan~Xu Shuwei~Shen, Peng Liu, Fan Zhang, Jinyu Xing, Pengfei
+  Shao, Benjamin Kaffenberger, and Ronald~X. Xu.
+\newblock Single model deep learning on imbalanced small datasets for skin
+  lesion classification.
+\newblock Available at \url{https://arxiv.org/abs/2102.01284}, 11 Feb 2022.
+
+\bibitem{06612}
+Kyle Young, Gareth Booth, Becks Simpson, Reuben Dutton, and Sally Shrapnel.
+\newblock Deep neural network or dermatologist?
+\newblock Available at \url{https://arxiv.org/abs/1908.06612}, 19 Aug 2019.
+
+\bibitem{03225}
+Xiaohan Xing, Yuenan Hou, Hang Li, Yixuan Yuan, Hongsheng Li, and Max Q.-H.
+  Meng.
+\newblock Categorical relation-preserving contrastive knowledge distillation
+  for medical image classification.
+\newblock Available at \url{https://arxiv.org/abs/2107.03225}, 7 Jul 2021.
+
+\bibitem{12602}
+Amirreza Mahbod, Philipp Tschandl, Georg Langs, Rupert Ecker, and Isabella
+  Ellinger.
+\newblock The effects of skin lesion segmentation on the performance of
+  dermatoscopic image classification.
+\newblock Available at \url{https://arxiv.org/abs/2008.12602}, 28 Aug 2020.
+
+\bibitem{03426}
+Yeong~Chan Lee, Sang-Hyuk Jung, and Hong-Hee Won.
+\newblock Wonderm: Skin lesion classification with fine-tuned neural networks.
+\newblock Available at \url{https://arxiv.org/abs/1808.03426}, 10 May 2019.
+
 \bibitem{03910}
 Nils Gessert, Maximilian Nielsen, Mohsin Shaikh, René Werner, and Alexander
   Schlaefer.
 \newblock Skin lesion classification using ensembles of multi-resolution
   efficientnets with meta data.
 \newblock Available at \url{https://arxiv.org/abs/1910.03910}, 9 Oct 2019.
+
+\bibitem{05045}
+Michele Alberti, Angela Botros, Narayan Schuez, Rolf Ingold, Marcus Liwicki,
+  and Mathias Seuret.
+\newblock Trainable spectrally initializable matrix transformations in
+  convolutional neural networks.
+\newblock Available at \url{https://arxiv.org/abs/1911.05045}, 13 Nov 2019.
+
+\bibitem{10417}
+Philipp Tschandl, Cliff Rosendahl, and Harald Kittler.
+\newblock The ham10000 dataset, a large collection of multi-source
+  dermatoscopic images of common pigmented skin lesions.
+\newblock Available at \url{https://arxiv.org/abs/1803.10417}, 25 Nov 2018.
 
 \bibitem{08375}
 Abien~Fred Agarap.
@@ -114,11 +184,5 @@ YAOSHIANG HO and SAMUEL WOOKEY.
 Jimmy~Ba Diederik P.~Kingma.
 \newblock Adam: A method for stochastic optimization.
 \newblock Available at \url{https://arxiv.org/abs/1412.6980}, 30 Jan 2017.
-
-\bibitem{08332}
-Katherine~M. Li and Evelyn~C. Li.
-\newblock Skin lesion analysis towards melanoma detection via end-to-end deep
-  learning of convolutional neural networks.
-\newblock Available at \url{https://arxiv.org/abs/1807.08332}, 22 June 2018.
 
 \end{thebibliography}

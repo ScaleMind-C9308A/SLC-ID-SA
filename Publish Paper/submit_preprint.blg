@@ -5,7 +5,6 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: bib/references.bib
-Warning--I didn't find a database entry for "Metadata"
 Warning--empty journal in 03358
 Warning--empty year in 03358
 Warning--empty journal in 11872
@@ -28,12 +27,40 @@ Too many commas in name 1 of "Barret Zoph, Vijay Vasudevan, Jonathon Shlens, Quo
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in 07012
 Warning--empty year in 07012
-Warning--empty journal in 10417
-Warning--empty year in 10417
+Warning--empty journal in 1556
+Warning--empty year in 1556
+Warning--empty journal in 03798
+Warning--empty year in 03798
+Warning--empty journal in 10348
+Warning--empty year in 10348
+Warning--empty journal in 09418
+Warning--empty year in 09418
 Warning--empty journal in 11946
 Warning--empty year in 11946
+Too many commas in name 1 of "Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu" for entry 01507
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu" for entry 01507
+while executing---line 944 of file unsrt.bst
+Warning--empty journal in 01507
+Warning--empty year in 01507
+Warning--empty journal in 04552v2
+Warning--empty year in 04552v2
+Warning--empty journal in 01284
+Warning--empty year in 01284
+Warning--empty journal in 06612
+Warning--empty year in 06612
+Warning--empty journal in 03225
+Warning--empty year in 03225
+Warning--empty journal in 12602
+Warning--empty year in 12602
+Warning--empty journal in 03426
+Warning--empty year in 03426
 Warning--empty journal in 03910
 Warning--empty year in 03910
+Warning--empty journal in 05045
+Warning--empty year in 05045
+Warning--empty journal in 10417
+Warning--empty year in 10417
 Warning--empty journal in 08375
 Warning--empty year in 08375
 Warning--empty journal in 03044
@@ -46,38 +73,36 @@ Warning--empty journal in 8943952
 Warning--empty year in 8943952
 Warning--empty journal in 6980
 Warning--empty year in 6980
-Warning--empty journal in 08332
-Warning--empty year in 08332
-You've used 20 entries,
+You've used 31 entries,
             1791 wiz_defined-function locations,
-            526 strings with 7792 characters,
-and the built_in function-call counts, 3612 in all, are:
-= -- 217
-> -- 292
+            567 strings with 10076 characters,
+and the built_in function-call counts, 5518 in all, are:
+= -- 335
+> -- 437
 < -- 0
-+ -- 105
-- -- 85
-* -- 266
-:= -- 666
-add.period$ -- 60
-call.type$ -- 20
-change.case$ -- 20
++ -- 158
+- -- 127
+* -- 402
+:= -- 1012
+add.period$ -- 93
+call.type$ -- 31
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 160
-empty$ -- 281
-format.name$ -- 85
-if$ -- 705
+cite$ -- 93
+duplicate$ -- 248
+empty$ -- 435
+format.name$ -- 127
+if$ -- 1080
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 20
-newline$ -- 103
-num.names$ -- 20
-pop$ -- 100
+int.to.str$ -- 31
+missing$ -- 31
+newline$ -- 158
+num.names$ -- 31
+pop$ -- 155
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 62
+skip$ -- 95
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -85,8 +110,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 40
-while$ -- 20
-width$ -- 22
-write$ -- 182
-(There was 1 error message)
+warning$ -- 62
+while$ -- 31
+width$ -- 33
+write$ -- 281
+(There were 3 error messages)
