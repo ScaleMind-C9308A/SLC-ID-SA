@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.16)  17 MAY 2022 18:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.16)  17 MAY 2022 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -902,8 +902,8 @@ Overfull \hbox (27.10553pt too wide) in paragraph at lines 257--288
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--328
-
+Overfull \hbox (54.36342pt too wide) in paragraph at lines 330--349
+ [][] 
  []
 
 
@@ -913,7 +913,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12] [13]) (submit_preprint.bbl
+[12] [13] [14]) (submit_preprint.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 .
 
@@ -924,18 +924,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14
+ [15
 
-] [15] [16]) [17]
+] [16] [17]) [18]
 (submit_preprint.aux)
 Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
 (rerunfilecheck)             Checksum: 701673AA53A7F4E4A12C7367ECD3DEB2;1687.
  ) 
 Here is how much of TeX's memory you used:
- 18253 strings out of 478541
- 301505 string characters out of 2849516
- 701053 words of memory out of 3000000
- 35807 multiletter control sequences out of 15000+600000
+ 18257 strings out of 478541
+ 301553 string characters out of 2849516
+ 706117 words of memory out of 3000000
+ 35808 multiletter control sequences out of 15000+600000
  534305 words of font info for 260 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,11n,134p,1469b,558s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -950,9 +950,9 @@ m Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on submit_preprint.pdf (18 pages, 403038 bytes).
+Output written on submit_preprint.pdf (19 pages, 405243 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
  67228 words of extra memory for PDF output out of 74296 (max. 10000000)
 

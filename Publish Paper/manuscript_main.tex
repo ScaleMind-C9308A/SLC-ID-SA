@@ -324,31 +324,51 @@ As the results, metadata does not make the model more balanced and improve the m
 	\caption{ROC AUC Score of each model}
 	\label{table:7}
 \end{table}\\
-Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. The table 8 illustrates the deeper analyzing of the three models.\\
+Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. The table 8 illustrates the deeper analyzing of the three models. It's clear that MobileNetV3Large and NasNetMobile are the two best performance model. Nevertheless, MobileNetV3Large has less number of parameters and depth than NasNetMobile according to the table 2.At the end of this experiment, I decide to configure the MobileNetV3Large to construct an optimized model. The result of this experiment is illustrated in table 9.\\
 \begin{table}
 	\centering	
-	\begin{tabular}{l | c | c | c | c|}
+	\begin{tabular}{|l | c | c | c | c|}
 		\hline
-		Model & MobileNetV2 & MobileNetV3Smal & MobileNetV3Large & NasNetMobile\\
+		Model & MobileNetV2 & MobileNetV3Small & MobileNetV3Large & NasNetMobile\\
 		\hline
-		Accuracy(avg)\\
+		Accuracy(avg) & 0.81 & 0.78 & 0.84 & \textbf{0.86}\\
 		\hline
-		Balanced Accuracy(avg)\\ 
+		Balanced Accuracy(avg) & 0.86 & 0.87 & 0.87 & \textbf{0.88}\\ 
 		\hline
-		Precision(avg)\\
+		Precision(avg) & 0.71 & 0.63 & \textbf{0.75} & 0.73\\
 		\hline
-		F1-score(avg)\\
+		F1-score(avg) & 0.75 & 0.70 & \textbf{0.79} & 0.78\\
 		\hline
-		Sensitivity(avg)\\ 
+		Sensitivity(avg) & 0.78 & 0.79 & 0.80 & \textbf{0.81}\\ 
 		\hline
-		Specificity(avg)\\
+		Specificity(avg) & 0.95 & 0.95 & 0.95 & \textbf{0.96}\\
 		\hline
-		ROC-AUC-score(avg)\\
+		ROC-AUC-score(avg) & 0.96 & 0.95 & 0.96 & \textbf{0.97}\\
 		\hline
+	\end{tabular}
+\caption{Deeper analyzing of mobile model}
+\label{table:8}
+\end{table}
+\begin{table}
+	\centering
+	\begin{tabular}{|l | c |}
+		Model & Accuracy\\
+		\hline
+		MobileNetV3Large-Layer[:270] + Soft-Attention & 0.71 \\
+		\hline
+		MobileNetV3Large-Layer[:266] + Soft-Attention & 0.73 \\
+		\hline
+		MobileNetV3Large-Layer[:260] + Soft-Attention & 0.77 \\
+		\hline
+		MobileNetV3Large-Layer[:251] + Soft-Attention & 0.79 \\
+		\hline
+		MobileNetV3Large-Layer[:246] + Soft-Attention & 0.84 \\
+		\hline
+		MobileNetV3Large-Layer[:246] + Soft-Attention + Dense(512)& 1 \\
 	\end{tabular}
 \end{table}
 \section{Conclusion}
-
+In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. In case it is not, what factor make the model imbalanced. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata make the model less imbalanced, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using weighted loss function. Using weighted loss function make the standard deviation of model f1-score less than $0.1$. At the end of the experiment, mobile model is found that can achieve great performance without the large number of parameters or depth. Therefore, MobileNetV3Large is configured to construct an optimized and balanced model. 
 \clearpage
 \pagebreak
 
