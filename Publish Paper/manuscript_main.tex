@@ -348,24 +348,59 @@ Another interesting point found during the experiment is that MobileNetV2, Mobil
 	\end{tabular}
 \caption{Deeper analyzing of mobile model}
 \label{table:8}
-\end{table}
+\end{table}\\
 \begin{table}
 	\centering
 	\begin{tabular}{|l | c |}
+		\hline
 		Model & Accuracy\\
 		\hline
-		MobileNetV3Large-Layer[:270] + Soft-Attention & 0.71 \\
+		MobileNetV3Large-Layer[:270] + Soft-Attention + Metadata & 0.71 \\
 		\hline
-		MobileNetV3Large-Layer[:266] + Soft-Attention & 0.73 \\
+		MobileNetV3Large-Layer[:266] + Soft-Attention + Metadata  & 0.73 \\
 		\hline
-		MobileNetV3Large-Layer[:260] + Soft-Attention & 0.77 \\
+		MobileNetV3Large-Layer[:260] + Soft-Attention + Metadata  & 0.77 \\
 		\hline
-		MobileNetV3Large-Layer[:251] + Soft-Attention & 0.79 \\
+		MobileNetV3Large-Layer[:251] + Soft-Attention + Metadata  & 0.79 \\
 		\hline
-		MobileNetV3Large-Layer[:246] + Soft-Attention & 0.84 \\
+		MobileNetV3Large-Layer[:246] + Soft-Attention + Metadata  & 0.84 \\
 		\hline
-		MobileNetV3Large-Layer[:246] + Soft-Attention + Dense(512)& 1 \\
+		MobileNetV3Large-Layer[:246] + Soft-Attention + Dense(512) + Metadata & 0.85 \\
+		\hline
+		MobileNetV3Large-Layer[:240] + Soft-Attention + Metadata  & \textbf{0.86}\\
+		\hline
+		MobileNetV3Large-Layer[:230] + Soft-Attention + Metadata  & 0.84 \\
+		\hline
+		MobileNetV3Large-Layer[:230] + Soft-Attention + Metadata  & 0.81 \\
+		\hline
+		MobileNetV3Large-Layer[:230] + Soft-Attention & 0.85 \\ 
+		\hline
+		MobileNetV3Large & 0.85 \\ 
+		\hline
 	\end{tabular}
+\caption{Deeper analyzing of MobileNetV3Large Model}
+\label{table:9}
+\end{table}
+In the MobileNetV3Large experiment, the model architecture is constructed by replacing the layers after the $28^th$ layer from the last layer by the Soft-Attention. The Table 9 demonstrate that, the Soft-Attention and the metadata have a good effect on the model. Otherwise, Adding a dense layer does not increase the model performance. The best MobileNetV3Large model architecture is the combination of MobileNetV3Large replaced from $241^th$ layer to the rest by Soft-Attention layer and the metadata, which peak the model performance of 0.86 accuracy rate. This is an optimized and balanced model, the parameters of model is indicated in Table 10.\\
+\begin{table}
+	\centering
+	\begin{tabular}{| l | c |}
+		\hline
+		Accuracy & 0.86\\
+		\hline
+		Precision(avg) & 0.86\\
+		\hline
+		F1-score(avg) & 0.86\\
+		\hline
+		Sensitivity(avg) & 0.86\\
+		\hline
+		Specificity(avg) & 0.95\\
+		\hline
+		ROC AUC Score(avg) & 0.98\\
+		\hline
+	\end{tabular}
+\caption{Performance of MobileNetV3Large}
+\label{table:10}
 \end{table}
 \section{Conclusion}
 In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. In case it is not, what factor make the model imbalanced. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata make the model less imbalanced, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using weighted loss function. Using weighted loss function make the standard deviation of model f1-score less than $0.1$. At the end of the experiment, mobile model is found that can achieve great performance without the large number of parameters or depth. Therefore, MobileNetV3Large is configured to construct an optimized and balanced model. 
