@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  18 MAY 2022 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  20 MAY 2022 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -900,95 +900,88 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 
+l.14 
       [1
 
 ] [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
-<img/DataDistribution.png, id=132, 395.22656pt x 83.5622pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+<img/DataDistribution.png, id=133, 395.22656pt x 83.5622pt>
 File: img/DataDistribution.png Graphic file (type png)
 <use img/DataDistribution.png>
-Package pdftex.def Info: img/DataDistribution.png  used on input line 41.
+Package pdftex.def Info: img/DataDistribution.png  used on input line 40.
 (pdftex.def)             Requested size: 452.9679pt x 95.7719pt.
- [3] [4 <./img/DataDistribution.png>]
-<Diagram/Input Schema.png, id=167, 996.72375pt x 267.24844pt>
-File: Diagram/Input Schema.png Graphic file (type png)
-<use Diagram/Input Schema.png>
-Package pdftex.def Info: Diagram/Input Schema.png  used on input line 59.
-(pdftex.def)             Requested size: 317.07614pt x 85.01558pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
-<Diagram/SoftAttention.png, id=179, 1349.04pt x 394.47375pt>
+[3]
+<Diagram/Input Schema.png, id=159, 996.72375pt x 267.24844pt>
+File: Diagram/Input Schema.png Graphic file (type png)
+<use Diagram/Input Schema.png>
+Package pdftex.def Info: Diagram/Input Schema.png  used on input line 58.
+(pdftex.def)             Requested size: 317.07614pt x 85.01558pt.
+ [4 <./img/DataDistribution.png>] [5 <./Diagram/Input Schema.png>]
+<Diagram/SoftAttention.png, id=181, 1349.04pt x 394.47375pt>
 File: Diagram/SoftAttention.png Graphic file (type png)
 <use Diagram/SoftAttention.png>
-Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 72.
+Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 71.
 (pdftex.def)             Requested size: 452.9679pt x 132.45198pt.
-<Diagram/SoftAttentionBlock.png, id=181, 619.56468pt x 385.44pt>
+<Diagram/SoftAttentionBlock.png, id=183, 619.56468pt x 385.44pt>
 File: Diagram/SoftAttentionBlock.png Graphic file (type png)
 <use Diagram/SoftAttentionBlock.png>
-Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 79.
+Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 78.
 
 (pdftex.def)             Requested size: 226.48395pt x 140.89322pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--83
+Underfull \hbox (badness 10000) in paragraph at lines 67--82
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./Diagram/Input Schema.png>]
-<Diagram/MainModel.png, id=203, 1522.18687pt x 191.9672pt>
+[6 <./Diagram/SoftAttention.png>]
+<Diagram/MainModel.png, id=204, 1522.18687pt x 191.9672pt>
 File: Diagram/MainModel.png Graphic file (type png)
 <use Diagram/MainModel.png>
-Package pdftex.def Info: Diagram/MainModel.png  used on input line 122.
+Package pdftex.def Info: Diagram/MainModel.png  used on input line 121.
 (pdftex.def)             Requested size: 452.9679pt x 57.12485pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./Diagram/SoftAttention.png> <./Diagram/SoftAttentionBlock.png>] [8 <./Diag
-ram/MainModel.png>]
+ [7 <./Diagram/SoftAttentionBlock.png>]
+[8 <./Diagram/MainModel.png>]
 <img/Confusion-matrix.png, id=218, 483.8075pt x 295.1025pt>
 File: img/Confusion-matrix.png Graphic file (type png)
 <use img/Confusion-matrix.png>
-Package pdftex.def Info: img/Confusion-matrix.png  used on input line 147.
+Package pdftex.def Info: img/Confusion-matrix.png  used on input line 146.
 (pdftex.def)             Requested size: 239.16624pt x 145.8803pt.
 
-Overfull \hbox (21.74359pt too wide) in paragraph at lines 147--148
+Overfull \hbox (21.74359pt too wide) in paragraph at lines 146--147
  [][] 
  []
 
 <img/AUC.png, id=219, 235.88126pt x 215.80624pt>
 File: img/AUC.png Graphic file (type png)
 <use img/AUC.png>
-Package pdftex.def Info: img/AUC.png  used on input line 152.
+Package pdftex.def Info: img/AUC.png  used on input line 151.
 (pdftex.def)             Requested size: 152.19519pt x 139.245pt.
 [9 <./img/Confusion-matrix.png> <./img/AUC.png>]
-Overfull \hbox (27.10553pt too wide) in paragraph at lines 221--252
+Overfull \hbox (27.10553pt too wide) in paragraph at lines 220--251
  [][] 
  []
 
 
-Overfull \hbox (27.10553pt too wide) in paragraph at lines 257--288
+Overfull \hbox (27.10553pt too wide) in paragraph at lines 256--287
  [][] 
  []
 
 
-Overfull \hbox (54.36342pt too wide) in paragraph at lines 330--349
+Overfull \hbox (54.36342pt too wide) in paragraph at lines 329--348
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10] [11]
 
@@ -1013,11 +1006,11 @@ Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
 (rerunfilecheck)             Checksum: 701673AA53A7F4E4A12C7367ECD3DEB2;1687.
  ) 
 Here is how much of TeX's memory you used:
- 18177 strings out of 478550
- 305437 string characters out of 2839911
- 707708 words of memory out of 3000000
- 35702 multiletter control sequences out of 15000+600000
- 534305 words of font info for 260 fonts, out of 8000000 for 9000
+ 18176 strings out of 478550
+ 305436 string characters out of 2839911
+ 708818 words of memory out of 3000000
+ 35703 multiletter control sequences out of 15000+600000
+ 534175 words of font info for 258 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,11n,134p,1469b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
@@ -1034,9 +1027,9 @@ symbol/usyr.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on submit_preprint.pdf (20 pages, 408019 bytes).
+Output written on submit_preprint.pdf (20 pages, 408488 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
  67228 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -3,7 +3,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{ACKNOWLEDGMENT} \\ 
 I would like to express my special thanks of gratitude to my teacher, Dr.Nguyen Viet Dung (dung.nguyenviet1@hust.edu.vn) who gave me the golden support to do this wonderful project. He gave a chance to use High GPU computing computer for AI Training. Otherwise, he also gave me recommendation on how to implement experiment to make a good conclusion such as what I should focus on, what I need to investigate, which metrics I should consider.  
-I would like to express my special thanks of gratitude to my teacher, Dr.Nguyen Viet Dung(dung.nguyenviet1@hust.edu.vn) who gave me the golden support to do this wonderful project. He gave me a chance to use High GPU computing computers for AI Training. Furthermore, he also gave me recommendations on how to implement experiments to make a good conclusion such as what I should focus on, what I need to investigate, and which metrics I should consider.  
 \section{Introduction}
 %The Need of AI-enabled computer-aided diagnostics
 Skin cancer is one of the most common cancers leading to worldwide death. Every day, more than 9500\cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6\cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase\cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States\cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99\%. However, once the disease progresses beyond the skin, survival is poor\cite{11872}. Moreover, with the increasing incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need for effective solution. \newline
@@ -126,7 +125,7 @@ The whole architecture of the model used for image feature extraction is applied
 \section{Training}
 \subsection{Loss Function}
 The loss function used in this paper is categorical cross-entropy. Consider $X = [x_1, x_2, \dots, x_n]$ as the input feature, $\theta = [\theta_1, \theta_2, \dots, \theta_n]$. Let $N$, and $C$ is the number of training examples and number of class respectively. The categorical cross-entropy loss is presented as:
-\[L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N}y^c_n\log(\hat{y}^c_n)\]
+\[L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N}W_c\times y^c_n \times \log(\hat{y}^c_n)\]
 where $\hat{y}^c_i$  is the output of model and $y^c_i$ is the target that the model should return. \\
 Since the dataset face the imbalanced problem then I applied the class weight for the loss. This formula below is used to calculate the class weight:
 \[W = N \odot D\]
@@ -324,7 +323,7 @@ As the results, metadata does not make the model more balanced and improve the m
 	\caption{ROC AUC Score of each model}
 	\label{table:7}
 \end{table}\\
-Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. The table 8 illustrates the deeper analyzing of the three models. It's clear that MobileNetV3Large and NasNetMobile are the two best performance model. Nevertheless, MobileNetV3Large has less number of parameters and depth than NasNetMobile according to the table 2.At the end of this experiment, I decide to configure the MobileNetV3Large to construct an optimized model. The result of this experiment is illustrated in table 9.\\
+Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. The table 8 illustrates the deeper analyzing of the three models. It's clear that MobileNetV3Large and NasNetMobile are the two best performance model. Nevertheless, MobileNetV3Large has less number of parameters and depth than NasNetMobile according to the table 2.\\
 \begin{table}
 	\centering	
 	\begin{tabular}{|l | c | c | c | c|}
@@ -346,9 +345,10 @@ Another interesting point found during the experiment is that MobileNetV2, Mobil
 		ROC-AUC-score(avg) & 0.96 & 0.95 & 0.96 & \textbf{0.97}\\
 		\hline
 	\end{tabular}
-\caption{Deeper analyzing of mobile model}
-\label{table:8}
-\end{table}\\
+	\caption{Deeper analyzing of mobile model}
+	\label{table:8}
+\end{table}
+At the end of this experiment, I decide to configure the MobileNetV3Large to construct an optimized model. The result of this experiment is illustrated in table 9.
 \begin{table}
 	\centering
 	\begin{tabular}{|l | c |}
@@ -381,7 +381,7 @@ Another interesting point found during the experiment is that MobileNetV2, Mobil
 \caption{Deeper analyzing of MobileNetV3Large Model}
 \label{table:9}
 \end{table}
-In the MobileNetV3Large experiment, the model architecture is constructed by replacing the layers after the $28^th$ layer from the last layer by the Soft-Attention. The Table 9 demonstrate that, the Soft-Attention and the metadata have a good effect on the model. Otherwise, Adding a dense layer does not increase the model performance. The best MobileNetV3Large model architecture is the combination of MobileNetV3Large replaced from $241^th$ layer to the rest by Soft-Attention layer and the metadata, which peak the model performance of 0.86 accuracy rate. This is an optimized and balanced model, the parameters of model is indicated in Table 10.\\
+In the MobileNetV3Large experiment, the model architecture is constructed by replacing the layers after the $28^{th}$ layer from the last layer by the Soft-Attention. The Table 9 demonstrate that, the Soft-Attention and the metadata have a good effect on the model. Otherwise, Adding a dense layer does not increase the model performance. The best MobileNetV3Large model architecture is the combination of MobileNetV3Large replaced from $241^{th}$ layer to the rest by Soft-Attention layer and the metadata, which peak the model performance of 0.86 accuracy rate. This is an optimized and balanced model, the parameters of model is indicated in Table 10 and Table 11.
 \begin{table}
 	\centering
 	\begin{tabular}{| l | c |}
@@ -399,8 +399,26 @@ In the MobileNetV3Large experiment, the model architecture is constructed by rep
 		ROC AUC Score(avg) & 0.98\\
 		\hline
 	\end{tabular}
-\caption{Performance of MobileNetV3Large}
-\label{table:10}
+	\caption{Performance of MobileNetV3Large}
+	\label{table:10}
+\end{table}
+\begin{table}
+	\centering
+	\begin{tabular}{| l | c | c | c |}
+		\hline
+		Model & MobileNetV3Large & DenseNet201 & InceptionResnetV2\\
+		\hline
+		No. Parameters & \textbf{5.5M} & 20.2M & 55.9M\\
+		\hline
+		Depth & \textbf{118} & 402 & 449\\
+		\hline
+		Accuracy & 0.86 & 0.89 & 0.90\\
+		\hline
+		Time Prediction(s/epochs) & \textbf{116} & 1000 & 3500 \\
+		\hline
+	\end{tabular}
+\caption{How Performance of MobileNetV3Large be optimized}
+\label{table:11}
 \end{table}
 \section{Conclusion}
 In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. In case it is not, what factor make the model imbalanced. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata make the model less imbalanced, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using weighted loss function. Using weighted loss function make the standard deviation of model f1-score less than $0.1$. At the end of the experiment, mobile model is found that can achieve great performance without the large number of parameters or depth. Therefore, MobileNetV3Large is configured to construct an optimized and balanced model. 
