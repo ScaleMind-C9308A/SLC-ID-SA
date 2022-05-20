@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  20 MAY 2022 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  20 MAY 2022 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./submit_preprint.tex
-(submit_preprint.tex
+**./Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention
+_Metadata.tex
+
+(Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
+tadata.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-05>
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls
@@ -723,8 +726,11 @@ nd-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count333
 \l__pdf_internal_box=\box60
-) (submit_preprint.aux)
-\openout1 = `submit_preprint.aux'.
+)
+(Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
+tadata.aux)
+\openout1 = `Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_Soft
+Attention_Metadata.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -842,9 +848,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
- (submit_preprint.out) (submit_preprint.out)
+
+(Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
+tadata.out)
+(Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
+tadata.out)
 \@outlinefile=\write4
-\openout4 = `submit_preprint.out'.
+\openout4 = `Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_Soft
+Attention_Metadata.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -987,7 +998,9 @@ Overfull \hbox (54.36342pt too wide) in paragraph at lines 329--348
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12] [13] [14] [15]) (submit_preprint.bbl
+[12] [13] [14] [15])
+(Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
+tadata.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 .
 
@@ -1001,18 +1014,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 [16
 
-] [17] [18]) [19] (submit_preprint.aux)
-Package rerunfilecheck Info: File `submit_preprint.out' has not changed.
+] [17] [18]) [19]
+(Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
+tadata.aux)
+Package rerunfilecheck Info: File `Balanced_and_Optimized_Skin_Cancer_Classific
+ation_Model_using_SoftAttention_Metadata.out' has not changed.
 (rerunfilecheck)             Checksum: 701673AA53A7F4E4A12C7367ECD3DEB2;1687.
  ) 
 Here is how much of TeX's memory you used:
  18176 strings out of 478550
- 305436 string characters out of 2839911
- 708818 words of memory out of 3000000
+ 306954 string characters out of 2839911
+ 709232 words of memory out of 3000000
  35703 multiletter control sequences out of 15000+600000
  534175 words of font info for 258 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,11n,134p,1469b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,11n,134p,1538b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
 cm-super-t1.enc}{C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/base/8r.enc}<C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type
@@ -1027,7 +1043,8 @@ symbol/usyr.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on submit_preprint.pdf (20 pages, 408488 bytes).
+Output written on Balanced_and_Optimized_Skin_Cancer_Classification_Model_using
+_SoftAttention_Metadata.pdf (20 pages, 408488 bytes).
 PDF statistics:
  390 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
