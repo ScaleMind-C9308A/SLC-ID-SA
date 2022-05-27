@@ -4,11 +4,8 @@
 \textbf{ACKNOWLEDGMENT} \\ 
 I would like to express my special thanks of gratitude to my teacher, Dr.Nguyen Viet Dung (dung.nguyenviet1@hust.edu.vn) who gave me the golden support to do this wonderful project. He gave a chance to use High GPU computing computer for AI Training. Otherwise, he also gave me recommendation on how to implement experiment to make a good conclusion such as what I should focus on, what I need to investigate, which metrics I should consider.  
 \section{Introduction}
-%The Need of AI-enabled computer-aided diagnostics
-Skin cancer is one of the most common cancers leading to worldwide death. Every day, more than 9500\cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6\cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase\cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States\cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99\%. However, once the disease progresses beyond the skin, survival is poor\cite{11872}. Moreover, with the increasing incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need for effective solution. \newline
-%The Need of AI-enabled computer-aided diagnostics in Skin Lesion Clasification
+Skin cancer is one of the most common cancers leading to worldwide death. Every day, more than 9500\cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6\cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase\cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States\cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99 percent. However, once the disease progresses beyond the skin, survival is poor\cite{11872}. Moreover, with the increasing incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need for effective solution. \\
 Recently, deep learning particularly, and machine learning in general algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis, and Medical Treatment. Medical imaging, including ultrasound, computed tomography, magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosis results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history and medical data. In Medical Treatment, AI models are applied to building solutions for a specific disease, medicine revolution is an example. In various studies, AI algorithms have provided various end-to-end solutions in the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging\cite{11872}. \\
-%The Success in AI - especially in CNN - some model based CNN
 In order to adapt the increase in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{04861}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. Some of these models wich have been used as a backbone model in this paper will be discuss more in the Related Work section. \\
 In this paper, the effect of metadata on classifying skin disease is also analyzed .On the other hand, by analyzing the combination of several backbone models, I will also construct an optimized model that has the ability to classify in a balanced way between classes instead of well identifying the majority of classes. 
 
@@ -46,11 +43,8 @@ In the previous paper\cite{03358}, the image data is augmented for all class, th
 The HAM10000 dataset\cite{10417} also contain the metadata of patient including gender, age, and the capturing position. During the data exploration term, the age category miss 57 data point, which is decided to remove this 57 samples. In the gender and capturing position category contain some samples of unknown. Instead of removing, these unknowns data point is kept and considered as "prefer not to say". Besides, the label of the whole data is preprocessed into one-hot vector.
 \section{Model Schema}
 \subsection{Input Schema}
-%Other preprocessed input%
 Using metadata as another input is not new. In paper\cite{03910}, they decide to keep the missing value and set its value to $0$. The sex and anatomical site are categorical encoded. The age, on the other hand is numerical normalized. After processing, the metadata is fed into a two-layer neural network with 256 neurons each. Each layer contains batch normalization, a ReLU\cite{08375} activation and dropout with $p = 0.4$. The network’s output is concatenated with the CNN’s feature vector after global average pooling. Especially, they use a simply data augmentation strategy to address the problem of missing values in metadata. During training, they randomly encode each property as missing with a probability of $p = 0.1$. \\
-%My proprocessed input%
 In this paper, the unknowns is kept as a type as discussed in Metadata section. Sex, anatomical site and age are also category encoded and numerical normalized, respectively. After processing, the metadata is then concatenated and fed into a dense layer of 4096 neurons. Finally, this this dense layer is then concatenate with the output of Soft-Attention which is then discussed in Soft-Attention section. \\
-%Figure%
 The Input schema is described as follow:\\
 \begin{figure}[h]
 	\centering
@@ -216,9 +210,8 @@ All the model in this paper is trained with Adam Optimizer\cite{6980}. The initi
 \label{table:4}
 \end{table}
 \FloatBarrier
-According to the Table 3 and 4, it is clear that the model trained with augmented data has a higher accuracy than the model trained with metadata only.  While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.93$ and $0.91$ respectively, their training with metadata has both the accuracy of $0.89$. Furthermore, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, although has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.84$, $0.86$, respectively. This term will be discussed later on. Although, the model trained with augmented data have high accuracy, when I analyzed the f1-score and the recall score of models, it turns out that models trained with augmented data have imbalanced f1-scores according to table 5. As a results, augmented data model dose not classify well on all class as InceptionRtesNetV2 trained on augmented data have 0.29 f1-score on class df while InceptionRtesNetV2 trained on metadata can classify well by a balanced way. This may cause by the augmented data. \\
-However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the
-the imbalanced term. Since this dataset is not balanced, therefore using augmented data can make the model bias to the class which has large sample. Using the metadata instead make the model less bias, though it still make the model imbalanced due to the high variance of model which has the number of depth much less than 400.\\ 
+According to the Table 3 and 4, it is clear that the model trained with augmented data has a higher accuracy than the model trained with metadata only. While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.93$ and $0.91$ respectively, their training with metadata has both the accuracy of $0.89$. Furthermore, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, although has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.84$, $0.86$, respectively. This term will be discussed later on. Although, the model trained with augmented data have high accuracy, when I analyzed the f1-score and the recall score of models, it turns out that models trained with augmented data have imbalanced f1-scores according to table 5. As a results, augmented data model dose not classify well on all class as InceptionRtesNetV2 trained on augmented data have 0.29 f1-score on class df while InceptionRtesNetV2 trained on metadata can classify well by a balanced way. This may cause by the augmented data. \\
+However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the imbalanced term. Since this dataset is not balanced, therefore using augmented data can make the model bias to the class which has large sample. Using the metadata instead make the model less bias, though it still make the model imbalanced due to the high variance of model which has the number of depth much less than 400.\\ 
 This problem is also true with the recall score according to table 6. DenseNet201, InceptionResNetV2, ResNet50, VGG16 trained with augmented data has recall standard deviation of $0.189$, $0.275$, $0.209$, $0.191$, respectively. On the other hand, other models have recall standard deviation which is close to $0.1$. Especially, inceptionResnetV2 train on metadata has recall standard deviation of approximately $0.09$. \\
 As the results, metadata does make the model less imbalanced and improve the model performance by reducing the amount of data needed for achieving nearly the expected results.On the other hand, the reason why the model become much more balanced is the weighted loss function. Weight loss function has ability to solve the imbalanced class samples by adding a weight related to the number of samples in each class. Therefore, DenseNet201, InceptionResNetV2 trained with weighted loss function have recall in akiec of $0.85$. $0.82$, respectively, as opposed to their training in akiec without weighted loss function. MobileV3large, MobileV3Small, NasNetLarge and NasNetMobile whose standard deviation is less than $0.15$ outperform others on classifying class df with the recall score of $0.92$, $1$, $0.92$, $0.92$, separately.\\ 
 \FloatBarrier
@@ -226,36 +219,36 @@ As the results, metadata does make the model less imbalanced and improve the mod
 	\centering
 	\begin{tabular}{|l | c | c | c | c | c | c | c | c|} 
 		\hline
-		Model & akiec & bcc & bkl & df & mel & nv & vasc & $\sigma$ \\
+		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
 		\hline
-		DenseNet201 + Augmented Data & 0.67 & 0.78 & 0.64 & 0.67 & 0.61 & 0.96 & 0.91 & 0.128 \\ 
+		DenseNet201 + Augmented Data & 0.67 & 0.78 & 0.64 & 0.67 & 0.61 & 0.96 & 0.91 & 0.74 \\ 
 		\hline
-		InceptionResNetV2 + Augmented Data & 0.69 &	0.88 & 0.77 & 0.29 & 0.66 & 0.98 & 1 & 0.225\\
+		InceptionResNetV2 + Augmented Data & 0.69 &	0.88 & 0.77 & 0.29 & 0.66 & 0.98 & 1 & 0.75\\
 		\hline
-		Resnet50 + Augmented Data & 0.53 & 0.86 & 0.68 & 0.67 & 0.57 & 0.97 & 0.95 & 0.165\\
+		Resnet50 + Augmented Data & 0.53 & 0.86 & 0.68 & 0.67 & 0.57 & 0.97 & 0.95 & 0.74\\
 		\hline 	
-		VGG16 + Augmented Data & 0.65 & 0.7 & 0.52 & 0.4 & 0.53 & 0.95 & 0.95 & 0.197\\ 
+		VGG16 + Augmented Data & 0.65 & 0.7 & 0.52 & 0.4 & 0.53 & 0.95 & 0.95 & 0.67\\ 
 		\hline		
-		DenseNet201 + Metadata & \textbf{0.84} & 0.77 & \textbf{0.81} & \textbf{0.83} & \textbf{0.69} & 0.94 & 0.97 & \textbf{0.088}\\
+		DenseNet201 + WeightLoss & \textbf{0.84} & 0.77 & \textbf{0.81} & \textbf{0.83} & \textbf{0.69} & 0.94 & 0.97 & \textbf{0.83}\\
 		\hline
-		InceptionResNetV2 + Metadata & 0.77 & 0.83 & \textbf{0.83} & 0.64 & \textbf{0.75} & 0.94 & 0.7 & \textbf{0.09}\\
+		InceptionResNetV2 + WeightLoss & 0.77 & 0.83 & \textbf{0.83} & 0.64 & \textbf{0.75} & 0.94 & 0.7 & \textbf{0.81}\\
 		\hline
-		Resnet50 + Metadata & 0.49 & 0.59 & 0.55 & 0.36 & 0.45 & 0.83 & 0.8 & 0.162\\
+		Resnet50 + WeightLoss & 0.49 & 0.59 & 0.55 & 0.36 & 0.45 & 0.83 & 0.8 & 0.58\\
 		\hline
-		Resnet152 + Metadata & 0.42 & 0.38 & 0.41 & 0.15 & 0.4 & 0.75 & 0.75 & 0.199\\
+		Resnet152 + WeightLoss & 0.42 & 0.38 & 0.41 & 0.15 & 0.4 & 0.75 & 0.75 & 0.46\\
 		\hline
-		MobileNetV2 + Metadata & 0.68 & 0.79 & 0.66 & 0.78 & 0.54 & 0.9 & 0.9 & 0.122\\
+		MobileNetV2 + WeightLoss & 0.68 & 0.79 & 0.66 & 0.78 & 0.54 & 0.9 & \textbf{0.9} & 0.75\\
 		\hline
-		MobileNetV3Large + Metadata & 0.72 & 0.76 & 0.75 & 0.92 & 0.58 & 0.92 & 0.92 & 0.12\\
+		MobileNetV3Large + WeightLoss & 0.72 & 0.76 & 0.75 & 0.92 & 0.58 & 0.92 & \textbf{0.92} & 0.79\\
 		\hline
-		MobileNetV3Small + Metadata & 0.6 & 0.72 & 0.61 & 0.75 & 0.47 & 0.89 & 0.89 & 0.144\\
+		MobileNetV3Small + WeightLoss & 0.6 & 0.72 & 0.61 & 0.75 & 0.47 & 0.89 & \textbf{0.89} & 0.70\\
 		\hline
-		NasNetLarge + Metadata & 0.79 & 0.79 & 0.8 & 0.74 & 0.65 & 0.92 & 0.92 & \textbf{0.088}\\
+		NasNetLarge + WeightLoss & 0.79 & 0.79 & 0.8 & 0.74 & 0.65 & 0.92 & 0.92 & \textbf{0.80}\\
 		\hline
-		NasNetMobile + Metadata & 0.76 & 0.74 & 0.78 & 0.73 & 0.63 & 0.93 & 0.93 & 0.101\\
+		NasNetMobile + WeightLoss & 0.76 & 0.74 & 0.78 & 0.73 & 0.63 & 0.93 & \textbf{0.93} & 0.78\\
 		\hline
 	\end{tabular}
-	\caption{F1-Score of each class and the standard deviation of each model}
+	\caption{F1-Score of each class and the mean f1-score of each model}
 	\label{table:5}
 \end{table}
 \FloatBarrier
@@ -264,36 +257,36 @@ As the results, metadata does make the model less imbalanced and improve the mod
 	\centering
 	\begin{tabular}{|l | c | c | c | c | c | c | c | c|} 
 		\hline
-		Model & akiec & bcc & bkl & df & mel & nv & vasc & $\sigma$ \\
+		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
 		\hline
-		DenseNet201 + Augmented Data & 0.52 & 0.77 & 0.58 & 0.5 & 0.71 & 0.97 & 1 & \textbf{0.189}\\ 
+		DenseNet201 + Augmented Data & 0.52 & 0.77 & 0.58 & 0.5 & 0.71 & 0.97 & 1 & 0.72\\ 
 		\hline
-		InceptionResNetV2 + Augmented Data & 0.52 & 0.88 & 0.83 & 0.17 & 0.65 & 0.98 & 1 & \textbf{0.275}\\
+		InceptionResNetV2 + Augmented Data & 0.52 & 0.88 & 0.83 & 0.17 & 0.65 & 0.98 & 1 & 0.71\\
 		\hline
-		Resnet50 + Augmented Data & 0.43 & 0.85 & 0.7 & 0.5 & 0.47 & 0.98 & 0.9 & \textbf{0.209}\\
+		Resnet50 + Augmented Data & 0.43 & 0.85 & 0.7 & 0.5 & 0.47 & 0.98 & 0.9 & 0.69\\
 		\hline 	
-		VGG16 + Augmented Data & 0.61 & 0.81 & 0.44 & 0.44 & 0.68 & 0.95 & 0.9 & 	\textbf{0.191}\\ 
+		VGG16 + Augmented Data & 0.61 & 0.81 & 0.44 & 0.44 & 0.68 & 0.95 & 0.9 & 0.69\\ 
 		\hline		
-		DenseNet201 + Metadata & \textbf{0.85} & 0.75 & 0.78 & 0.83 & 0.63 & 0.96 & \textbf{1} & 0.116\\
+		DenseNet201 + Weight Loss & \textbf{0.85} & 0.75 & 0.78 & 0.83 & 0.63 & 0.96 & \textbf{1} & \textbf{0.82}\\
 		\hline
-		InceptionResNetV2 + Metadata & \textbf{0.82} & 0.84 & 0.81 & 0.67 & 0.7 & 0.95 & 	0.93 & \textbf{0.097}\\
+		InceptionResNetV2 + Metadata & \textbf{0.82} & 0.84 & 0.81 & 0.67 & 0.7 & 0.95 & 	0.93 & \textbf{0.81}\\
 		\hline
-		Resnet50 + Metadata & 0.67 & 0.63 & 0.54 & 0.83 & 0.63 & 0.74 & 0.86 & 0.107\\
+		Resnet50 + Weight Loss & 0.67 & 0.63 & 0.54 & 0.83 & 0.63 & 0.74 & 0.86 & 0.70\\
 		\hline
-		Resnet152 + Metadata & 0.51 & 0.49 & 0.35 & 0.76 & 0.47 & 0.63 & 0.48 & 0.121\\
+		Resnet152 + Weight Loss & 0.51 & 0.49 & 0.35 & 0.76 & 0.47 & 0.63 & 0.48 & 0.52\\
 		\hline
-		MobileNetV2 + Metadata & 0.7 & 0.86 & 0.72 & 0.75 & 0.58 & 0.86 & \textbf{1} & 0.126\\
+		MobileNetV2 + Weight Loss & 0.7 & 0.86 & 0.72 & 0.75 & 0.58 & 0.86 & \textbf{1} & 0.78\\
 		\hline
-		MobileNetV3Large + Metadata & 0.72 & 0.76 & 0.75 & \textbf{0.92} & 0.58 & 0.92 & 0.92 & 0.12\\
+		MobileNetV3Large + Weight Loss & 0.72 & 0.76 & 0.75 & \textbf{0.92} & 0.58 & 0.92 & 0.92 & \textbf{0.80}\\
 		\hline
-		MobileNetV3Small + Metadata & 0.76 & 0.84 & 0.68 & \textbf{1} & 0.52 & 0.82 & 0.93 & 0.147\\
+		MobileNetV3Small + Weight Loss & 0.76 & 0.84 & 0.68 & \textbf{1} & 0.52 & 0.82 & 0.93 & 0.79\\
 		\hline
-		NasNetLarge + Metadata & 0.73 & 0.71 & \textbf{0.83} & \textbf{0.92} & 0.59 & 0.9 & 0.93 & 0.119\\
+		NasNetLarge + Weight Loss & 0.73 & 0.71 & \textbf{0.83} & \textbf{0.92} & 0.59 & 0.9 & 0.93 & \textbf{0.81}\\
 		\hline
-		NasNetMobile + Metadata & \textbf{0.82} & 0.73 & \textbf{0.83} & \textbf{0.92} & 0.53 & 0.93 & 0.93 & 0.134\\
+		NasNetMobile + Weight Loss & \textbf{0.82} & 0.73 & \textbf{0.83} & \textbf{0.92} & 0.53 & 0.93 & 0.93 & \textbf{0.81}\\
 		\hline
 	\end{tabular}
-	\caption{Recall score of each class and the standard deviation of each model}
+	\caption{Recall score of each class and the mean recall score of each model}
 	\label{table:6}
 \end{table}
 \FloatBarrier
@@ -388,7 +381,7 @@ Nevertheless, MobileNetV3Large has less number of parameters and depth than NasN
 		\hline
 		MobileNetV3Large-Layer[:230] + Soft-Attention + Metadata  & 0.81 \\
 		\hline
-		MobileNetV3Large-Layer[:230] + Soft-Attention & s0.85 \\ 
+		MobileNetV3Large-Layer[:230] + Soft-Attention & 0.85 \\ 
 		\hline
 		MobileNetV3Large & 0.85 \\ 
 		\hline
