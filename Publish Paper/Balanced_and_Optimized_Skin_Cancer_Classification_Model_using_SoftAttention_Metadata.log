@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  27 MAY 2022 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  27 MAY 2022 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,12 +1025,12 @@ ation_Model_using_SoftAttention_Metadata.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18219 strings out of 478550
- 307845 string characters out of 2839911
- 699123 words of memory out of 3000000
+ 307842 string characters out of 2839911
+ 698620 words of memory out of 3000000
  35734 multiletter control sequences out of 15000+600000
  534565 words of font info for 264 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,10n,134p,2403b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,10n,134p,1900b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
 cm-super-t1.enc}{C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/base/8r.enc}<C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type
@@ -1046,7 +1046,7 @@ type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
 Output written on Balanced_and_Optimized_Skin_Cancer_Classification_Model_using
-_SoftAttention_Metadata.pdf (20 pages, 409006 bytes).
+_SoftAttention_Metadata.pdf (20 pages, 408679 bytes).
 PDF statistics:
  392 PDF objects out of 1000 (max. 8388607)
  84 named destinations out of 1000 (max. 500000)
