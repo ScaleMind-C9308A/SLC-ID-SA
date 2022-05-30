@@ -120,7 +120,7 @@ The whole architecture of the model used for image feature extraction is applied
 \subsection{Loss Function}
 The loss function used in this paper is categorical cross-entropy. Consider $X = [x_1, x_2, \dots, x_n]$ as the input feature, $\theta = [\theta_1, \theta_2, \dots, \theta_n]$. Let $N$, and $C$ is the number of training examples and number of class respectively. The categorical cross-entropy loss is presented as:
 \[L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N}W_c\times y^c_n \times \log(\hat{y}^c_n)\]
-where $\hat{y}^c_i$  is the output of model and $y^c_i$ is the target that the model should return. \\
+where $\hat{y}^c_i$  is the output of model and $y^c_i$ is the target that the model should return, $W_c$ is the weight of class $c$.\\
 Since the dataset face the imbalanced problem then I applied the class weight for the loss. This formula below is used to calculate the class weight:
 \[W = N \odot D\]
 \[D = \begin{bmatrix}
@@ -128,11 +128,7 @@ Since the dataset face the imbalanced problem then I applied the class weight fo
 \end{bmatrix} = \frac{1}{C} \odot \begin{bmatrix}
 \frac{1}{N_1} & \frac{1}{N_2} & \dots & \frac{1}{N_n}\\
 \end{bmatrix}\]
-where $N$ is the number of training sample, $C$ is the number of class, $N_i$ is the number of sample in each class $i$. $D$ is the matrix contain the inverse of $C \times N_i$. The overall loss function is then become\cite{8943952}:
-\[
-	L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N} W_c \times y^c_n \times \log(h_\theta(x_n, c))
-\]
-where $W_c$ is the weight of class $c$, $y^c_n$ is the expected output of class $c$ at training example $n$. Otherwise, $h_\theta$ is the model with weight $\theta$.
+where $N$ is the number of training sample, $C$ is the number of class, $N_i$ is the number of sample in each class $i$. $D$ is the matrix contain the inverse of $C \times N_i$. 
 \subsection{Evaluation Metrics}
 \begin{figure}[!htb]
 	\begin{minipage}{0.48\textwidth}
@@ -210,48 +206,46 @@ All the model in this paper is trained with Adam Optimizer\cite{6980}. The initi
 \label{table:4}
 \end{table}
 \FloatBarrier
-According to the Table 3 and 4, it is clear that the model trained with augmented data has a higher accuracy than the model trained with metadata only. While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.93$ and $0.91$ respectively, their training with metadata has both the accuracy of $0.89$. Furthermore, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, although has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.84$, $0.86$, respectively. This term will be discussed later on. Although, the model trained with augmented data have high accuracy, when I analyzed the f1-score and the recall score of models, it turns out that models trained with augmented data have imbalanced f1-scores according to table 5. As a results, augmented data model dose not classify well on all class as InceptionRtesNetV2 trained on augmented data have 0.29 f1-score on class df while InceptionRtesNetV2 trained on metadata can classify well by a balanced way. This may cause by the augmented data. \\
-However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the imbalanced term. Since this dataset is not balanced, therefore using augmented data can make the model bias to the class which has large sample. Using the metadata instead make the model less bias, though it still make the model imbalanced due to the high variance of model which has the number of depth much less than 400.\\ 
-This problem is also true with the recall score according to table 6. DenseNet201, InceptionResNetV2, ResNet50, VGG16 trained with augmented data has recall standard deviation of $0.189$, $0.275$, $0.209$, $0.191$, respectively. On the other hand, other models have recall standard deviation which is close to $0.1$. Especially, inceptionResnetV2 train on metadata has recall standard deviation of approximately $0.09$. \\
-As the results, metadata does make the model less imbalanced and improve the model performance by reducing the amount of data needed for achieving nearly the expected results.On the other hand, the reason why the model become much more balanced is the weighted loss function. Weight loss function has ability to solve the imbalanced class samples by adding a weight related to the number of samples in each class. Therefore, DenseNet201, InceptionResNetV2 trained with weighted loss function have recall in akiec of $0.85$. $0.82$, respectively, as opposed to their training in akiec without weighted loss function. MobileV3large, MobileV3Small, NasNetLarge and NasNetMobile whose standard deviation is less than $0.15$ outperform others on classifying class df with the recall score of $0.92$, $1$, $0.92$, $0.92$, separately.\\ 
+According to the Table 3 and 4, it is clear that the model trained with augmented data has a higher accuracy than the model trained with metadata only. While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.93$ and $0.91$ respectively, their training with metadata has both the accuracy of $0.89$. Furthermore, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, even though has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.84$, $0.86$, respectively. This term will be discussed later on. Since, the model trained with augmented data have high accuracy, when their f1-score and the recall score of models are analyzed, it turns out that models trained with augmented data have imbalanced f1-scores according to table 5. As a results, augmented data model dose not classify well on all class as InceptionResNetV2 trained on augmented data have $0.29$ f1-score on class df while InceptionResNetV2 trained on metadata and the new weight loss can classify well in a balanced way. \\
 \FloatBarrier
 \begin{table}[h]
 	\centering
-	\begin{tabular}{|l | c | c | c | c | c | c | c | c|} 
+	\begin{tabular}{|c | c | c | c | c | c | c | c | c|} 
 		\hline
 		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
 		\hline
-		DenseNet201 + Augmented Data & 0.67 & 0.78 & 0.64 & 0.67 & 0.61 & 0.96 & 0.91 & 0.74 \\ 
+		\thead{DenseNet201 +\\ Augmented Data} & 0.67 & 0.78 & 0.64 & 0.67 & 0.61 & 0.96 & 0.91 & 0.74 \\ 
 		\hline
-		InceptionResNetV2 + Augmented Data & 0.69 &	0.88 & 0.77 & 0.29 & 0.66 & 0.98 & 1 & 0.75\\
+		\thead{InceptionResNetV2 +\\ Augmented Data} & 0.69 &	0.88 & 0.77 & 0.29 & 0.66 & 0.98 & 1 & 0.75\\
 		\hline
-		Resnet50 + Augmented Data & 0.53 & 0.86 & 0.68 & 0.67 & 0.57 & 0.97 & 0.95 & 0.74\\
+		\thead{Resnet50 +\\ Augmented Data} & 0.53 & 0.86 & 0.68 & 0.67 & 0.57 & 0.97 & 0.95 & 0.74\\
 		\hline 	
-		VGG16 + Augmented Data & 0.65 & 0.7 & 0.52 & 0.4 & 0.53 & 0.95 & 0.95 & 0.67\\ 
+		\thead{VGG16 +\\ Augmented Data} & 0.65 & 0.7 & 0.52 & 0.4 & 0.53 & 0.95 & 0.95 & 0.67\\ 
 		\hline		
-		DenseNet201 + WeightLoss & \textbf{0.84} & 0.77 & \textbf{0.81} & \textbf{0.83} & \textbf{0.69} & 0.94 & 0.97 & \textbf{0.83}\\
+		\thead{DenseNet201 +\\Metadata and WeightLoss} & \textbf{0.84} & 0.77 & \textbf{0.81} & \textbf{0.83} & \textbf{0.69} & 0.94 & 0.97 & \textbf{0.83}\\
 		\hline
-		InceptionResNetV2 + WeightLoss & 0.77 & 0.83 & \textbf{0.83} & 0.64 & \textbf{0.75} & 0.94 & 0.7 & \textbf{0.81}\\
+		\thead{InceptionResNetV2 +\\Metadata and WeightLoss} & 0.77 & 0.83 & \textbf{0.83} & 0.64 & \textbf{0.75} & 0.94 & 0.7 & \textbf{0.81}\\
 		\hline
-		Resnet50 + WeightLoss & 0.49 & 0.59 & 0.55 & 0.36 & 0.45 & 0.83 & 0.8 & 0.58\\
+		\thead{Resnet50 +\\Metadata and WeightLoss} & 0.49 & 0.59 & 0.55 & 0.36 & 0.45 & 0.83 & 0.8 & 0.58\\
 		\hline
-		Resnet152 + WeightLoss & 0.42 & 0.38 & 0.41 & 0.15 & 0.4 & 0.75 & 0.75 & 0.46\\
+		\thead{Resnet152 +\\Metadata and WeightLoss} & 0.42 & 0.38 & 0.41 & 0.15 & 0.4 & 0.75 & 0.75 & 0.46\\
 		\hline
-		MobileNetV2 + WeightLoss & 0.68 & 0.79 & 0.66 & 0.78 & 0.54 & 0.9 & \textbf{0.9} & 0.75\\
+		\thead{MobileNetV2 +\\Metadata and WeightLoss} & 0.68 & 0.79 & 0.66 & 0.78 & 0.54 & 0.9 & \textbf{0.9} & 0.75\\
 		\hline
-		MobileNetV3Large + WeightLoss & 0.72 & 0.76 & 0.75 & 0.92 & 0.58 & 0.92 & \textbf{0.92} & 0.79\\
+		\thead{MobileNetV3Large +\\Metadata and WeightLoss} & 0.72 & 0.76 & 0.75 & 0.92 & 0.58 & 0.92 & \textbf{0.92} & 0.79\\
 		\hline
-		MobileNetV3Small + WeightLoss & 0.6 & 0.72 & 0.61 & 0.75 & 0.47 & 0.89 & \textbf{0.89} & 0.70\\
+		\thead{MobileNetV3Small +\\Metadata and WeightLoss} & 0.6 & 0.72 & 0.61 & 0.75 & 0.47 & 0.89 & \textbf{0.89} & 0.70\\
 		\hline
-		NasNetLarge + WeightLoss & 0.79 & 0.79 & 0.8 & 0.74 & 0.65 & 0.92 & 0.92 & \textbf{0.80}\\
+		\thead{NasNetLarge +\\Metadata and WeightLoss} & 0.79 & 0.79 & 0.8 & 0.74 & 0.65 & 0.92 & 0.92 & \textbf{0.80}\\
 		\hline
-		NasNetMobile + WeightLoss & 0.76 & 0.74 & 0.78 & 0.73 & 0.63 & 0.93 & \textbf{0.93} & 0.78\\
+		\thead{NasNetMobile +\\Metadata and WeightLoss} & 0.76 & 0.74 & 0.78 & 0.73 & 0.63 & 0.93 & \textbf{0.93} & 0.78\\
 		\hline
 	\end{tabular}
 	\caption{F1-Score of each class and the mean f1-score of each model}
 	\label{table:5}
 \end{table}
 \FloatBarrier
+However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the imbalanced term. Since this dataset is not balanced, therefore using augmented data can make the model more  bias to the class which has larger sample. Using the metadata, though still make the model bias, it dose contributes to the improvement of  the performance of the model.\\ 
 \FloatBarrier
 \begin{table}[h]
 	\centering
@@ -259,75 +253,79 @@ As the results, metadata does make the model less imbalanced and improve the mod
 		\hline
 		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
 		\hline
-		DenseNet201 + Augmented Data & 0.52 & 0.77 & 0.58 & 0.5 & 0.71 & 0.97 & 1 & 0.72\\ 
+		\thead{DenseNet201 +\\ Augmented Data} & 0.52 & 0.77 & 0.58 & 0.5 & 0.71 & 0.97 & 1 & 0.72\\ 
 		\hline
-		InceptionResNetV2 + Augmented Data & 0.52 & 0.88 & 0.83 & 0.17 & 0.65 & 0.98 & 1 & 0.71\\
+		\thead{InceptionResNetV2 +\\ Augmented Data} & 0.52 & 0.88 & 0.83 & 0.17 & 0.65 & 0.98 & 1 & 0.71\\
 		\hline
-		Resnet50 + Augmented Data & 0.43 & 0.85 & 0.7 & 0.5 & 0.47 & 0.98 & 0.9 & 0.69\\
+		\thead{Resnet50 +\\ Augmented Data} & 0.43 & 0.85 & 0.7 & 0.5 & 0.47 & 0.98 & 0.9 & 0.69\\
 		\hline 	
-		VGG16 + Augmented Data & 0.61 & 0.81 & 0.44 & 0.44 & 0.68 & 0.95 & 0.9 & 0.69\\ 
+		\thead{VGG16 +\\ Augmented Data} & 0.61 & 0.81 & 0.44 & 0.44 & 0.68 & 0.95 & 0.9 & 0.69\\ 
 		\hline		
-		DenseNet201 + Weight Loss & \textbf{0.85} & 0.75 & 0.78 & 0.83 & 0.63 & 0.96 & \textbf{1} & \textbf{0.82}\\
+		\thead{DenseNet201 +\\Metadata and WeightLoss} & \textbf{0.85} & 0.75 & 0.78 & 0.83 & 0.63 & 0.96 & \textbf{1} & \textbf{0.82}\\
 		\hline
-		InceptionResNetV2 + Metadata & \textbf{0.82} & 0.84 & 0.81 & 0.67 & 0.7 & 0.95 & 	0.93 & \textbf{0.81}\\
+		\thead{InceptionResNetV2 +\\Metadata and WeightLoss} & \textbf{0.82} & 0.84 & 0.81 & 0.67 & 0.7 & 0.95 & 0.93 & \textbf{0.81}\\
 		\hline
-		Resnet50 + Weight Loss & 0.67 & 0.63 & 0.54 & 0.83 & 0.63 & 0.74 & 0.86 & 0.70\\
+		\thead{Resnet50 +\\Metadata and WeightLoss} & 0.67 & 0.63 & 0.54 & 0.83 & 0.63 & 0.74 & 0.86 & 0.70\\
 		\hline
-		Resnet152 + Weight Loss & 0.51 & 0.49 & 0.35 & 0.76 & 0.47 & 0.63 & 0.48 & 0.52\\
+		\thead{Resnet152 +\\Metadata and WeightLoss} & 0.51 & 0.49 & 0.35 & 0.76 & 0.47 & 0.63 & 0.48 & 0.52\\
 		\hline
-		MobileNetV2 + Weight Loss & 0.7 & 0.86 & 0.72 & 0.75 & 0.58 & 0.86 & \textbf{1} & 0.78\\
+		\thead{MobileNetV2 +\\Metadata and WeightLoss} & 0.7 & 0.86 & 0.72 & 0.75 & 0.58 & 0.86 & \textbf{1} & 0.78\\
 		\hline
-		MobileNetV3Large + Weight Loss & 0.72 & 0.76 & 0.75 & \textbf{0.92} & 0.58 & 0.92 & 0.92 & \textbf{0.80}\\
+		\thead{MobileNetV3Large +\\Metadata and WeightLoss} & 0.72 & 0.76 & 0.75 & \textbf{0.92} & 0.58 & 0.92 & 0.92 & \textbf{0.80}\\
 		\hline
-		MobileNetV3Small + Weight Loss & 0.76 & 0.84 & 0.68 & \textbf{1} & 0.52 & 0.82 & 0.93 & 0.79\\
+		\thead{MobileNetV3Small +\\Metadata and WeightLoss} & 0.76 & 0.84 & 0.68 & \textbf{1} & 0.52 & 0.82 & 0.93 & 0.79\\
 		\hline
-		NasNetLarge + Weight Loss & 0.73 & 0.71 & \textbf{0.83} & \textbf{0.92} & 0.59 & 0.9 & 0.93 & \textbf{0.81}\\
+		\thead{NasNetLarge +\\Metadata and WeightLoss} & 0.73 & 0.71 & \textbf{0.83} & \textbf{0.92} & 0.59 & 0.9 & 0.93 & \textbf{0.81}\\
 		\hline
-		NasNetMobile + Weight Loss & \textbf{0.82} & 0.73 & \textbf{0.83} & \textbf{0.92} & 0.53 & 0.93 & 0.93 & \textbf{0.81}\\
+		\thead{NasNetMobile +\\Metadata and WeightLoss} & \textbf{0.82} & 0.73 & \textbf{0.83} & \textbf{0.92} & 0.53 & 0.93 & 0.93 & \textbf{0.81}\\
 		\hline
 	\end{tabular}
 	\caption{Recall score of each class and the mean recall score of each model}
 	\label{table:6}
 \end{table}
 \FloatBarrier
+This problem is also true with the recall score according to table 6. DenseNet201, InceptionResNetV2, ResNet50, VGG16 trained with augmented data has expected value of recall of $0.72$, $0.71$, $0.69$, $0.69$, respectively, while the combination of InceptionResNetV2, Metadata and the new weight loss function achieve the expected value of recall: $0.82$.
+As the results, metadata does improve the model performance by reducing the amount of data needed for achieving nearly the expected results. On the other hand, the reason why the model become much more balanced is the weighted loss function. Weight loss function has ability to solve the imbalanced class samples by adding a weight related to the number of samples in each class. Therefore, DenseNet201, InceptionResNetV2 trained with the new weighted loss function have recall in akiec of $0.85$. $0.82$, respectively, as opposed to their training in akiec without weighted loss function. MobileV3large, MobileV3Small, NasNetLarge and NasNetMobile whose standard deviation is less than $0.15$ outperform others on classifying class df with the recall score of $0.92$, $1$, $0.92$, $0.92$, separately.\\ 
+\begin{comment}
 \FloatBarrier
 \begin{table}[ht]
-	\centering
-	\begin{tabular}{|l | c | c | c | c | c | c | c|} 
-		\hline
-		Model & akiec & bcc & bkl & df & mel & nv & vasc \\
-		\hline
-		DenseNet201 + Augmented Data & 0.96 & 0.98 & 0.9 & 0.80 & 0.95 & 0.95 & 0.999\\ 
-		\hline
-		InceptionResNetV2 + Augmented Data & 0.96 & 0.99 & 0.96 & 0.92 & 0.97 & 0.976 & 0.999\\
-		\hline
-		Resnet50 + Augmented Data & 0.97 & 0.99 & 0.91 & 0.94 & 0.95 & 0.95 & 0.99\\
-		\hline 	
-		VGG16 + Augmented Data & 0.98 & 0.99 & 0.96 & 0.97 & 0.97 & 0.97 & 0.99\\ 
-		\hline		
-		DenseNet201 + Metadata & 0.99 & 0.99 & 0.97 & 0.99 & 0.92 & 0.96 & 0.99\\
-		\hline
-		InceptionResNetV2 + Metadata & 0.98 & 0.98 & 0.98 & 0.98 & 0.95 & 0.96 & 0.99\\
-		\hline
-		Resnet50 + Metadata & 0.97 & 0.95 & 0.88 & 0.99 & 0.85 & 0.92 & 0.98\\
-		\hline
-		Resnet152 + Metadata & 0.95 & 0.9 & 0.84 & 0.92 & 0.82 & 0.89 & 0.8\\
-		\hline
-		MobileNetV2 + Metadata & 0.97 & 0.98 & 0.94 & 0.99 & 0.9 & 0.95 & 0.99\\
-		\hline
-		MobileNetV3Large + Metadata & 0.99 & 0.98 & 0.96 & 0.99 & 0.92 & 0.95 & 0.99\\
-		\hline
-		MobileNetV3Small + Metadata & 0.97 & 0.97 & 0.93 & 0.99 & 0.87 & 0.94 & 0.99\\
-		\hline
-		NasNetLarge + Metadata & 0.95 & 0.98 & 0.97 & 1 & 0.92 & 0.95 & 1\\
-		\hline
-		NasNetMobile + Metadata & 0.98 & 0.99 & 0.97 & 1 & 0.9 & 0.96 & 1\\
-		\hline
-	\end{tabular}
-	\caption{ROC AUC Score of each model}
-	\label{table:7}
+\centering
+\begin{tabular}{|l | c | c | c | c | c | c | c|} 
+\hline
+Model & akiec & bcc & bkl & df & mel & nv & vasc \\
+\hline
+DenseNet201 + Augmented Data & 0.96 & 0.98 & 0.9 & 0.80 & 0.95 & 0.95 & 0.999\\ 
+\hline
+InceptionResNetV2 + Augmented Data & 0.96 & 0.99 & 0.96 & 0.92 & 0.97 & 0.976 & 0.999\\
+\hline
+Resnet50 + Augmented Data & 0.97 & 0.99 & 0.91 & 0.94 & 0.95 & 0.95 & 0.99\\
+\hline 	
+VGG16 + Augmented Data & 0.98 & 0.99 & 0.96 & 0.97 & 0.97 & 0.97 & 0.99\\ 
+\hline		
+DenseNet201 + Metadata & 0.99 & 0.99 & 0.97 & 0.99 & 0.92 & 0.96 & 0.99\\
+\hline
+InceptionResNetV2 + Metadata & 0.98 & 0.98 & 0.98 & 0.98 & 0.95 & 0.96 & 0.99\\
+\hline
+Resnet50 + Metadata & 0.97 & 0.95 & 0.88 & 0.99 & 0.85 & 0.92 & 0.98\\
+\hline
+Resnet152 + Metadata & 0.95 & 0.9 & 0.84 & 0.92 & 0.82 & 0.89 & 0.8\\
+\hline
+MobileNetV2 + Metadata & 0.97 & 0.98 & 0.94 & 0.99 & 0.9 & 0.95 & 0.99\\
+\hline
+MobileNetV3Large + Metadata & 0.99 & 0.98 & 0.96 & 0.99 & 0.92 & 0.95 & 0.99\\
+\hline
+MobileNetV3Small + Metadata & 0.97 & 0.97 & 0.93 & 0.99 & 0.87 & 0.94 & 0.99\\
+\hline
+NasNetLarge + Metadata & 0.95 & 0.98 & 0.97 & 1 & 0.92 & 0.95 & 1\\
+\hline
+NasNetMobile + Metadata & 0.98 & 0.99 & 0.97 & 1 & 0.9 & 0.96 & 1\\
+\hline
+\end{tabular}
+\caption{ROC AUC Score of each model}
+\label{table:7}
 \end{table}
 \FloatBarrier
+\end{comment}
 Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. The table 8 illustrates the deeper analyzing of the three models. It's clear that MobileNetV3Large and NasNetMobile are the two best performance model.
 \FloatBarrier
 \begin{table}[ht]
@@ -379,8 +377,6 @@ Nevertheless, MobileNetV3Large has less number of parameters and depth than NasN
 		\hline
 		MobileNetV3Large-Layer[:230] + Soft-Attention + Metadata  & 0.84 \\
 		\hline
-		MobileNetV3Large-Layer[:230] + Soft-Attention + Metadata  & 0.81 \\
-		\hline
 		MobileNetV3Large-Layer[:230] + Soft-Attention & 0.85 \\ 
 		\hline
 		MobileNetV3Large & 0.85 \\ 
@@ -390,7 +386,7 @@ Nevertheless, MobileNetV3Large has less number of parameters and depth than NasN
 	\label{table:9}
 \end{table}
 \FloatBarrier
-In the MobileNetV3Large experiment, the model architecture is constructed by replacing the layers after the $28^{th}$ layer from the last layer by the Soft-Attention. The Table 9 demonstrate that, the Soft-Attention and the metadata have a good effect on the model. Otherwise, Adding a dense layer does not increase the model performance. The best MobileNetV3Large model architecture is the combination of MobileNetV3Large replaced from $241^{th}$ layer to the rest by Soft-Attention layer and the metadata, which peak the model performance of 0.86 accuracy rate. This is an optimized and balanced model, the parameters of model is indicated in Table 10 and Table 11.
+The Table 9 demonstrate that the Soft-Attention and the metadata have a good effect on the model. Otherwise, Adding a dense layer does not increase the model performance. The best MobileNetV3Large model architecture is the combination of MobileNetV3Large replaced from $241^{th}$ layer to the rest by Soft-Attention layer and the metadata, which peak the model performance of $0.86$ accuracy rate. 
 \FloatBarrier
 \begin{table}[ht]
 	\centering
@@ -433,7 +429,7 @@ In the MobileNetV3Large experiment, the model architecture is constructed by rep
 \end{table}
 \FloatBarrier
 \section{Conclusion}
-In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. In case it is not, what factor make the model imbalanced. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata make the model less imbalanced, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using weighted loss function. Using weighted loss function make the standard deviation of model f1-score less than $0.1$. At the end of the experiment, mobile model is found that can achieve great performance without the large number of parameters or depth. Therefore, MobileNetV3Large is configured to construct an optimized and balanced model. 
+In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata improve the model performance, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using aforementioned weighted loss function. Using weighted loss function make the expected value of model f1-score increase. At the end of the experiment, mobile model is found that can achieve great performance without either the large number of parameters or depth.  
 \clearpage
 \pagebreak
 

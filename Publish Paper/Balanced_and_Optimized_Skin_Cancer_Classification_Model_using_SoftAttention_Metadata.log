@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  27 MAY 2022 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  29 MAY 2022 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,7 +670,14 @@ ty
 .sty
 Package: placeins 2005/04/18  v 2.2
 )
-\@float@every@table=\toks35
+(C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/makecell\makecell
+.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen196
+\c@nlinenum=\count326
+\TeXr@lab=\toks35
+)
+\@float@every@table=\toks36
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaptio
 n.sty
@@ -683,22 +690,22 @@ Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.
 sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen196
-\captionmargin@=\dimen197
-\captionwidth=\dimen198
-\caption@tempdima=\dimen199
-\caption@indent=\dimen256
-\caption@parindent=\dimen257
-\caption@hangindent=\dimen258
+\captionmargin=\dimen197
+\captionmargin@=\dimen198
+\captionwidth=\dimen199
+\caption@tempdima=\dimen256
+\caption@indent=\dimen257
+\caption@parindent=\dimen258
+\caption@hangindent=\dimen259
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count326
-\c@continuedfloat=\count327
+\c@caption@flags=\count327
+\c@continuedfloat=\count328
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
-\c@subfigure=\count328
-\c@subtable=\count329
+\c@subfigure=\count329
+\c@subtable=\count330
 )
 
 Package geometry Warning: Over-specification in `h'-direction.
@@ -710,15 +717,15 @@ Package geometry Warning: Over-specification in `v'-direction.
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count330
-\calc@Bcount=\count331
-\calc@Adimen=\dimen259
-\calc@Bdimen=\dimen260
+\calc@Acount=\count331
+\calc@Bcount=\count332
+\calc@Adimen=\dimen260
+\calc@Bdimen=\dimen261
 \calc@Askip=\skip74
 \calc@Bskip=\skip75
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count332
+\calc@Ccount=\count333
 \calc@Cskip=\skip76
 ))
 (manuscript_title_etc.tex)
@@ -730,7 +737,7 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backe
 nd-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count333
+\l__color_backend_stack_int=\count334
 \l__pdf_internal_box=\box60
 )
 (Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
@@ -779,17 +786,17 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
 pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
-\scratchdimen=\dimen261
+\scratchcounter=\count335
+\scratchdimen=\dimen262
 \scratchbox=\box61
-\nofMPsegments=\count335
-\nofMParguments=\count336
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count337
-\MPscratchDim=\dimen262
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
-\everyMPtoPDFconversion=\toks37
+\nofMPsegments=\count336
+\nofMParguments=\count337
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen263
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
+\everyMPtoPDFconversion=\toks38
 )
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epst
 opdf-base.sty
@@ -849,7 +856,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count340
+\c@section@level=\count341
 )
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
@@ -969,38 +976,39 @@ File: Diagram/MainModel.png Graphic file (type png)
 Package pdftex.def Info: Diagram/MainModel.png  used on input line 115.
 (pdftex.def)             Requested size: 452.9679pt x 57.12485pt.
  [7 <./Diagram/SoftAttentionBlock.png>]
-[8 <./Diagram/MainModel.png>]
-<img/Confusion-matrix.png, id=218, 483.8075pt x 295.1025pt>
+<img/Confusion-matrix.png, id=211, 483.8075pt x 295.1025pt>
 File: img/Confusion-matrix.png Graphic file (type png)
 <use img/Confusion-matrix.png>
-Package pdftex.def Info: img/Confusion-matrix.png  used on input line 140.
+Package pdftex.def Info: img/Confusion-matrix.png  used on input line 136.
 (pdftex.def)             Requested size: 239.16624pt x 145.8803pt.
 
-Overfull \hbox (21.74359pt too wide) in paragraph at lines 140--141
+Overfull \hbox (21.74359pt too wide) in paragraph at lines 136--137
  [][] 
  []
 
-<img/AUC.png, id=219, 235.88126pt x 215.80624pt>
+<img/AUC.png, id=212, 235.88126pt x 215.80624pt>
 File: img/AUC.png Graphic file (type png)
 <use img/AUC.png>
-Package pdftex.def Info: img/AUC.png  used on input line 145.
+Package pdftex.def Info: img/AUC.png  used on input line 141.
 (pdftex.def)             Requested size: 152.19519pt x 139.245pt.
-[9 <./img/Confusion-matrix.png> <./img/AUC.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 213--217
+[8 <./Diagram/MainModel.png>] [9 <./img/Confusion-matrix.png> <./img/AUC.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-[10] [11]
-Overfull \hbox (27.42926pt too wide) in paragraph at lines 220--251
- [][] 
+[10]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
  []
 
-
-Overfull \hbox (27.42926pt too wide) in paragraph at lines 258--289
- [][] 
- []
-
-[12] [13] [14] [15])
+[11] Excluding 'comment' comment. [12] [13] [14])
 (Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
 tadata.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
@@ -1014,9 +1022,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[16
+[15
 
-] [17] [18]) [19]
+] [16] [17]) [18]
 (Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
 tadata.aux)
 Package rerunfilecheck Info: File `Balanced_and_Optimized_Skin_Cancer_Classific
@@ -1024,13 +1032,13 @@ ation_Model_using_SoftAttention_Metadata.out' has not changed.
 (rerunfilecheck)             Checksum: 701673AA53A7F4E4A12C7367ECD3DEB2;1687.
  ) 
 Here is how much of TeX's memory you used:
- 18219 strings out of 478550
- 307842 string characters out of 2839911
- 698620 words of memory out of 3000000
- 35734 multiletter control sequences out of 15000+600000
- 534565 words of font info for 264 fonts, out of 8000000 for 9000
+ 18459 strings out of 478550
+ 311103 string characters out of 2839911
+ 685354 words of memory out of 3000000
+ 35936 multiletter control sequences out of 15000+600000
+ 546635 words of font info for 302 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,10n,134p,1900b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,18n,134p,1900b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
 cm-super-t1.enc}{C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/base/8r.enc}<C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/type
@@ -1046,9 +1054,9 @@ type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
 Output written on Balanced_and_Optimized_Skin_Cancer_Classification_Model_using
-_SoftAttention_Metadata.pdf (20 pages, 408679 bytes).
+_SoftAttention_Metadata.pdf (19 pages, 406121 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 67228 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 85148 words of extra memory for PDF output out of 89155 (max. 10000000)
 
