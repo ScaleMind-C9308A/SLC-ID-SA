@@ -172,14 +172,6 @@ Naofumi Tomita, Behnaz Abdollahi, Jason Wei, Bing Ren, Arief Suriawinata, and
   precancerous esophagus tissue on histopathological slides.
 \newblock Available at \url{https://arxiv.org/abs/1811.08513}, 3 Dec 2019.
 
-\bibitem{8943952}
-YAOSHIANG HO and SAMUEL WOOKEY.
-\newblock The real-world-weight cross-entropy loss function: Modeling the costs
-  of mislabeling.
-\newblock Available at
-  \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8943952}, January 8
-  2020.
-
 \bibitem{6980}
 Jimmy~Ba Diederik P.~Kingma.
 \newblock Adam: A method for stochastic optimization.

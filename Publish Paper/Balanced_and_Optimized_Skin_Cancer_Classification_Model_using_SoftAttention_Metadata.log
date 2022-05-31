@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  29 MAY 2022 10:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  31 MAY 2022 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,36 +745,36 @@ tadata.aux)
 \openout1 = `Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_Soft
 Attention_Metadata.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Info: Redefining \microtypecontext on input line 7.
-Package microtype Info: Applying patch `item' on input line 7.
-Package microtype Info: Applying patch `toc' on input line 7.
-Package microtype Info: Applying patch `eqnum' on input line 7.
-Package microtype Info: Applying patch `footnote' on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Info: Redefining \microtypecontext on input line 10.
+Package microtype Info: Applying patch `item' on input line 10.
+Package microtype Info: Applying patch `toc' on input line 10.
+Package microtype Info: Applying patch `eqnum' on input line 10.
+Package microtype Info: Applying patch `footnote' on input line 10.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 7.
+LaTeX Info: Redefining \showhyphens on input line 10.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -842,7 +842,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 7.
+Package hyperref Info: Link coloring ON on input line 10.
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.
 sty
@@ -858,9 +858,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 7.
-LaTeX Info: Redefining \pageref on input line 7.
-LaTeX Info: Redefining \nameref on input line 7.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
 tadata.out)
@@ -872,8 +872,27 @@ Attention_Metadata.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+ Excluding 'comment' comment. (manuscript_main.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+
+ []
+
+[1
+
+{C:/Users/KhoiDOO/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]
+[2] [3]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 21.
+ 32.
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ztmcm.f
 d
@@ -884,131 +903,120 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 21.
+ 32.
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlztmcm.f
 d
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 21.
+ 32.
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omsztmcm.f
 d
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 21.
+ 32.
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxztmcm.f
 d
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-1.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+2.
 
 (C:\Users\KhoiDOO\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-[1
-
-{C:/Users/KhoiDOO/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]
-(manuscript_main.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.11 
-      [1
-
-] [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-<img/DataDistribution.png, id=133, 395.22656pt x 83.5622pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
+<img/DataDistribution.png, id=151, 395.22656pt x 83.5622pt>
 File: img/DataDistribution.png Graphic file (type png)
 <use img/DataDistribution.png>
-Package pdftex.def Info: img/DataDistribution.png  used on input line 36.
+Package pdftex.def Info: img/DataDistribution.png  used on input line 45.
 (pdftex.def)             Requested size: 452.9679pt x 95.7719pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3]
-<Diagram/Input Schema.png, id=159, 996.72375pt x 267.24844pt>
+[4]
+<Diagram/Input Schema.png, id=172, 996.72375pt x 267.24844pt>
 File: Diagram/Input Schema.png Graphic file (type png)
 <use Diagram/Input Schema.png>
-Package pdftex.def Info: Diagram/Input Schema.png  used on input line 51.
+Package pdftex.def Info: Diagram/Input Schema.png  used on input line 60.
 (pdftex.def)             Requested size: 317.07614pt x 85.01558pt.
- [4 <./img/DataDistribution.png>] [5 <./Diagram/Input Schema.png>]
-<Diagram/SoftAttention.png, id=181, 1349.04pt x 394.47375pt>
+ [5 <./img/DataDistribution.png>] [6 <./Diagram/Input Schema.png>]
+<Diagram/SoftAttention.png, id=195, 1349.04pt x 394.47375pt>
 File: Diagram/SoftAttention.png Graphic file (type png)
 <use Diagram/SoftAttention.png>
-Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 64.
+Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 73.
 (pdftex.def)             Requested size: 452.9679pt x 132.45198pt.
-<Diagram/SoftAttentionBlock.png, id=183, 619.56468pt x 385.44pt>
+<Diagram/SoftAttentionBlock.png, id=197, 619.56468pt x 385.44pt>
 File: Diagram/SoftAttentionBlock.png Graphic file (type png)
 <use Diagram/SoftAttentionBlock.png>
-Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 71.
+Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 80.
 
 (pdftex.def)             Requested size: 226.48395pt x 140.89322pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--75
+Underfull \hbox (badness 10000) in paragraph at lines 69--84
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./Diagram/SoftAttention.png>]
-<Diagram/MainModel.png, id=204, 1522.18687pt x 191.9672pt>
+[7 <./Diagram/SoftAttention.png>]
+<Diagram/MainModel.png, id=217, 1522.18687pt x 191.9672pt>
 File: Diagram/MainModel.png Graphic file (type png)
 <use Diagram/MainModel.png>
-Package pdftex.def Info: Diagram/MainModel.png  used on input line 115.
+Package pdftex.def Info: Diagram/MainModel.png  used on input line 124.
 (pdftex.def)             Requested size: 452.9679pt x 57.12485pt.
- [7 <./Diagram/SoftAttentionBlock.png>]
-<img/Confusion-matrix.png, id=211, 483.8075pt x 295.1025pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./Diagram/SoftAttentionBlock.png>]
+<img/Confusion-matrix.png, id=224, 483.8075pt x 295.1025pt>
 File: img/Confusion-matrix.png Graphic file (type png)
 <use img/Confusion-matrix.png>
-Package pdftex.def Info: img/Confusion-matrix.png  used on input line 136.
+Package pdftex.def Info: img/Confusion-matrix.png  used on input line 145.
 (pdftex.def)             Requested size: 239.16624pt x 145.8803pt.
 
-Overfull \hbox (21.74359pt too wide) in paragraph at lines 136--137
+Overfull \hbox (21.74359pt too wide) in paragraph at lines 145--146
  [][] 
  []
 
-<img/AUC.png, id=212, 235.88126pt x 215.80624pt>
+<img/AUC.png, id=225, 235.88126pt x 215.80624pt>
 File: img/AUC.png Graphic file (type png)
 <use img/AUC.png>
-Package pdftex.def Info: img/AUC.png  used on input line 141.
+Package pdftex.def Info: img/AUC.png  used on input line 150.
 (pdftex.def)             Requested size: 152.19519pt x 139.245pt.
-[8 <./Diagram/MainModel.png>] [9 <./img/Confusion-matrix.png> <./img/AUC.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+[9 <./Diagram/MainModel.png>] [10 <./img/Confusion-matrix.png> <./img/AUC.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
-[10]
+[11]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-[11] Excluding 'comment' comment. [12] [13] [14])
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] Excluding 'comment' comment. [13] [14] [15])
 (Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
 tadata.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
@@ -1022,21 +1030,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[15
+[16
 
-] [16] [17]) [18]
+] [17] [18]) [19]
 (Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
 tadata.aux)
 Package rerunfilecheck Info: File `Balanced_and_Optimized_Skin_Cancer_Classific
 ation_Model_using_SoftAttention_Metadata.out' has not changed.
-(rerunfilecheck)             Checksum: 701673AA53A7F4E4A12C7367ECD3DEB2;1687.
+(rerunfilecheck)             Checksum: 6DB4370789348C69755CE1C003EC98A3;2307.
  ) 
 Here is how much of TeX's memory you used:
- 18459 strings out of 478550
- 311103 string characters out of 2839911
- 685354 words of memory out of 3000000
- 35936 multiletter control sequences out of 15000+600000
- 546635 words of font info for 302 fonts, out of 8000000 for 9000
+ 18335 strings out of 478550
+ 309593 string characters out of 2839911
+ 695357 words of memory out of 3000000
+ 35892 multiletter control sequences out of 15000+600000
+ 526211 words of font info for 232 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,18n,134p,1900b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
@@ -1054,9 +1062,9 @@ type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
 Output written on Balanced_and_Optimized_Skin_Cancer_Classification_Model_using
-_SoftAttention_Metadata.pdf (19 pages, 406121 bytes).
+_SoftAttention_Metadata.pdf (19 pages, 404956 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 85148 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 57012 words of extra memory for PDF output out of 61914 (max. 10000000)
 

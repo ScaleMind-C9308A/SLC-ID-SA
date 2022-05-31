@@ -69,40 +69,38 @@ Warning--empty journal in 202017
 Warning--empty year in 202017
 Warning--empty journal in 08513
 Warning--empty year in 08513
-Warning--empty journal in 8943952
-Warning--empty year in 8943952
 Warning--empty journal in 6980
 Warning--empty year in 6980
-You've used 31 entries,
+You've used 30 entries,
             1791 wiz_defined-function locations,
-            567 strings with 10214 characters,
-and the built_in function-call counts, 5518 in all, are:
-= -- 335
-> -- 437
+            563 strings with 9998 characters,
+and the built_in function-call counts, 5367 in all, are:
+= -- 324
+> -- 429
 < -- 0
-+ -- 158
-- -- 127
-* -- 402
-:= -- 1012
-add.period$ -- 93
-call.type$ -- 31
-change.case$ -- 31
++ -- 155
+- -- 125
+* -- 394
+:= -- 986
+add.period$ -- 90
+call.type$ -- 30
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 93
-duplicate$ -- 248
-empty$ -- 435
-format.name$ -- 127
-if$ -- 1080
+cite$ -- 90
+duplicate$ -- 240
+empty$ -- 421
+format.name$ -- 125
+if$ -- 1049
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 31
-newline$ -- 158
-num.names$ -- 31
-pop$ -- 155
+int.to.str$ -- 30
+missing$ -- 30
+newline$ -- 153
+num.names$ -- 30
+pop$ -- 150
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 95
+skip$ -- 91
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -110,8 +108,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 62
-while$ -- 31
-width$ -- 33
-write$ -- 281
+warning$ -- 60
+while$ -- 30
+width$ -- 32
+write$ -- 272
 (There were 3 error messages)

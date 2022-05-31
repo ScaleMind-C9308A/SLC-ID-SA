@@ -4,30 +4,33 @@
 %\input{fragment/preamble_citation}
 \input{manuscript_title_etc}
 
+\renewcommand{\thesection}{\Roman{section}} 
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
 \begin{document}
-	
-	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Part I. Title Page, Authors, Abstract, etc. 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\title{\PAPERTITLE}
-	
-	\author{
+	\begin{comment}
+		\title{\PAPERTITLE}
+		
+		\author{
 		\AUTHORWANG}
-	
-	\date{March 17, 2022}
-	
-	\maketitle
-	
-	\begin{abstract}
+		
+		\date{March 17, 2022}
+		
+		\maketitle
+		\begin{abstract}
 		\singlespacing
 		\PAPERABSTRACT
 		
 		\noindent 
 		\PAPERKEYWORDS
 		%\thispagestyle{empty}
-	\end{abstract}
-	\clearpage
+		\end{abstract}
+		\clearpage
+	\end{comment}
+	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Part II. Manuscript main text
