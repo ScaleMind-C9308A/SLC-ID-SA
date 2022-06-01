@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  31 MAY 2022 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  1 JUN 2022 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -997,24 +997,21 @@ Package pdftex.def Info: img/AUC.png  used on input line 150.
 (pdftex.def)             Requested size: 152.19519pt x 139.245pt.
 [9 <./Diagram/MainModel.png>] [10 <./img/Confusion-matrix.png> <./img/AUC.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 [11]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 229.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 229.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 229.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12] Excluding 'comment' comment. [13] [14] [15])
 (Balanced_and_Optimized_Skin_Cancer_Classification_Model_using_SoftAttention_Me
@@ -1037,12 +1034,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 tadata.aux)
 Package rerunfilecheck Info: File `Balanced_and_Optimized_Skin_Cancer_Classific
 ation_Model_using_SoftAttention_Metadata.out' has not changed.
-(rerunfilecheck)             Checksum: 6DB4370789348C69755CE1C003EC98A3;2307.
+(rerunfilecheck)             Checksum: 14442A07B345524E22651BC01CB1EE7A;2259.
  ) 
 Here is how much of TeX's memory you used:
  18335 strings out of 478550
  309593 string characters out of 2839911
- 695357 words of memory out of 3000000
+ 685357 words of memory out of 3000000
  35892 multiletter control sequences out of 15000+600000
  526211 words of font info for 232 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1062,7 +1059,7 @@ type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
 Output written on Balanced_and_Optimized_Skin_Cancer_Classification_Model_using
-_SoftAttention_Metadata.pdf (19 pages, 404956 bytes).
+_SoftAttention_Metadata.pdf (19 pages, 405115 bytes).
 PDF statistics:
  397 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
