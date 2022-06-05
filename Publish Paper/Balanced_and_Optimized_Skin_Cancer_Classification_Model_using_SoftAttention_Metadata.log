@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  5 JUN 2022 16:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  5 JUN 2022 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -925,7 +925,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
  []
 
 Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
@@ -934,27 +934,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
+l.18 
       [1
 
 ] [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
  [3]
 <img/DataDistribution.png, id=156, 395.22656pt x 83.5622pt>
 File: img/DataDistribution.png Graphic file (type png)
 <use img/DataDistribution.png>
-Package pdftex.def Info: img/DataDistribution.png  used on input line 48.
+Package pdftex.def Info: img/DataDistribution.png  used on input line 47.
 (pdftex.def)             Requested size: 452.9679pt x 95.7719pt.
  [4 <./img/DataDistribution.png>]
 <Diagram/Input Schema.png, id=179, 996.72375pt x 267.24844pt>
 File: Diagram/Input Schema.png Graphic file (type png)
 <use Diagram/Input Schema.png>
-Package pdftex.def Info: Diagram/Input Schema.png  used on input line 63.
+Package pdftex.def Info: Diagram/Input Schema.png  used on input line 62.
 (pdftex.def)             Requested size: 317.07614pt x 85.01558pt.
 
 
@@ -964,16 +964,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Diagram/SoftAttention.png, id=191, 1349.04pt x 394.47375pt>
 File: Diagram/SoftAttention.png Graphic file (type png)
 <use Diagram/SoftAttention.png>
-Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 76.
+Package pdftex.def Info: Diagram/SoftAttention.png  used on input line 75.
 (pdftex.def)             Requested size: 452.9679pt x 132.45198pt.
 <Diagram/SoftAttentionBlock.png, id=193, 619.56468pt x 385.44pt>
 File: Diagram/SoftAttentionBlock.png Graphic file (type png)
 <use Diagram/SoftAttentionBlock.png>
-Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 83.
+Package pdftex.def Info: Diagram/SoftAttentionBlock.png  used on input line 82.
 
 (pdftex.def)             Requested size: 226.48395pt x 140.89322pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--87
+Underfull \hbox (badness 10000) in paragraph at lines 71--86
 
  []
 
@@ -988,44 +988,44 @@ ftAttentionBlock.png>]
 <Diagram/MainModel.png, id=221, 1522.18687pt x 191.9672pt>
 File: Diagram/MainModel.png Graphic file (type png)
 <use Diagram/MainModel.png>
-Package pdftex.def Info: Diagram/MainModel.png  used on input line 127.
+Package pdftex.def Info: Diagram/MainModel.png  used on input line 126.
 (pdftex.def)             Requested size: 452.9679pt x 57.12485pt.
  [8 <./Diagram/MainModel.png>]
 <img/Confusion-matrix.png, id=228, 483.8075pt x 295.1025pt>
 File: img/Confusion-matrix.png Graphic file (type png)
 <use img/Confusion-matrix.png>
-Package pdftex.def Info: img/Confusion-matrix.png  used on input line 148.
+Package pdftex.def Info: img/Confusion-matrix.png  used on input line 147.
 (pdftex.def)             Requested size: 239.16624pt x 145.8803pt.
 
-Overfull \hbox (21.74359pt too wide) in paragraph at lines 148--149
+Overfull \hbox (21.74359pt too wide) in paragraph at lines 147--148
  [][] 
  []
 
 <img/AUC.png, id=229, 235.88126pt x 215.80624pt>
 File: img/AUC.png Graphic file (type png)
 <use img/AUC.png>
-Package pdftex.def Info: img/AUC.png  used on input line 153.
+Package pdftex.def Info: img/AUC.png  used on input line 152.
 (pdftex.def)             Requested size: 152.19519pt x 139.245pt.
 [9 <./img/Confusion-matrix.png> <./img/AUC.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 231.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 231.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 231.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
@@ -1078,7 +1078,7 @@ type1/urw/times/utmb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
 Output written on Balanced_and_Optimized_Skin_Cancer_Classification_Model_using
-_SoftAttention_Metadata.pdf (20 pages, 406289 bytes).
+_SoftAttention_Metadata.pdf (20 pages, 406292 bytes).
 PDF statistics:
  400 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
