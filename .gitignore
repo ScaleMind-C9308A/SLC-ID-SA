@@ -3,3 +3,5 @@
 !spec/*.h5
 *.hdf5
 !spec/*.hdf5
+*.jpg
+!spec/*.jpg
