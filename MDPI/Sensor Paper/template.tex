@@ -171,25 +171,51 @@ Skin cancer is one of the most common cancers leading to worldwide death. Every 
 
 Recently, deep learning particularly, and machine learning in general algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis, and Medical Treatment. Medical imaging, including ultrasound, computed tomography, magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosis results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history and medical data. In Medical Treatment, AI models are applied to building solutions for a specific disease, medicine revolution is an example. In various studies, AI algorithms have provided various end-to-end solutions in the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging\cite{11872}.
 
-In order to adapt the rise in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{04861}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. Some of these models wich have been used as a backbone model in this paper will be discussed in the Related Work section.
+In order to adapt the rise in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{04861}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. Some of these models which have been used as a backbone model in this paper will be discussed in the Related Work section.
 
 \subsection{Related Works}
 Skin lesion classification is not a new area, since there are many great performance models constructed. One of the most cutting-edge technologies that have been used is Soft-Attention as stated in\cite{03358}. Soumyyak et al construct several models formed by the combination of a backbone model including DenseNet201\cite{06993}, InceptionResNetV2\cite{00567}, ResNet50\cite{03385}\cite{05027}, VGG16\cite{1556} and Soft-Attention layer. Using those above backbones has been tried by many previous papers. Rishu Garg et al \cite{03798} uses transfer learning approach with CNN based model. Amirreaza et al \cite{10348} do not only use those above backbone model but also used InceptionV3\cite{00567} model. Another paper that uses the backbone models is \cite{09418}, Hemanth et al decide to use EfficientNet\cite{11946} and SeNET\cite{01507} instead and CutOut\cite{04552v2} method which involves creating holes of different sizes on the images i.e. technically making a random portion of image inactive during data augmentation process. \cite{01284} also used Deep Convolution Neural Network, Peng Yao et al used RandArgument which crops an image into several images from a fixed size, DropBlock which is used for regularization, Multi-Weighted New Loss which is used for dealing with the imbalanced data problem, end-to-end Cumulative Learning Strategy which can more effectively balance representation learning and classifier learning without additional computational cost. Another state of the art is GradCam and Kernel SHAP\cite{06612}, Kyle Young et al create model agnostic, local interpretable methods that can highlight pixels that the trained network deems relevant for the final classification.
 
-Otherwise, the Student and Teacher Model is also a state of the art in 2021\cite{03225}. The student and teacher model is created by Xiaohan Xing et al as the combination of two model which share the memory with each other. Therefore, they can take full advantage of what others learn. SkinLinkNet\cite{12602} and WonderM\cite{03426} are both tested the effect of segmentation on skin lesion classification problem created by Amirreza et al and Yeong Chan et al, respectively. Another approach is using metadata including gender, age, and capturing position as stated in \cite{03910} by Nil Gessert et al. 
+Otherwise, the Student and Teacher Model is also a state of the art in 2021\cite{03225}. The student and teacher model is created by Xiaohan Xing et al as the combination of two model which share the memory with each other. Therefore, they can take full advantage of what others learn. SkinLinkNet\cite{12602} and WonderM\cite{03426} are both tested the effect of segmentation on skin lesion classification problem created by Amirreza et al and Yeong Chan et al, respectively. In WonderM, the method used is padding the image so that the image has the shape increased from (450,600) to (600, 600). In SkinLinkNet, instead resize the image down to (448, 448). Both of SkinLinkNet and WonderM use UNet to do the segmentation task, though they use EfficientNetB0 and DenseNet to do the classification task, respectively. Another approach is using metadata including gender, age, and capturing position as stated in \cite{03910} by Nil Gessert et al. 
 
 On the other hand, skin lesion classification problems are not only applied by Deep Learning but also Machine Learning. Random Forest, XGBoost, and Support Vector Machines are tested by \cite{03798} of Rishu Garg et al. Besides, Isolation Forest is applied before the soft-max activation of the deep learning model to detect out of distribution skin lesion images as stated in\cite{10348} by Amirreza Rezvantalab et al. Matrix Transformation, besides is also applied before the soft-max activation function in \cite{05045} by Michele Alberti et al. 
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{|c c c c c c c c c|} 
+	\begin{tabular}{|p{1cm}|p{12.5cm}|}
 		\hline
-		Class & AKIEC & BCC & BKL & DF & MEL & NV & VASC & Total \\ 
+		Work & Approach \\ 
 		\hline
-		No. Sample & 327 & 514 & 1099 & 115 & 1113 & 6705 & 142 & 10015 \\
+		\cite{03358} & Combination of Backbone Model and Soft Attention. Backbone model includes DenseNet201, InceptionResNetV2, VGG16, ResNet50, ResNet34\\
+		\hline
+		\cite{03798} & Transfer Learning with CNN based model\\
+		\hline
+		\cite{10348} & Transfer Learning with CNN based model including DenseNet201, InceptionResNetV2, VGG16, ResNet50, ResNet34, and InceptionNetV3\\
+		\hline
+		\cite{09418} & Transfer Learning with CNN based model including EfficientNet and SeNet. Data augmentation process used CutOut to create random sized hole considered as an inactive portion of image.\\
+		\hline
+		\cite{01284} & Transfer Learning with CNN based model. Data augmentation process uses RandArgument to split picture into several pictures which is used to train. DropBlock and Multi-Weight Loss Function are used to deal with the imbalanced.\\
+		\hline
+		\cite{06612} & GradCam and Kernel SHAP, two model agnostic, local interpretable methods that can highlight pixels that the trained network deems relevant for the final classification.\\
+		\hline
+		\cite{03225} & Student and Teacher Model is the combination of two model which share the memory learned with others. \\
+		\hline
+		\cite{12602} & SkinLinkNet uses the image whose shape is (448,488) for training. Unet and EfficientNetB0 are used for segmentation and classification task respectively.\\
+		\hline
+		\cite{03426} & WonderM uses the image whose shape is (600,600) created by padding for training. Unet and DenseNet are used for segmentation and classification task respectively.\\
+		\hline
+		\cite{03910} & MetaData including age, gender, and capture position are used to gain higher performance of the model. The models used in this paper are CNN-based model \\
+		\hline
+		\cite{03798} & Traditional Machine Learning Algorithms are applied including Random Forest, XGBoost, and Support Vector Machine \\
+		\hline
+		\cite{10348} & Matrix Factorization are applied before the softmax activation function \\
+		\hline
+		\cite{05045} & Isolation Forest are applied distribution skin lesion images before fedding into the softmax activation function. \\
+		\hline
+		\cite{10348} & Matrix Factorization are applied before the softmax activation function. \\
 		\hline
 	\end{tabular}
-	\caption{Data Distribution in HAM10000}
-	\label{table:1}
+	\caption{Related Works Summary}
+	\label{table:0}
 \end{table}
 
 \subsection{Objectives}

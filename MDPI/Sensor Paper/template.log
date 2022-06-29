@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  29 JUN 2022 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  29 JUN 2022 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1513,6 +1513,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 {C:/Users/KhoiDOO/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map} <./Defi
 nitions/logo-mdpi-eps-converted-to.pdf> <./Definitions/logo-orcid.pdf>]
+Overfull \hbox (14.95694pt too wide) in paragraph at lines 184--217
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1522,38 +1526,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [2]
-<Definitions/DataDistribution.png, id=179, 395.22656pt x 83.5622pt>
+<Definitions/DataDistribution.png, id=193, 395.22656pt x 83.5622pt>
 File: Definitions/DataDistribution.png Graphic file (type png)
 <use Definitions/DataDistribution.png>
 Package pdftex.def Info: Definitions/DataDistribution.png  used on input line 2
-06.
+44.
 (pdftex.def)             Requested size: 394.35522pt x 83.37837pt.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[3 <./Definitions/DataDistribution.png>]
-<Definitions/Input Schema.png, id=202, 996.72375pt x 267.24844pt>
-File: Definitions/Input Schema.png Graphic file (type png)
-<use Definitions/Input Schema.png>
-Package pdftex.def Info: Definitions/Input Schema.png  used on input line 222.
-(pdftex.def)             Requested size: 276.04744pt x 74.01347pt.
-
-
-Package natbib Warning: Citation `202017' on page 4 undefined on input line 228
-.
-
-<Definitions/SoftAttention.png, id=206, 1349.04pt x 394.47375pt>
-File: Definitions/SoftAttention.png Graphic file (type png)
-<use Definitions/SoftAttention.png>
-Package pdftex.def Info: Definitions/SoftAttention.png  used on input line 236.
-
-(pdftex.def)             Requested size: 394.35522pt x 115.30937pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1565,27 +1544,64 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[4 <./Definitions/Input Schema.png>]
-<Definitions/SoftAttentionBlock.png, id=219, 619.56468pt x 385.44pt>
+[3]
+<Definitions/Input Schema.png, id=214, 996.72375pt x 267.24844pt>
+File: Definitions/Input Schema.png Graphic file (type png)
+<use Definitions/Input Schema.png>
+Package pdftex.def Info: Definitions/Input Schema.png  used on input line 260.
+(pdftex.def)             Requested size: 276.04744pt x 74.01347pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `202017' on page 4 undefined on input line 266
+.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[4 <./Definitions/DataDistribution.png>]
+<Definitions/SoftAttention.png, id=227, 1349.04pt x 394.47375pt>
+File: Definitions/SoftAttention.png Graphic file (type png)
+<use Definitions/SoftAttention.png>
+Package pdftex.def Info: Definitions/SoftAttention.png  used on input line 274.
+
+(pdftex.def)             Requested size: 394.35522pt x 115.30937pt.
+<Definitions/SoftAttentionBlock.png, id=229, 619.56468pt x 385.44pt>
 File: Definitions/SoftAttentionBlock.png Graphic file (type png)
 <use Definitions/SoftAttentionBlock.png>
 Package pdftex.def Info: Definitions/SoftAttentionBlock.png  used on input line
- 244.
+ 282.
 (pdftex.def)             Requested size: 197.17761pt x 122.66696pt.
 
-Overfull \hbox (7.5087pt too wide) in paragraph at lines 250--251
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[5 <./Definitions/Input Schema.png> <./Definitions/SoftAttention.png>]
+Overfull \hbox (7.5087pt too wide) in paragraph at lines 288--289
 []\T1/ppl/m/n/10 (-20) In this pa-per, the back-bone mod-els used in this pa-pe
 r are DenseNet201[[]], Inception[[]],
  []
 
-<Definitions/MainModel.png, id=230, 1522.18687pt x 191.9672pt>
+<Definitions/MainModel.png, id=250, 1522.18687pt x 191.9672pt>
 File: Definitions/MainModel.png Graphic file (type png)
 <use Definitions/MainModel.png>
-Package pdftex.def Info: Definitions/MainModel.png  used on input line 288.
+Package pdftex.def Info: Definitions/MainModel.png  used on input line 326.
 (pdftex.def)             Requested size: 394.35522pt x 49.7316pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1594,22 +1610,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[5 <./Definitions/SoftAttention.png> <./Definitions/SoftAttentionBlock.png>]
-<Definitions/Confusion-matrix.png, id=238, 483.8075pt x 295.1025pt>
+[6 <./Definitions/SoftAttentionBlock.png> <./Definitions/MainModel.png>]
+<Definitions/Confusion-matrix.png, id=258, 483.8075pt x 295.1025pt>
 File: Definitions/Confusion-matrix.png Graphic file (type png)
 <use Definitions/Confusion-matrix.png>
 Package pdftex.def Info: Definitions/Confusion-matrix.png  used on input line 3
-08.
+46.
 (pdftex.def)             Requested size: 208.21884pt x 127.00417pt.
 
-Overfull \hbox (18.93002pt too wide) in paragraph at lines 308--309
+Overfull \hbox (18.93002pt too wide) in paragraph at lines 346--347
  [][] 
  []
 
-<Definitions/AUC.png, id=239, 235.88126pt x 215.80624pt>
+<Definitions/AUC.png, id=259, 235.88126pt x 215.80624pt>
 File: Definitions/AUC.png Graphic file (type png)
 <use Definitions/AUC.png>
-Package pdftex.def Info: Definitions/AUC.png  used on input line 313.
+Package pdftex.def Info: Definitions/AUC.png  used on input line 351.
 (pdftex.def)             Requested size: 132.50159pt x 121.22606pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1619,20 +1635,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[6 <./Definitions/MainModel.png> <./Definitions/Confusion-matrix.png> <./Defini
-tions/AUC.png>]
+[7 <./Definitions/Confusion-matrix.png> <./Definitions/AUC.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[7]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1654,18 +1660,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [9]
-Overfull \hbox (0.77069pt too wide) in paragraph at lines 547--560
- [][] 
- []
-
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 586.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 586.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 586.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 586.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1675,7 +1669,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 628--628
+Overfull \hbox (0.77069pt too wide) in paragraph at lines 585--598
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 624.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 624.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 624.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 624.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
 
  []
 
@@ -1688,7 +1703,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[11] 
+[12] 
 AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1698,12 +1713,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[12
+[13
 pdfTeX warning (ext4): destination with the same identifier (name{cite.02357}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.877 \end{document}
+l.915 \end{document}
                     ]
 
 Package natbib Warning: There were undefined citations.
@@ -1721,11 +1736,11 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: BC156CC9B753FF5BE921453445856BF6;2252.
  ) 
 Here is how much of TeX's memory you used:
- 32067 strings out of 478550
- 605694 string characters out of 2839911
- 933395 words of memory out of 3000000
- 49117 multiletter control sequences out of 15000+600000
- 545730 words of font info for 418 fonts, out of 8000000 for 9000
+ 32073 strings out of 478550
+ 605750 string characters out of 2839911
+ 935499 words of memory out of 3000000
+ 49118 multiletter control sequences out of 15000+600000
+ 545889 words of font info for 420 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,120p,4341b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/
@@ -1741,9 +1756,9 @@ super/sfss0500.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/urw/palatino/uplb8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/KhoiDOO/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (12 pages, 459122 bytes).
+Output written on template.pdf (13 pages, 465036 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
  99538 words of extra memory for PDF output out of 106986 (max. 10000000)
 
