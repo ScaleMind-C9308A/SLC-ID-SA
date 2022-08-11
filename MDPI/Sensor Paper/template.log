@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.30) (preloaded format=pdflatex 2022.8.8)  8 AUG 2022 23:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.30) (preloaded format=pdflatex 2022.8.8)  9 AUG 2022 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1453,7 +1453,7 @@ r are DenseNet201[[]], Inception[[]],
 File: Definitions/MainModel - Model Form.png Graphic file (type png)
 <use Definitions/MainModel - Model Form.png>
 Package pdftex.def Info: Definitions/MainModel - Model Form.png  used on input 
-line 333.
+line 332.
 (pdftex.def)             Requested size: 197.17761pt x 113.3127pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1468,13 +1468,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Definitions/Model Structure.png Graphic file (type png)
 <use Definitions/Model Structure.png>
 Package pdftex.def Info: Definitions/Model Structure.png  used on input line 34
-1.
+0.
 (pdftex.def)             Requested size: 394.35522pt x 197.175pt.
 <Definitions/Mobile Model Structure.png, id=271, 1300.86pt x 650.43pt>
 File: Definitions/Mobile Model Structure.png Graphic file (type png)
 <use Definitions/Mobile Model Structure.png>
 Package pdftex.def Info: Definitions/Mobile Model Structure.png  used on input 
-line 348.
+line 347.
 (pdftex.def)             Requested size: 394.35522pt x 197.175pt.
 
 
@@ -1491,17 +1491,17 @@ g>]
 File: Definitions/Confusion-matrix.png Graphic file (type png)
 <use Definitions/Confusion-matrix.png>
 Package pdftex.def Info: Definitions/Confusion-matrix.png  used on input line 3
-68.
+67.
 (pdftex.def)             Requested size: 208.21884pt x 127.00417pt.
 
-Overfull \hbox (18.93002pt too wide) in paragraph at lines 368--369
+Overfull \hbox (18.93002pt too wide) in paragraph at lines 367--368
  [][] 
  []
 
 <Definitions/AUC.png, id=280, 235.88126pt x 215.80624pt>
 File: Definitions/AUC.png Graphic file (type png)
 <use Definitions/AUC.png>
-Package pdftex.def Info: Definitions/AUC.png  used on input line 373.
+Package pdftex.def Info: Definitions/AUC.png  used on input line 372.
 (pdftex.def)             Requested size: 132.50159pt x 121.22606pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1522,62 +1522,62 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [9]
-Overfull \hbox (5.17386pt too wide) in paragraph at lines 450--450
+Overfull \hbox (5.17386pt too wide) in paragraph at lines 449--449
 []|\T1/ppl/m/n/10 (-20) akiec| 
  []
 
 
-Overfull \hbox (1.87138pt too wide) in paragraph at lines 450--450
+Overfull \hbox (1.87138pt too wide) in paragraph at lines 449--449
 []|\T1/ppl/m/n/10 (-20) vasc| 
  []
 
 
-Overfull \hbox (4.6516pt too wide) in paragraph at lines 450--451
+Overfull \hbox (4.6516pt too wide) in paragraph at lines 449--450
 []|\T1/ppl/m/n/10 (-20) Mean| 
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 454--454
+Underfull \hbox (badness 1348) in paragraph at lines 453--453
 []|\T1/ppl/m/n/10 (+20) InceptionResNetV2 with Aug-
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 464--464
+Underfull \hbox (badness 2799) in paragraph at lines 463--463
 []|\T1/ppl/m/n/10 (+20) Resnet50 with Meta-data and
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 476--476
+Underfull \hbox (badness 1584) in paragraph at lines 475--475
 []|\T1/ppl/m/n/10 (+20) NasNetMobile with Meta-data
  []
 
 
-Overfull \hbox (5.17386pt too wide) in paragraph at lines 487--487
+Overfull \hbox (5.17386pt too wide) in paragraph at lines 486--486
 []|\T1/ppl/m/n/10 (-20) akiec| 
  []
 
 
-Overfull \hbox (1.87138pt too wide) in paragraph at lines 487--487
+Overfull \hbox (1.87138pt too wide) in paragraph at lines 486--486
 []|\T1/ppl/m/n/10 (-20) vasc| 
  []
 
 
-Overfull \hbox (4.6516pt too wide) in paragraph at lines 487--488
+Overfull \hbox (4.6516pt too wide) in paragraph at lines 486--487
 []|\T1/ppl/m/n/10 (-20) Mean| 
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 491--491
+Underfull \hbox (badness 1348) in paragraph at lines 490--490
 []|\T1/ppl/m/n/10 (+20) InceptionResNetV2 with Aug-
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 501--501
+Underfull \hbox (badness 2799) in paragraph at lines 500--500
 []|\T1/ppl/m/n/10 (+20) Resnet50 with Meta-data and
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 513--513
+Underfull \hbox (badness 1584) in paragraph at lines 512--512
 []|\T1/ppl/m/n/10 (+20) NasNetMobile with Meta-data
  []
 
@@ -1599,12 +1599,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [11]
-Overfull \hbox (0.77069pt too wide) in paragraph at lines 551--564
+Overfull \hbox (0.77069pt too wide) in paragraph at lines 550--563
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--634
+Underfull \hbox (badness 10000) in paragraph at lines 633--633
 
  []
 
@@ -1618,415 +1618,415 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 634.
+(Font)              scaled to size 9.37807pt on input line 633.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 634.
+(Font)              scaled to size 7.29405pt on input line 633.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 634.
+(Font)              scaled to size 9.37807pt on input line 633.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 634.
+(Font)              scaled to size 7.29405pt on input line 633.
 
-Overfull \hbox (1.77545pt too wide) in paragraph at lines 668--668
+Overfull \hbox (1.77545pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (-20) DenseNet-
  []
 
 
-Overfull \hbox (1.77545pt too wide) in paragraph at lines 668--668
+Overfull \hbox (1.77545pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (-20) DenseNet-
  []
 
 
-Overfull \hbox (0.82628pt too wide) in paragraph at lines 668--668
+Overfull \hbox (0.82628pt too wide) in paragraph at lines 667--667
 \T1/ppl/b/n/9 (-20) ResNetV2| 
  []
 
 
-Overfull \hbox (0.82628pt too wide) in paragraph at lines 668--668
+Overfull \hbox (0.82628pt too wide) in paragraph at lines 667--667
 \T1/ppl/b/n/9 (-20) ResNetV2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 \T1/ppl/b/n/9 (+20) 152 +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) NasNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) NasNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 \T1/ppl/b/n/9 (+20) Large +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 668--668
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 668--668
+Underfull \hbox (badness 1565) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 668--668
+Underfull \hbox (badness 1565) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 668--668
+Underfull \hbox (badness 1565) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 668--668
+Underfull \hbox (badness 1565) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 668--668
+Underfull \hbox (badness 1565) in paragraph at lines 667--667
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 []|\T1/ppl/m/n/9 (+20) Dropout
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 668--668
+Underfull \hbox (badness 10000) in alignment at lines 667--667
 [][][][][][][][][][] 
  []
 
@@ -2039,212 +2039,212 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [13]
-Overfull \hbox (4.1478pt too wide) in paragraph at lines 695--695
+Overfull \hbox (4.1478pt too wide) in paragraph at lines 694--694
 []|\T1/ppl/b/n/9 (-20) MobileNetV2| 
  []
 
 
-Overfull \hbox (4.1478pt too wide) in paragraph at lines 695--695
+Overfull \hbox (4.1478pt too wide) in paragraph at lines 694--694
 []|\T1/ppl/b/n/9 (-20) MobileNetV2
  []
 
 
-Overfull \hbox (1.30278pt too wide) in paragraph at lines 695--695
+Overfull \hbox (1.30278pt too wide) in paragraph at lines 694--694
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (1.30278pt too wide) in paragraph at lines 695--695
+Overfull \hbox (1.30278pt too wide) in paragraph at lines 694--694
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (1.30278pt too wide) in paragraph at lines 695--695
+Overfull \hbox (1.30278pt too wide) in paragraph at lines 694--694
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (4.1478pt too wide) in paragraph at lines 695--695
+Overfull \hbox (4.1478pt too wide) in paragraph at lines 694--694
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (5.70396pt too wide) in paragraph at lines 695--695
+Overfull \hbox (5.70396pt too wide) in paragraph at lines 694--694
 []|\T1/ppl/b/n/9 (-20) NasNetMobile
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 3x3 3 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 3x3 3 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 5x5 SE 8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 5x5 SE 8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 3x3 4 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 3x3 4 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 3x3 SE 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 3x3 SE 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 695--695
+Underfull \hbox (badness 3954) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) Conv2D 1x1
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 695--695
+Underfull \hbox (badness 3954) in paragraph at lines 694--694
 []|\T1/ppl/m/n/9 (+20) Conv2D 1x1
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 695--695
+Underfull \hbox (badness 10000) in alignment at lines 694--694
 [][][][][][][][] 
  []
 
@@ -2280,7 +2280,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.02357})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.924 \end{document}
+l.923 \end{document}
                     ]
 
 Package natbib Warning: There were multiply defined citations.
@@ -2296,7 +2296,7 @@ Package rerunfilecheck Info: File `template.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  32289 strings out of 478338
- 600897 string characters out of 2844163
+ 600900 string characters out of 2844163
  966275 words of memory out of 3000000
  49519 multiletter control sequences out of 15000+600000
  547420 words of font info for 442 fonts, out of 8000000 for 9000
@@ -2311,7 +2311,7 @@ ts/type1/public/mathpazo/fplmr.pfb><D:/Program Files/BasicMikTex/fonts/type1/pu
 blic/mathpazo/fplmri.pfb><D:/Program Files/BasicMikTex/fonts/type1/urw/palatino
 /uplb8a.pfb><D:/Program Files/BasicMikTex/fonts/type1/urw/palatino/uplr8a.pfb><
 D:/Program Files/BasicMikTex/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (16 pages, 580181 bytes).
+Output written on template.pdf (16 pages, 580172 bytes).
 PDF statistics:
  411 PDF objects out of 1000 (max. 8388607)
  93 named destinations out of 1000 (max. 500000)
