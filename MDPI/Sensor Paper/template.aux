@@ -142,27 +142,43 @@
 \newlabel{table:Acc-Augment-Model}{{4}{9}{Accuracy of the model with augmented data\relax }{table.caption.12}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Accuracy of the model with metadata\relax }}{9}{table.caption.14}\protected@file@percent }
 \newlabel{table:Acc-Metadata-Model}{{5}{9}{Accuracy of the model with metadata\relax }{table.caption.14}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces F1-Score of each class and the mean f1-score of each model\relax }}{10}{table.caption.15}\protected@file@percent }
-\newlabel{table:F1-score-summary}{{6}{10}{F1-Score of each class and the mean f1-score of each model\relax }{table.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces F1 Score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. \relax }}{10}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:f1 AD}{{10}{10}{F1 Score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. \relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The f1-score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.1\relax }}{11}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:f1 MD WL}{{11}{11}{The f1-score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.1\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Recall score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }}{11}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:re AD}{{12}{11}{Recall score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces The recall score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }}{12}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:re MD WL}{{13}{12}{The recall score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }{figure.caption.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces How Performance of MobileNetV3Large be optimized\relax }}{12}{table.caption.19}\protected@file@percent }
+\newlabel{table:optimized-performance-mobile-model}{{6}{12}{How Performance of MobileNetV3Large be optimized\relax }{table.caption.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{12}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix\nobreakspace  {}A}{14}{appendix.A.}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }}{14}{table.caption.20}\protected@file@percent }
+\newlabel{appendix-table:detailed structure model}{{A1}{14}{Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }{table.caption.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix\nobreakspace  {}B}{15}{appendix.B.}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A2}{\ignorespaces Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }}{15}{table.caption.21}\protected@file@percent }
+\newlabel{appendix-table:detailed mobile model structure}{{A2}{15}{Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }{table.caption.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Appendix\nobreakspace  {}C}{16}{appendix.C.}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Appendix\nobreakspace  {}C}{16}{subsection.C.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A3}{\ignorespaces F1-Score of each class: akiec, bcc, bkl, df, mel, nv, vasc which are denoted in the abbreviation. The last column is the expected value of f1-score from each model. All model in the first column is the models trained in this research. The term "with Augmented Data" means that model is trained with data augmenting during the training, there is no metadata or weight loss contribution. The term "with Metadata and WeightLoss" means that the model is trained with metadata including age, gender, localization and the weight loss function, there is no augmented data contribution\relax }}{16}{table.caption.22}\protected@file@percent }
+\newlabel{table:F1-score-summary}{{A3}{16}{F1-Score of each class: akiec, bcc, bkl, df, mel, nv, vasc which are denoted in the abbreviation. The last column is the expected value of f1-score from each model. All model in the first column is the models trained in this research. The term "with Augmented Data" means that model is trained with data augmenting during the training, there is no metadata or weight loss contribution. The term "with Metadata and WeightLoss" means that the model is trained with metadata including age, gender, localization and the weight loss function, there is no augmented data contribution\relax }{table.caption.22}{}}
 \citation{04381}
 \citation{02244}
 \citation{02244}
 \citation{07012}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Recall score of each class and the mean recall score of each model\relax }}{11}{table.caption.16}\protected@file@percent }
-\newlabel{table:recall-score-summary}{{7}{11}{Recall score of each class and the mean recall score of each model\relax }{table.caption.16}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }}{11}{table.caption.17}\protected@file@percent }
-\newlabel{table:mobile-performance}{{8}{11}{Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }{table.caption.17}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces How Performance of MobileNetV3Large be optimized\relax }}{12}{table.caption.18}\protected@file@percent }
-\newlabel{table:optimized-performance-mobile-model}{{9}{12}{How Performance of MobileNetV3Large be optimized\relax }{table.caption.18}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{12}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix\nobreakspace  {}A}{14}{appendix.A.}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }}{14}{table.caption.19}\protected@file@percent }
-\newlabel{appendix-table:detailed structure model}{{A1}{14}{Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }{table.caption.19}{}}
 \bibcite{08332}{{1}{year}{{Author1}}{{}}}
 \bibcite{03225}{{2}{year}{{Author2}}{{}}}
 \bibcite{03798}{{3}{year}{{Author2}}{{}}}
 \bibcite{09365}{{4}{year}{{Author2}}{{}}}
 \bibcite{10348}{{5}{year}{{Author2}}{{}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}Appendix\nobreakspace  {}C}{17}{subsection.C.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A4}{\ignorespaces Recall score of each class and the expected value of recall score from each model\relax }}{17}{table.caption.23}\protected@file@percent }
+\newlabel{table:recall-score-summary}{{A4}{17}{Recall score of each class and the expected value of recall score from each model\relax }{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Appendix\nobreakspace  {}C}{17}{subsection.C.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A5}{\ignorespaces Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }}{17}{table.caption.24}\protected@file@percent }
+\newlabel{table:mobile-performance}{{A5}{17}{Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }{table.caption.24}{}}
+\@writefile{toc}{\contentsline {section}{References}{17}{table.caption.24}\protected@file@percent }
 \bibcite{06612}{{6}{year}{{Author2}}{{}}}
 \bibcite{10417}{{7}{year}{{Author2}}{{}}}
 \bibcite{05045}{{8}{year}{{Author2}}{{}}}
@@ -170,10 +186,6 @@
 \bibcite{03910}{{10}{year}{{Author2}}{{}}}
 \bibcite{11797}{{11}{year}{{Author2}}{{}}}
 \bibcite{01284}{{12}{year}{{Author2}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix\nobreakspace  {}B}{15}{appendix.B.}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A2}{\ignorespaces Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }}{15}{table.caption.20}\protected@file@percent }
-\newlabel{appendix-table:detailed mobile model structure}{{A2}{15}{Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }{table.caption.20}{}}
-\@writefile{toc}{\contentsline {section}{References}{15}{table.caption.20}\protected@file@percent }
 \bibcite{11872}{{13}{year}{{Author2}}{{}}}
 \bibcite{03358}{{14}{year}{{Author2}}{{}}}
 \bibcite{12602}{{15}{year}{{Author2}}{{}}}
@@ -199,8 +211,8 @@
 \bibcite{01507}{{35}{year}{{Author2}}{{}}}
 \bibcite{04552v2}{{36}{year}{{Author2}}{{}}}
 \bibcite{07261}{{37}{year}{{Author2}}{{}}}
-\newlabel{LastPage}{{}{16}{}{page.16}{}}
-\xdef\lastpage@lastpage{16}
-\xdef\lastpage@lastpageHy{16}
-\expandafter\ifx\csname c@page@totc\endcsname\relax\newcounter{page@totc}\fi\setcounter{page@totc}{17}
-\gdef \@abspage@last{16}
+\newlabel{LastPage}{{}{19}{}{page.19}{}}
+\xdef\lastpage@lastpage{19}
+\xdef\lastpage@lastpageHy{19}
+\expandafter\ifx\csname c@page@totc\endcsname\relax\newcounter{page@totc}\fi\setcounter{page@totc}{20}
+\gdef \@abspage@last{19}

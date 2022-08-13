@@ -398,7 +398,7 @@ Then, the model is evaluated by the following metrics:
 \[\text{Accuracy} = \frac{TP + TN}{TP + FP + FN + TN} \hspace{1cm} \text{Balanced Accuracy} = \frac{\text{Sens} + \text{Spec}}{2}\]
 The last metric is the $AUC$ score standing for Area Under the Curve which is the Receiver Operating Curve(ROC) that indicate the probability of TP versus the probability of FP.  
 \subsection{Traning}
-Before training, the data set is split into three sub datasets including training, validation, and testing. In this paper, the graphic card that is used to train is Nvidia RTX TitanV. In order to make the comparison fair, all the model in this paper is trained with Adam Optimizer\cite{6980}. The initial learning rate is set to $0.001$, an learning rate reduction schedule is setup with the minimum learning rate is $0.0000001$ with the factor of $0.2$, the epsilon argument of the optimizer is set to $0.1$. On the other hand, Early Stopping is also set up, if the accuracy of validation set dose not increase after 25 epochs, the training will stop. 
+Before training, the data set is split into three sub datasets including training, validation, and testing. In this paper, the graphic card that is used to train is Nvidia RTX TitanV. In order to make the comparison fair, all the model in this paper is trained with Adam Optimizer\cite{6980}. The initial learning rate is set to $0.001$, an learning rate reduction schedule is setup with the minimum learning rate is $0.0000001$ with the factor of $0.2$, the epsilon argument of the optimizer is set to $0.1$. On the other hand, Early Stopping is also set up, if the accuracy of validation set does not increase after 25 epochs, the training will stop. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -410,7 +410,7 @@ The accuracy of all model is presented in the figure below:
 		\hline
 		InceptionResNetV2 & DenseNet201 & ResNet50 & VGG16 \\
 		\hline
-		0.93 & 0.91 & 0.92 & 0.88\\
+		0.79 & 0.84 & 0.76 & 0.77\\
 		\hline
 	\end{tabular}
 	\caption{Accuracy of the model with augmented data}
@@ -440,110 +440,39 @@ The accuracy of all model is presented in the figure below:
 	\label{table:Acc-Metadata-Model}
 \end{table}
 
-According to the Table 3 and 4, it is clear that the model trained with augmented data has a higher accuracy than the model trained with metadata only. While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.93$ and $0.91$ respectively, their training with metadata has both the accuracy of $0.89$. Furthermore, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, even though has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.84$, $0.86$, respectively. This term will be discussed later on. Since, the model trained with augmented data have high accuracy, when their f1-score and the recall score of models are analyzed, it turns out that models trained with augmented data have imbalanced f1-scores according to table 5. As a results, augmented data model dose not classify well on all class as InceptionResNetV2 trained on augmented data have $0.29$ f1-score on class df while InceptionResNetV2 trained on metadata and the new weight loss can classify well in a balanced way. However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the imbalanced term. Since this data set is not balanced, therefore using augmented data can make the model more  bias to the class which has larger sample. Using the metadata, though still make the model bias, it dose contributes to the improvement of  the performance of the model.
+According to the Table 4 and 5, it is clear that the model trained with metadata has a higher accuracy than the model trained with augmented data only. While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.79$ and $0.84$ respectively, their training with metadata has both the accuracy of $0.89$. Furthermore, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, even though has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.84$, $0.86$, respectively. 
 
-\begin{table}[H]
+Moreover, the model trained with augmented data does not only have low accuracy but their f1-score and the recall score also are imbalanced according to figure 10. As a results, augmented data model does not classify well on all class as InceptionResNetV2 trained on augmented data have f1-score on class df and akiec is just above $0.3$ and $0.4$, separately while InceptionResNetV2 trained on metadata and the new weight loss can classify well in a balanced way arcoding to the figure 11. However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the imbalanced term. Since this data set is not balanced, therefore using augmented data can make the model more  bias to the class which has larger sample. Using the metadata, though still make the model bias, it does contributes to the improvement of  the performance of the model.
+
+\begin{figure}[H]
 	\centering
-	\begin{tabular}{|p{5cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.7cm}|} 
-		\hline
-		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
-		\hline
-		DenseNet201 with Augmented Data & 0.67 & 0.78 & 0.64 & 0.67 & 0.61 & 0.96 & 0.91 & 0.74 \\ 
-		\hline
-		InceptionResNetV2 with Augmented Data & 0.69 &	0.88 & 0.77 & 0.29 & 0.66 & 0.98 & 1 & 0.75\\
-		\hline
-		Resnet50 with Augmented Data & 0.53 & 0.86 & 0.68 & 0.67 & 0.57 & 0.97 & 0.95 & 0.74\\
-		\hline 	
-		VGG16 with Augmented Data & 0.65 & 0.7 & 0.52 & 0.4 & 0.53 & 0.95 & 0.95 & 0.67\\ 
-		\hline		
-		DenseNet201 with Metadata and WeightLoss & \textbf{0.84} & 0.77 & \textbf{0.81} & \textbf{0.83} & \textbf{0.69} & 0.94 & 0.97 & \textbf{0.83}\\
-		\hline
-		InceptionResNetV2 with Metadata and WeightLoss & 0.77 & 0.83 & \textbf{0.83} & 0.64 & \textbf{0.75} & 0.94 & 0.7 & \textbf{0.81}\\
-		\hline
-		Resnet50 with Metadata and WeightLoss & 0.49 & 0.59 & 0.55 & 0.36 & 0.45 & 0.83 & 0.8 & 0.58\\
-		\hline
-		Resnet152 with Metadata and WeightLoss & 0.42 & 0.38 & 0.41 & 0.15 & 0.4 & 0.75 & 0.75 & 0.46\\
-		\hline
-		NasNetLarge with Metadata and WeightLoss & 0.79 & 0.79 & 0.8 & 0.74 & 0.65 & 0.92 & 0.92 & \textbf{0.80}\\
-		\hline
-		MobileNetV2 with Metadata and WeightLoss & 0.68 & 0.79 & 0.66 & 0.78 & 0.54 & 0.9 & \textbf{0.9} & 0.75\\
-		\hline
-		MobileNetV3Large with Metadata and WeightLoss & 0.72 & 0.76 & 0.75 & 0.92 & 0.58 & 0.92 & \textbf{0.92} & 0.79\\
-		\hline
-		MobileNetV3Small with Metadata and WeightLoss & 0.6 & 0.72 & 0.61 & 0.75 & 0.47 & 0.89 & \textbf{0.89} & 0.70\\
-		\hline
-		NasNetMobile with Metadata and WeightLoss & 0.76 & 0.74 & 0.78 & 0.73 & 0.63 & 0.93 & \textbf{0.93} & 0.78\\
-		\hline
-	\end{tabular}
-	\caption{F1-Score of each class and the mean f1-score of each model}
-	\label{table:F1-score-summary}
-\end{table}
-
-\begin{table}[H]
+	\includegraphics[width=0.7\linewidth]{Definitions/f1 AD}
+	\caption{F1 Score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. }
+	\label{fig:f1 AD}
+\end{figure}
+\begin{figure}[H]
 	\centering
-	\begin{tabular}{|p{5cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.7cm}|} 
-		\hline
-		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
-		\hline
-		DenseNet201 with Augmented Data & 0.52 & 0.77 & 0.58 & 0.5 & 0.71 & 0.97 & 1 & 0.72\\ 
-		\hline
-		InceptionResNetV2 with Augmented Data & 0.52 & 0.88 & 0.83 & 0.17 & 0.65 & 0.98 & 1 & 0.71\\
-		\hline
-		Resnet50 with Augmented Data & 0.43 & 0.85 & 0.7 & 0.5 & 0.47 & 0.98 & 0.9 & 0.69\\
-		\hline 	
-		VGG16 with Augmented Data & 0.61 & 0.81 & 0.44 & 0.44 & 0.68 & 0.95 & 0.9 & 0.69\\ 
-		\hline		
-		DenseNet201 with Metadata and WeightLoss & \textbf{0.85} & 0.75 & 0.78 & 0.83 & 0.63 & 0.96 & \textbf{1} & \textbf{0.82}\\
-		\hline
-		InceptionResNetV2 with Metadata and WeightLoss & \textbf{0.82} & 0.84 & 0.81 & 0.67 & 0.7 & 0.95 & 0.93 & \textbf{0.81}\\
-		\hline
-		Resnet50 with Metadata and WeightLoss & 0.67 & 0.63 & 0.54 & 0.83 & 0.63 & 0.74 & 0.86 & 0.70\\
-		\hline
-		Resnet152 with Metadata and WeightLoss & 0.51 & 0.49 & 0.35 & 0.76 & 0.47 & 0.63 & 0.48 & 0.52\\
-		\hline
-		NasNetLarge with Metadata and WeightLoss & 0.73 & 0.71 & \textbf{0.83} & \textbf{0.92} & 0.59 & 0.9 & 0.93 & \textbf{0.81}\\
-		\hline
-		MobileNetV2 with Metadata and WeightLoss & 0.7 & 0.86 & 0.72 & 0.75 & 0.58 & 0.86 & \textbf{1} & 0.78\\
-		\hline
-		MobileNetV3Large with Metadata and WeightLoss & 0.72 & 0.76 & 0.75 & \textbf{0.92} & 0.58 & 0.92 & 0.92 & \textbf{0.80}\\
-		\hline
-		MobileNetV3Small with Metadata and WeightLoss & 0.76 & 0.84 & 0.68 & \textbf{1} & 0.52 & 0.82 & 0.93 & 0.79\\
-		\hline
-		NasNetMobile with Metadata and WeightLoss & \textbf{0.82} & 0.73 & \textbf{0.83} & \textbf{0.92} & 0.53 & 0.93 & 0.93 & \textbf{0.81}\\
-		\hline
-	\end{tabular}
-	\caption{Recall score of each class and the mean recall score of each model}
-	\label{table:recall-score-summary}
-\end{table}
+	\includegraphics[width=0.7\linewidth]{Definitions/f1 MD WL}
+	\caption{The f1-score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.1}
+	\label{fig:f1 MD WL}
+\end{figure}
 
-This problem is also true with the recall score according to table 7. DenseNet201, InceptionResNetV2, ResNet50, VGG16 trained with augmented data has expected value of recall of $0.72$, $0.71$, $0.69$, $0.69$, respectively, while the combination of InceptionResNetV2, Metadata and the new weight loss function achieve the expected value of recall: $0.82$. Therefore, metadata does improve the model performance by reducing the amount of data needed for achieving nearly the expected results. On the other hand, the reason why the model become much more balanced is the weighted loss function. Weight loss function has ability to solve the imbalanced class samples by adding a weight related to the number of samples in each class. DenseNet201, InceptionResNetV2 trained with the new weighted loss function have recall in akiec of $0.85$. $0.82$, respectively, as opposed to their training in akiec without weighted loss function. MobileV3large, MobileV3Small, NasNetLarge and NasNetMobile outperform others on classifying class df with the recall score of $0.92$, $1$, $0.92$, $0.92$, separately. 
+This problem is also true with the recall score according to table 7. DenseNet201, InceptionResNetV2, trained with augmented data has expected value of recall of $0.56$, $0.69$, respectively, while the combination of DenseNet201, Metadata and the new weight loss function achieve the expected value of recall: $0.82$. Therefore, metadata does improve the model performance by reducing the amount of data needed for achieving higher results. On the other hand, the reason why the model become much more balanced is the weighted loss function. Weight loss function has ability to solve the imbalanced class samples by adding a weight related to the number of samples in each class. DenseNet201, InceptionResNetV2 trained with the new weighted loss function have recall in akiec of $0.85$. $0.82$, respectively, as opposed to their training in akiec without weighted loss function: $0.65$ and $0.37$. 
 
-\begin{table}[H]
-	\centering	
-	\begin{tabular}{|l | c | c | c | c|} 
-		\hline
-		Model & \cite{04381} & \cite{02244}Small & \cite{02244}Large & \cite{07012}Mobile\\
-		\hline
-		Accuracy(avg) & 0.81 & 0.78 & 0.86 & \textbf{0.86}\\
-		\hline
-		Balanced Accuracy(avg) & 0.86 & 0.87 & 0.87 & \textbf{0.88}\\ 
-		\hline
-		Precision(avg) & 0.71 & 0.63 & \textbf{0.75} & 0.73\\
-		\hline
-		F1-score(avg) & 0.75 & 0.70 & \textbf{0.79} & 0.78\\
-		\hline
-		Sensitivity(avg) & 0.78 & 0.79 & 0.80 & \textbf{0.81}\\ 
-		\hline
-		Specificity(avg) & 0.95 & 0.95 & 0.95 & \textbf{0.96}\\
-		\hline
-		ROC-AUC-score(avg) & 0.96 & 0.95 & 0.96 & \textbf{0.97}\\
-		\hline
-	\end{tabular}
-	\caption{Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator}
-	\label{table:mobile-performance}
-\end{table} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Definitions/re AD}
+	\caption{Recall score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2}
+	\label{fig:re AD}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Definitions/re MD WL}
+	\caption{The recall score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2}
+	\label{fig:re MD WL}
+\end{figure}
 
-Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. The table 8 illustrates the deeper analyzing of the three models. It's clear that MobileNetV3Large and NasNetMobile are the two best performance model. Nevertheless, MobileNetV3Large has less number of parameters and depth than NasNetMobile according to the table 2. 
+Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. MobileV3large, MobileV3Small, NasNetLarge and NasNetMobile outperform others on classifying class df with the recall score of $0.92$, $1$, $0.92$, $0.92$, separately according to the  table A4 appendix C.2.  It's transparent that MobileNetV3Large and NasNetMobile are the two best performance model. Nevertheless, MobileNetV3Large has less number of parameters and depth than NasNetMobile.
 
 \begin{table}[H]
 	\centering
@@ -698,6 +627,110 @@ ROC & Receiver Operating Curve\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{adjustwidth}{-\extralength}{0cm}
+	
+\section[\appendixname~\thesection]{Detailed Model Performance}
+\subsection[\appendixname~\thesection]{F1-Score Model Performance}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{5cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.7cm}|} 
+		\hline
+		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
+		\hline
+		DenseNet201 with Augmented Data & 0.56 & 0.75 & 0.64 & 0.62 & 0.60 & 0.93 & 0.85 & 0.70 \\ 
+		\hline
+		InceptionResNetV2 with Augmented Data & 0.42 &	0.63 & 0.51 & 0.35 & 0.57 & 0.9 & 0.7 & 0.58\\
+		\hline
+		Resnet50 with Augmented Data & 0.39 & 0.59 & 0.42 & 0.6 & 0.42 & 0.88 & 0.79 & 0.58\\
+		\hline 	
+		VGG16 with Augmented Data & 0.35 & 0.62 & 0.42 & 0.32 & 0.47 & 0.89 & 0.77 & 0.54\\ 
+		\hline		
+		DenseNet201 with Metadata and WeightLoss & \textbf{0.84} & 0.77 & \textbf{0.81} & \textbf{0.83} & \textbf{0.69} & 0.94 & 0.97 & \textbf{0.83}\\
+		\hline
+		InceptionResNetV2 with Metadata and WeightLoss & 0.77 & 0.83 & \textbf{0.83} & 0.64 & \textbf{0.75} & 0.94 & 0.7 & \textbf{0.81}\\
+		\hline
+		Resnet50 with Metadata and WeightLoss & 0.49 & 0.59 & 0.55 & 0.36 & 0.45 & 0.83 & 0.8 & 0.58\\
+		\hline
+		Resnet152 with Metadata and WeightLoss & 0.42 & 0.38 & 0.41 & 0.15 & 0.4 & 0.75 & 0.75 & 0.46\\
+		\hline
+		NasNetLarge with Metadata and WeightLoss & 0.79 & 0.79 & 0.8 & 0.74 & 0.65 & 0.92 & 0.92 & \textbf{0.80}\\
+		\hline
+		MobileNetV2 with Metadata and WeightLoss & 0.68 & 0.79 & 0.66 & 0.78 & 0.54 & 0.9 & \textbf{0.9} & 0.75\\
+		\hline
+		MobileNetV3Large with Metadata and WeightLoss & 0.72 & 0.76 & 0.75 & 0.92 & 0.58 & 0.92 & \textbf{0.92} & 0.79\\
+		\hline
+		MobileNetV3Small with Metadata and WeightLoss & 0.6 & 0.72 & 0.61 & 0.75 & 0.47 & 0.89 & \textbf{0.89} & 0.70\\
+		\hline
+		NasNetMobile with Metadata and WeightLoss & 0.76 & 0.74 & 0.78 & 0.73 & 0.63 & 0.93 & \textbf{0.93} & 0.78\\
+		\hline
+	\end{tabular}
+	\caption{F1-Score of each class: akiec, bcc, bkl, df, mel, nv, vasc which are denoted in the abbreviation. The last column is the expected value of f1-score from each model. All model in the first column is the models trained in this research. The term "with Augmented Data" means that model is trained with data augmenting during the training, there is no metadata or weight loss contribution. The term "with Metadata and WeightLoss" means that the model is trained with metadata including age, gender, localization and the weight loss function, there is no augmented data contribution}
+	\label{table:F1-score-summary}
+\end{table}
+
+\subsection[\appendixname~\thesection]{Recall Model Performance}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{5cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.6cm} | p{0.7cm}|} 
+		\hline
+		Model & akiec & bcc & bkl & df & mel & nv & vasc & Mean \\
+		\hline
+		DenseNet201 with Augmented Data & 0.65 & 0.75 & 0.59 & 0.53 & 0.54 & 0.93 & 0.85 & 0.69\\ 
+		\hline
+		InceptionResNetV2 with Augmented Data & 0.37 & 0.60 & 0.55 & 0.24 & 0.59 & 0.9 & 0.67 & 0.56\\
+		\hline
+		Resnet50 with Augmented Data & 0.33 & 0.56 & 0.38 & 0.53 & 0.40 & 0.92 & 0.81 & 0.56\\
+		\hline 	
+		VGG16 with Augmented Data & 0.31 & 0.66 & 0.37 & 0.24 & 0.40 & 0.94 & 0.71 & 0.51\\ 
+		\hline		
+		DenseNet201 with Metadata and WeightLoss & \textbf{0.85} & 0.75 & 0.78 & 0.83 & 0.63 & 0.96 & \textbf{1} & \textbf{0.82}\\
+		\hline
+		InceptionResNetV2 with Metadata and WeightLoss & \textbf{0.82} & 0.84 & 0.81 & 0.67 & 0.7 & 0.95 & 0.93 & \textbf{0.81}\\
+		\hline
+		Resnet50 with Metadata and WeightLoss & 0.67 & 0.63 & 0.54 & 0.83 & 0.63 & 0.74 & 0.86 & 0.70\\
+		\hline
+		Resnet152 with Metadata and WeightLoss & 0.51 & 0.49 & 0.35 & 0.76 & 0.47 & 0.63 & 0.48 & 0.52\\
+		\hline
+		NasNetLarge with Metadata and WeightLoss & 0.73 & 0.71 & \textbf{0.83} & \textbf{0.92} & 0.59 & 0.9 & 0.93 & \textbf{0.81}\\
+		\hline
+		MobileNetV2 with Metadata and WeightLoss & 0.7 & 0.86 & 0.72 & 0.75 & 0.58 & 0.86 & \textbf{1} & 0.78\\
+		\hline
+		MobileNetV3Large with Metadata and WeightLoss & 0.72 & 0.76 & 0.75 & \textbf{0.92} & 0.58 & 0.92 & 0.92 & \textbf{0.80}\\
+		\hline
+		MobileNetV3Small with Metadata and WeightLoss & 0.76 & 0.84 & 0.68 & \textbf{1} & 0.52 & 0.82 & 0.93 & 0.79\\
+		\hline
+		NasNetMobile with Metadata and WeightLoss & \textbf{0.82} & 0.73 & \textbf{0.83} & \textbf{0.92} & 0.53 & 0.93 & 0.93 & \textbf{0.81}\\
+		\hline
+	\end{tabular}
+	\caption{Recall score of each class and the expected value of recall score from each model}
+	\label{table:recall-score-summary}
+\end{table}
+
+\subsection[\appendixname~\thesection]{Detailed Mobile Model Perform}
+\begin{table}[H]
+	\centering	
+	\begin{tabular}{|l | c | c | c | c|} 
+		\hline
+		Model & \cite{04381} & \cite{02244}Small & \cite{02244}Large & \cite{07012}Mobile\\
+		\hline
+		Accuracy(avg) & 0.81 & 0.78 & 0.86 & \textbf{0.86}\\
+		\hline
+		Balanced Accuracy(avg) & 0.86 & 0.87 & 0.87 & \textbf{0.88}\\ 
+		\hline
+		Precision(avg) & 0.71 & 0.63 & \textbf{0.75} & 0.73\\
+		\hline
+		F1-score(avg) & 0.75 & 0.70 & \textbf{0.79} & 0.78\\
+		\hline
+		Sensitivity(avg) & 0.78 & 0.79 & 0.80 & \textbf{0.81}\\ 
+		\hline
+		Specificity(avg) & 0.95 & 0.95 & 0.95 & \textbf{0.96}\\
+		\hline
+		ROC-AUC-score(avg) & 0.96 & 0.95 & 0.96 & \textbf{0.97}\\
+		\hline
+	\end{tabular}
+	\caption{Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator}
+	\label{table:mobile-performance}
+\end{table} 
+
 %\printendnotes[custom] % Un-comment to print a list of endnotes
 
 \reftitle{References}
