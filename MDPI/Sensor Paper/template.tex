@@ -533,12 +533,37 @@ Another interesting point found during the experiment is that MobileNetV2, Mobil
 	\label{table:optimized-performance-mobile-model}
 \end{table}
 
-The table 9 shows that the MobileNetV3Large, though the number of parameters are much smaller than the DenseNet201, InceptionResNetV2, achieve the accuracy nearly to the others. In detail, MobileNetV3Large whose the number of parameters is 5.5 millions which is four and ten times less than DenseNet201 and InceptionResNetV2, respectively. The depth of MobileNetV3Large, on the other hand, is four times less than DenseNet201, InceptionResNetV2 which are 118 hidden layers as opposed to 402, 449 of DenseNet201 and InceptionResNetV2, separately. Although, the MobileNetV3Larege only achieve the accuracy of 0.86 the time need for prediction is 10 and 30 times less than the other opponents. If the MobileNetV3Large need a harder process of parameter hyper-tuning to achieve a better result, which is also the future target of this research.
+The table 7 shows that the MobileNetV3Large, though the number of parameters are much smaller than the DenseNet201, InceptionResNetV2, achieve the accuracy nearly to the others. In detail, MobileNetV3Large whose the number of parameters is 5.5 millions which is four and ten times less than DenseNet201 and InceptionResNetV2, respectively. The depth of MobileNetV3Large, on the other hand, is four times less than DenseNet201, InceptionResNetV2 which are 118 hidden layers as opposed to 402, 449 of DenseNet201 and InceptionResNetV2, separately. Although, the MobileNetV3Larege only achieve the accuracy of 0.86 the time need for prediction is 10 and 30 times less than the other opponents. If the MobileNetV3Large need a harder process of parameter hyper-tuning to achieve a better result, which is also the future target of this research.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Definitions/ADvsMD}
+	\caption{ROC AUC Score. This figure illustrate the AUC score associated with models including models trained with augmented data and models trained with metadata}
+	\label{fig:ADvsDC-AUC}
+\end{figure}
 
+The figure 14 shows the AUC score of the three models InceptionResNetV2, Densenet201, and ResNet50 which is trained with only augmented data or metadata. It's transparent that the InceptionResNetV2 and DenseNet201 have higher AUC-score trained with metadata: 0.974 and 0.971 as opposed to 0.972 and 0.93, respectively. ResNet50 trained with augmented data, on the other hand have higher auc-score: 0.95 as compared to 0.93 of ResNet50 trained with metadata. Overall, InceptionResNetV2 trained with metadata reach the peak with the auc-score of 0.974. The InceptionResNetV2 trained with metadata is also compared with the others to find out the best models trained. According to the figure 15, the InceptionResNetV2 still hit the peak of 0.974 auc-score. ResNet152, otherwise is the worst model with the auc-score of 0.87. Other models, on the other hand have the approximately same of auc-score. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Definitions/vsALL}
+	\caption{ROC AUC Score of all model trained in this paper.}
+	\label{fig:vsallAUC}
+\end{figure}
+
+After the experiment, the InceptionResNetV2 is chose to compare with the other SOTA models. 
+
+\begin{table}
+	\begin{tabular}{| p{3cm} | c | c | c | c | c |}
+		\hline
+		Model & Accuracy & Precision & f1-score & recall & auc-score\\
+		\hline
+		s
+	\end{tabular}
+\end{table} 
 
 \section{Conclusions}
-In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata improve the model performance, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using aforementioned weighted loss function. Using weighted loss function make the expected value of model f1-score increase. At the end of the experiment, mobile model is found that can achieve great performance without either the large number of parameters or depth.  
+In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata improve the model performance, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using aforementioned weighted loss function. Using weighted loss function make the expected value of model f1-score increase. At the end of the experiment, mobile model is found that can achieve great performance without either the large number of parameters or depth. 
 
 \vspace{6pt} 
 
