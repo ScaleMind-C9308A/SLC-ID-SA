@@ -83,35 +83,34 @@
 	ATTENTION}
 
 % Author Orchid ID: enter ID or remove command
-\newcommand{\orcidauthorA}{0000-0002-2566-5637} % Add \orcidA{} behind the author's name
-%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
+\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+\newcommand{\orcidauthorC}{0000-0002-2566-5637} % Add \orcidC{} behind the author's name
 
 % Authors, for the paper (add full first names)
-\Author{Khoi Do Hoang$^{
-		2,\dagger,%\ddagger
-	}$\orcidA{}*}
+\Author{Viet Dung Nguyen $^{1,\dagger}$\orcidA{}, Ngoc Dung Bui $^{2,\dagger}$\orcidB{} and Khoi Do Hoang $^{3,\dagger}$\orcidC{}}
 
 %\longauthorlist{yes}
 
 % MDPI internal command: Authors, for metadata in PDF
-\AuthorNames{Khoi Do}
+\AuthorNames{Dung Viet Nguyen, Ngoc Dung Bui and Khoi Do Hoang}
 
 % MDPI internal command: Authors, for citation in the left column
-\AuthorCitation{Do, K.}
+\AuthorCitation{Nguyen, D.; Bui, D.; Khoi, D.}
 % If this is a Chicago style journal: Lastname, Firstname, Firstname Lastname, and Firstname Lastname.
 
 % Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
 
 \address{
-$^{1}$ \quad Lecturer: Viet Dung Nguyen; dung.nguyenviet1@hust.edu.vn\\
-$^{2}$ \quad Author: Khoi Do Hoang; khoi.dh200332@sis.hust.edu.vn}
+$^{1}$ \quad Faculty: Information Technology, University of Transport and Communications, Vietnam \\
+$^{2}$ \quad Faculty: Information Technology, University of Transport and Communications, Vietnam\\
+$^{3}$ \quad Faculty: Information Technology, University of Transport and Communications, Vietnam}
 
 % Contact information of the corresponding author
-\corres{Correspondence: khoido8899@gmail.com; Tel.: +84-9360-192-58}
+\corres{Correspondence: dung.nguyenviet1@hust.edu.vn; Tel.:  +84-9834-443-22 (D.N.)}
 
 % Current address and/or shared authorship
 \firstnote{Current address: 1st Dai Co Viet Street, Ha Noi, Viet Nam} 
-\secondnote{}
 % The commands \thirdnote{} till \eighthnote{} are available for further notes 
 
 %\simplesumm{} % Simple summary
@@ -167,32 +166,32 @@ $^{2}$ \quad Author: Khoi Do Hoang; khoi.dh200332@sis.hust.edu.vn}
 
 \section{Introduction} 
 \subsection{Problem Statement}
-Skin cancer is one of the most common cancers leading to worldwide death. Every day, more than 9500\cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6\cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase\cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States\cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99 percent. However, once the disease progresses beyond the skin, survival is poor\cite{11872}. Moreover, with the increasing incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need for effective solution. 
+Skin cancer is one of the most common cancers leading to worldwide death. Every day, more than 9500 \cite{03358} people in the United States are diagnosed with skin cancer. Otherwise, 3.6 \cite{03358} million people are diagnosed with basal cell skin cancer each year. According to the Skin Cancer Foundation, the global incidence of skin cancer continues to increase \cite{11872}. In 2019, it is estimated that 192,310 cases of melanoma will be diagnosed in the United States \cite{11872}. On the other hand, if patients are early diagnosed, the survival rate is correlated with 99 percent. However, once the disease progresses beyond the skin, survival is poor \cite{11872}. Moreover, with the increasing incidence of skin cancers, low awareness among a growing population, and a lack of adequate clinical expertise and services, there is a need for effective solution. 
 
-Recently, deep learning particularly, and machine learning in general algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis, and Medical Treatment. Medical imaging, including ultrasound, computed tomography, magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosis results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history and medical data. In Medical Treatment, AI models are applied to build solutions to a specific disease, medicine revolution is an example. In various studies, AI algorithms have provided various end-to-end solutions to the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging\cite{11872}.
+Recently, deep learning particularly, and machine learning in general algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis, and Medical Treatment. Medical imaging, including ultrasound, computed tomography, magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosis results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history and medical data. In Medical Treatment, AI models are applied to build solutions to a specific disease, medicine revolution is an example. In various studies, AI algorithms have provided various end-to-end solutions to the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging \cite{11872}.
 
-In order to adapt the rise in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet\cite{06993}, EfficientNet\cite{04861}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. Some of these models which have been used as a backbone model in this paper will be discussed in the Related Work section.
+In order to adapt the rise in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet \cite{06993}, EfficientNet \cite{04861}, Inception \cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet \cite{03385} \cite{05027}, and NasNet \cite{07012}. Some of these models which have been used as a backbone model in this paper will be discussed in the Related Work section.
 
 \subsection{Related Works}
-Skin lesion classification is not a new area, since there are many great performance models constructed. One of the most cutting-edge technologies that have been used is Soft-Attention as stated in\cite{03358}. Soumyyak et al construct several models formed by the combination of a backbone model including DenseNet201\cite{06993}, InceptionResNetV2\cite{00567}, ResNet50\cite{03385}\cite{05027}, VGG16\cite{1556} and Soft-Attention layer. Their approach is to add the Soft-Attention layer at the end or the middle of the backbone model. For ResNet50 and VGG16, the Soft-Attention layer is added after the third residual block and CNN block, respectively. DenseNet201 and InceptionResNetV2, otherwise concatenate with the Soft-Attention before a fully-connected layer, and then soft-max layer.
+Skin lesion classification is not a new area, since there are many great performance models constructed. One of the most cutting-edge technologies that have been used is Soft-Attention as stated in \cite{03358}. Soumyyak et al construct several models formed by the combination of a backbone model including DenseNet201 \cite{06993}, InceptionResNetV2 \cite{00567}, ResNet50 \cite{03385} \cite{05027}, VGG16 \cite{1556} and Soft-Attention layer. Their approach is to add the Soft-Attention layer at the end or the middle of the backbone model. For ResNet50 and VGG16, the Soft-Attention layer is added after the third residual block and CNN block, respectively. DenseNet201 and InceptionResNetV2, otherwise concatenate with the Soft-Attention before a fully-connected layer, and then soft-max layer.
 
-Using those above backbones has been tried by many previous papers. Rishu Garg et al \cite{03798} uses transfer learning approach with CNN based model: ResNet50 and VGG16 which are pretrained with ImageNet data set. Besides, they also use data augmentation to avoid the imbalance of the data set. Histogram Equalization is also used to increase the contrast of the skin lesions before feeding into the Machine Learning algorithms including Random Forest, XGBoost, Support Vector Machine.	
+Using those above backbones has been tried by many previous papers. Rishu Garg et al   \cite{03798} uses transfer learning approach with CNN based model: ResNet50 and VGG16 which are pretrained with ImageNet data set. Besides, they also use data augmentation to avoid the imbalance of the data set. Histogram Equalization is also used to increase the contrast of the skin lesions before feeding into the Machine Learning algorithms including Random Forest, XGBoost, Support Vector Machine.	
 
-Amirreaza et al \cite{10348} do not only use those above backbone model but also used InceptionV3\cite{00567} model. In that research, the dataset HAM10000 and $PH^2$ are combined to create a 8 classes data set. Before feeding into the Deep CNN models, the image is resized to (224, 224) for DenseNet201, ResNet152, InceptionResNetV2 and (229, 229) for InceptionV3. 
+Amirreaza et al \cite{10348} do not only use those above backbone model but also used InceptionV3 \cite{00567} model. In that research, the dataset HAM10000 and $PH^2$ are combined to create a 8 classes data set. Before feeding into the Deep CNN models, the image is resized to (224, 224) for DenseNet201, ResNet152, InceptionResNetV2 and (229, 229) for InceptionV3. 
 
-Another paper that uses the backbone models is \cite{09418}, Hemanth et al decide to use EfficientNet\cite{11946} and SeNET\cite{01507} instead and CutOut\cite{04552v2} method which involves creating holes of different sizes on the images i.e. technically making a random portion of image inactive during data augmentation process. 
+Another paper that uses the backbone models is \cite{09418}, Hemanth et al decide to use EfficientNet \cite{11946} and SeNET \cite{01507} instead and CutOut \cite{04552v2} method which involves creating holes of different sizes on the images i.e. technically making a random portion of image inactive during data augmentation process. 
 
 Otherwise, \cite{01284} also used Deep Convolution Neural Network, Peng Yao et al used RandArgument which crops an image into several images from a fixed size, DropBlock which is used for regularization, Multi-Weighted New Loss which is used for dealing with the imbalanced data problem, end-to-end Cumulative Learning Strategy which can more effectively balance representation learning and classifier learning without additional computational cost. 
 
-Another state of the art is GradCam and Kernel SHAP\cite{06612}, Kyle Young et al create model agnostic, local interpretable methods that can highlight pixels that the trained network deems relevant for the final classification. In that research they use three data sets containing HAM10000, BCN-20000 and MSK. Before feeding into the models, the images are preprocessed by binarized with a very low threshold to find the center of mass. 
+Another state of the art is GradCam and Kernel SHAP \cite{06612}, Kyle Young et al create model agnostic, local interpretable methods that can highlight pixels that the trained network deems relevant for the final classification. In that research they use three data sets containing HAM10000, BCN-20000 and MSK. Before feeding into the models, the images are preprocessed by binarized with a very low threshold to find the center of mass. 
 
-On the other hand, there are also many state of the art whose great performance on skin lesion classification. The Student and Teacher Model is also a high performance model in 2021\cite{03225}, which is created by Xiaohan Xing et al as the combination of two model which share the memory with each other. Therefore, they can take full advantage of what others learn. 
+On the other hand, there are also many state of the art whose great performance on skin lesion classification. The Student and Teacher Model is also a high performance model in 2021 \cite{03225}, which is created by Xiaohan Xing et al as the combination of two model which share the memory with each other. Therefore, they can take full advantage of what others learn. 
 
-SkinLinkNet\cite{12602} and WonderM\cite{03426} are both tested the effect of segmentation on skin lesion classification problem created by Amirreza et al and Yeong Chan et al, respectively. In WonderM, the method used is padding the image so that the image has the shape increased from (450,600) to (600, 600). In SkinLinkNet, instead resize the image down to (448, 448). Both of SkinLinkNet and WonderM use UNet to do the segmentation task, though they use EfficientNetB0 and DenseNet to do the classification task, respectively. 
+SkinLinkNet \cite{12602} and WonderM \cite{03426} are both tested the effect of segmentation on skin lesion classification problem created by Amirreza et al and Yeong Chan et al, respectively. In WonderM, the method used is padding the image so that the image has the shape increased from (450,600) to (600, 600). In SkinLinkNet, instead resize the image down to (448, 448). Both of SkinLinkNet and WonderM use UNet to do the segmentation task, though they use EfficientNetB0 and DenseNet to do the classification task, respectively. 
 
-Another approach is using metadata including gender, age, and capturing position as stated in \cite{03910} by Nil Gessert et al. The metadata is fed into fully connected neural network after being encoded into one-hot vector. All missing data point of age is set to 0. In order to overcome the missing data problem, the research apply one-hot encoding to the group but the initial validation is poor performance then numerical encoding is applied.
+Another approach is using metadata including gender, age, and capturing position as stated in  \cite{03910} by Nil Gessert et al. The metadata is fed into fully connected neural network after being encoded into one-hot vector. All missing data point of age is set to 0. In order to overcome the missing data problem, the research apply one-hot encoding to the group but the initial validation is poor performance then numerical encoding is applied.
 
-On the other hand, skin lesion classification problems are not only applied by Deep Learning but also Machine Learning. Random Forest, XGBoost, and Support Vector Machines are tested by \cite{03798} of Rishu Garg et al. Besides, Isolation Forest is applied before the soft-max activation of the deep learning model to detect out of distribution skin lesion images as stated in\cite{10348} by Amirreza Rezvantalab et al. Matrix Transformation, besides is also applied before the soft-max activation function in \cite{05045} by Michele Alberti et al. 
+On the other hand, skin lesion classification problems are not only applied by Deep Learning but also Machine Learning. Random Forest, XGBoost, and Support Vector Machines are tested by  \cite{03798} of Rishu Garg et al. Besides, Isolation Forest is applied before the soft-max activation of the deep learning model to detect out of distribution skin lesion images as stated in \cite{10348} by Amirreza Rezvantalab et al. Matrix Transformation, besides is also applied before the soft-max activation function in \cite{05045} by Michele Alberti et al. 
 
 \begin{table}
 	\centering
@@ -237,7 +236,7 @@ In this research, a new model is constructed from the combination of:\\
 \section{Materials and Methods}
 \subsection{Materials}
 \subsubsection{Image Data}
-The data set used in this paper is the HAM10000 data set published by Havard University Dataverse\cite{10417}. There are total 7 classes in this data set containing Actinic keratoses and intraepithelial carcinoma or Bowen's disease (AKIEC), Basal cell Carcinoma (BCC),  benign keratosis-like lesions (solar lentigines / seborrheic keratoses andchen-planus like keratoses, BKL), dermatofibroma (DF), melanoma (MEL), melanocytic nevi (NV), and vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage, VASC). The distribution of the data set is shown in the table below:
+The data set used in this paper is the HAM10000 data set published by Havard University Dataverse \cite{10417}. There are total 7 classes in this data set containing Actinic keratoses and intraepithelial carcinoma or Bowen's disease (AKIEC), Basal cell Carcinoma (BCC),  benign keratosis-like lesions (solar lentigines / seborrheic keratoses andchen-planus like keratoses, BKL), dermatofibroma (DF), melanoma (MEL), melanocytic nevi (NV), and vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage, VASC). The distribution of the data set is shown in the table \ref{table:data-distribution} below:
 
 \begin{table}[H]
 	\centering
@@ -262,7 +261,7 @@ The data set used in this paper is the HAM10000 data set published by Havard Uni
 More than 50 percent of lesions are confirmed through histopathology (HISTO), the ground truth for the rest of the cases is either follow-up examination (FOLLOWUP), expert consensus (CONSENSUS), or confirmation by in-vivo confocal microscopy (CONFOCAL). On the other hand, before being used for training the whole data is shuffled then split into two part. $90$ percent and $10$ percent of the data is used for training and validating respectively. Images in this data set has the type of $RGB$ and shape of (450, 600). However, Each backbone need the different input size of image as well as the range of pixel value.
 
 \subsubsection{Metadata}
-The HAM10000 data set\cite{10417} also contain the metadata of patient including gender, age, and the capturing position 
+The HAM10000 data set \cite{10417} also contain the metadata of patient including gender, age, and the capturing position illustrated in table \ref{table:metadata sample}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c c c c |} 
@@ -279,36 +278,38 @@ The HAM10000 data set\cite{10417} also contain the metadata of patient including
 \end{table}
 \subsection{Methodology}
 \subsubsection{Overall Architecture}
-The whole architecture of the model used for image feature extraction is applied in the same way in paper \cite{03358}. Metadata branch, otherwise is preprocessed before feeding into a dense layer then concatenate with the output of Soft-Attention layer. It is described in the figure below:
+The whole architecture of the model is represented in the figure \ref{fig:main-model}. The model takes two input including Image data and Metadata. Metadata branch, otherwise is preprocessed before feeding into a dense layer then concatenate with the output of Soft-Attention layer. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{Definitions/MainModel - Model Form}
+	\includegraphics[width=0.5\linewidth]{Definitions/MainModel - Model Form}
 	\caption{Overall Model Architecture}
 	\label{fig:main-model}
 \end{figure}
 
-The figure 6 illustrates the overall structures of the combination of backbone models and Soft-Attention, which is used in this research. In detailed the combination of DenseNet201 and Soft-Attention is formed by replacing the three last DenseBlock, Global Average Pooling, and the fully-connected layer with the Soft-Attention Module. Similarity, ResNet50 and ResNet152 is also replaced the three last Residual Block, Global Average Pooling, and the fully connected layer with the Soft-Attention module. InceptionResNetV2, on the other hand, is replaced the Average Pool and the last Dropout with the Soft-Attention Module. Besides, the two last Normal Cell in NasNetLarge is replaced with the Soft-Attention module. 
+The figure \ref{fig:model-structure} illustrates the overall structures of the combination of backbone models and Soft-Attention, which is used in this research. In detailed the combination of DenseNet201 and Soft-Attention is formed by replacing the three last DenseBlock, Global Average Pooling, and the fully-connected layer with the Soft-Attention Module. Similarity, ResNet50 and ResNet152 is also replaced the three last Residual Block, Global Average Pooling, and the fully connected layer with the Soft-Attention module. InceptionResNetV2, on the other hand, is replaced the Average Pool and the last Dropout with the Soft-Attention Module. Besides, the two last Normal Cell in NasNetLarge is replaced with the Soft-Attention module. 
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{Definitions/Model Structure}
-	\caption{Overall Model Architecture. This figure show the overall structure of the backbone model (non mobile-based model) including DenseNet201, InceptionResNetV2, ResNet50, ResNet152, and NasNetLarge. The detail structure and information can be found at the Apendix A}
+	\caption{Overall Original Model Architecture. This figure show the overall structure of the backbone model (non mobile-based model) including DenseNet201, InceptionResNetV2, ResNet50, ResNet152, and NasNetLarge. The detail structure and information can be found at the Apendix \ref{appendix-table:detailed structure model}}
 	\label{fig:model-structure}
 \end{figure}
-The figure 7, on the other hand shows the detailed structure of mobile-based mobile and its combination with Soft-Attention. All of the MobileNet versions combine with the Soft-Attention module by replacing the two last convolution 1x1 by Soft-Attention module. The NasNetMobile, otherwise, combine with the Soft-Attention module by replacing the last Normal Cell. 
+
+The figure \ref{fig:mobile-model-structure}, on the other hand shows the detailed structure of mobile-based mobile and its combination with Soft-Attention. All of the MobileNet versions combine with the Soft-Attention module by replacing the two last convolution 1x1 by Soft-Attention module. The NasNetMobile, otherwise, combine with the Soft-Attention module by replacing the last Normal Cell. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{Definitions/Mobile Model Structure}
-	\caption{Overall Mobile-based Model Architecture. This figure show the overall structure of the mobile-based backbone model including MobileNetV2, MobileNetV3Small, MobileNetV3Large, and NasNetMobile. The detail structure and information can be found at the Apendix B}
+	\caption{Overall Mobile-based Model Architecture. This figure show the overall structure of the mobile-based backbone model including MobileNetV2, MobileNetV3Small, MobileNetV3Large, and NasNetMobile. The detail structure and information can be found at the Apendix \ref{appendix-table:detailed mobile model structure}}
 	\label{fig:mobile-model-structure}
 \end{figure}
 
 \subsubsection{Input Schema}
-In this research, the image data is both augmented for all class, the number of image increase to 18015 images and keep original form. Before feeding into the backbone model, the images is pre-processed by the input requirement of each model. DenseNet201\cite{06993} require the input pixels values are scaled between $0$ and $1$ and each channel is normalized with respect to the ImageNet data set. In Resnet50 and Resnet152\cite{03385}\cite{05027}, the images are converted from $RGB$ to $BGR$, then each color channel is zero-centered with respect to the ImageNet data set, without scaling. InceptionResNetV2\cite{11946}, on the other hand, will scale input pixels between $-1$ and $1$. Similarly, three versions of MobileNet\cite{04861}\cite{04381}\cite{02244}, NasNetMobile and NasNetLarge\cite{07012} require the input pixel is in range of $-1$ and $1$. 
+In this research, the image data is both augmented for all class, the number of image increase to 18015 images and keep original form. Before feeding into the backbone model, the images is pre-processed by the input requirement of each model. DenseNet201 \cite{06993} require the input pixels values are scaled between $0$ and $1$ and each channel is normalized with respect to the ImageNet data set. In Resnet50 and Resnet152 \cite{03385} \cite{05027}, the images are converted from $RGB$ to $BGR$, then each color channel is zero-centered with respect to the ImageNet data set, without scaling. InceptionResNetV2\cite{11946}, on the other hand, will scale input pixels between $-1$ and $1$. Similarly, three versions of MobileNet \cite{04861} \cite{04381} \cite{02244}, NasNetMobile and NasNetLarge \cite{07012} require the input pixel is in range of $-1$ and $1$. 
 
-On the other hand, the metadata is also used as another input. In paper\cite{03910}, they decide to keep the missing value and set its value to $0$. The sex and anatomical site are categorical encoded. The age, on the other hand is numerical normalized. After processing, the metadata is fed into a two-layer neural network with 256 neurons each. Each layer contains batch normalization, a ReLU\cite{08375} activation, and dropout with $p = 0.4$. The network’s output is concatenated with the CNN’s feature vector after global average pooling. Especially, they use a simply data augmentation strategy to address the problem of missing values in metadata. During training, they randomly encode each property as missing with a probability of $p = 0.1$. 
+On the other hand, the metadata is also used as another input. In the research \cite{03910}, they decide to keep the missing value and set its value to $0$. The sex and anatomical site are categorical encoded. The age, on the other hand is numerical normalized. After processing, the metadata is fed into a two-layer neural network with 256 neurons each. Each layer contains batch normalization, a ReLU \cite{08375} activation, and dropout with $p = 0.4$. The network’s output is concatenated with the CNN’s feature vector after global average pooling. Especially, they use a simply data augmentation strategy to address the problem of missing values in metadata. During training, they randomly encode each property as missing with a probability of $p = 0.1$. 
 
-In this paper, the unknowns is kept as a type as discussed in Metadata section. Sex, anatomical site and age are also category encoded and numerical normalized, respectively. After processing, the metadata is then concatenated and fed into a dense layer of 4096 neurons. Finally, this this dense layer is then concatenate with the output of Soft-Attention which is then discussed in Soft-Attention section. The Input schema is described as follow:
+In this paper, the unknowns is kept as a type as discussed in Metadata section. Sex, anatomical site and age are also category encoded and numerical normalized, respectively. After processing, the metadata is then concatenated and fed into a dense layer of 4096 neurons. Finally, this this dense layer is then concatenate with the output of Soft-Attention which is then discussed in Soft-Attention section. The Input schema is described in the table \ref{fig:input-schema}
 
 \begin{figure}[H]
 	\centering
@@ -318,7 +319,7 @@ In this paper, the unknowns is kept as a type as discussed in Metadata section. 
 \end{figure}
 
 \subsubsection{Backbone Model}
-In this paper, the backbone models used in this paper are DenseNet201\cite{06993}, Inception\cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet\cite{03385}\cite{05027}, and NasNet\cite{07012}. The combination of DenseNet201, InceptionResNetV2 and Soft-Attention layer are both tested by the previous paper\cite{03358} with a great performance. Otherwise, Resnet50 also well classify but with much less number of parameter and depth than based on its f1-score and precision stated. Therefore, in this paper, the performance of the model Resnet152 and NasnetLarge which has the larger number of parameter and depth is analyzed. On the other hand, three version of MobileNet and the NasnetMobile will also be analyzed which has a small number of parameter and depth.  
+In this paper, the backbone models used in this paper are DenseNet201 \cite{06993}, Inception \cite{00567}, MobileNets \cite{04861} \cite{04381} \cite{02244}, ResNet \cite{03385} \cite{05027}, and NasNet \cite{07012}. The combination of DenseNet201, InceptionResNetV2 and Soft-Attention layer are both tested by the previous paper \cite{03358} with a great performance. Otherwise, Resnet50 also well classify but with much less number of parameter and depth than based on its f1-score and precision stated. Therefore, in this paper, the performance of the model Resnet152 and NasnetLarge which has the larger number of parameter and depth is analyzed. On the other hand, three version of MobileNet and the NasnetMobile will also be analyzed which has a small number of parameter and depth.  
 
 \begin{table}[H]
 	\centering
@@ -332,7 +333,7 @@ In this paper, the backbone models used in this paper are DenseNet201\cite{06993
 		\hline
 		DenseNet201 & 80 & 20.2M & 402 \\
 		\hline
-		InceptionResNetV2\cite{07261} & 215 & 55.9M & 449 \\
+		InceptionResNetV2 & 215 & 55.9M & 449 \\
 		\hline
 		MobileNet & 16 & 4.3M & 55 \\ 
 		\hline
@@ -351,12 +352,12 @@ In this paper, the backbone models used in this paper are DenseNet201\cite{06993
 	\label{table:model-summary}
 \end{table}
 
-\subsubsection{Soft-Attention}
+\subsubsection{Soft-Attention Module}
 Applying the Soft-Attention layer in deep learning is not a new approach. Soft-Attention has been used in various applications: image caption generation in \cite{03044} and handwriting verification in \cite{202017} respectively. In skin lesion classification, Soft-Attention is used to increase the performance of the model as described in \cite{03358}. Soft-Attention can ignore irrelevant areas of the image by multiplying the corresponding feature maps with low weights. The function below describes the flow of the Soft-Attention module:
 \[
 f_{sa} = \gamma t\sum_{k=1}^{K}softmax(W_k * t)
 \]
-In order to apply Soft-Attention, there are two main steps. Firstly, the input tensor is put in grid-based feature extraction from the high-resolution image, where each grid cell is analyzed in the whole slide to generate a feature map\cite{08513}. This feature map called $t \in R^{h \times w \times d}$ where $h, w, \text{and } d$ is the shape of tensor generated by a Convolution Neural Network(CNN), is then input to a 3D convolution layer whose weights is $W_k \in R^{h \times w \times d \times K}$. The output of this convolution is normalized using the softmax function to generate K (a constant value) attention maps. These $K$ attention maps are aggregated to produce a weight function called $\alpha$. This $\alpha$ function is then multiplied with feature tensor $t$ and scaled by $\gamma$, a learnable scalar. Finally, the output of Soft-Attention function $f_{sa}$ is the concatenation of the beginning feature tensor $t$ and the scaled attention maps. 
+In order to apply Soft-Attention, there are two main steps. Firstly, the input tensor is put in grid-based feature extraction from the high-resolution image, where each grid cell is analyzed in the whole slide to generate a feature map \cite{08513}. This feature map called $t \in R^{h \times w \times d}$ where $h, w, \text{and } d$ is the shape of tensor generated by a Convolution Neural Network(CNN), is then input to a 3D convolution layer whose weights is $W_k \in R^{h \times w \times d \times K}$. The output of this convolution is normalized using the soft-max function to generate K (a constant value) attention maps. These $K$ attention maps are aggregated to produce a weight function called $\alpha$. This $\alpha$ function is then multiplied with feature tensor $t$ and scaled by $\gamma$, a learnable scalar. Finally, the output of Soft-Attention function $f_{sa}$ is the concatenation of the beginning feature tensor $t$ and the scaled attention maps. 
 
 \begin{figure}[H]
 	\centering
@@ -365,7 +366,7 @@ In order to apply Soft-Attention, there are two main steps. Firstly, the input t
 	\label{fig:soft-attention}
 \end{figure}
 
-In this paper, the Soft-Attention layer is applied in the same way in this paper\cite{03358}. The Soft-Attention module is described in the following diagram:
+In this paper, the Soft-Attention layer is applied in the same way in this paper \cite{03358}. The Soft-Attention module is described in the following diagram:
 
 \begin{figure}[H]
 	\centering
@@ -374,13 +375,13 @@ In this paper, the Soft-Attention layer is applied in the same way in this paper
 	\label{fig:soft-attention-block}
 \end{figure}
 
-After feeding into ReLU function layer, the feature map is processed in two paths. The first path is the 2-dimensional Max Pooling. In the second path, the feature map, on the other hand is fed into the Soft-Attention Layer before the 2-dimensional Max Pooling. After all, these two paths are then concatenated, fed into a ReLU layer, and a Dropout with the probability of $0.5$.
+After feeding into ReLU function layer, the heat feature map is processed in two paths. The first path is the 2-dimensional Max Pooling. In the second path, the feature map, on the other hand is fed into the Soft-Attention Layer before the 2-dimensional Max Pooling. After all, these two paths are then concatenated, fed into a ReLU layer, and a Dropout with the probability of $0.5$.
 
 
 \subsubsection{Loss Function}
 The loss function used in this paper is categorical cross-entropy. Consider $X = [x_1, x_2, \dots, x_n]$ as the input feature, $\theta = [\theta_1, \theta_2, \dots, \theta_n]$. Let $N$, and $C$ is the number of training examples and number of class respectively. The categorical cross-entropy loss is presented as:
 \[L(\theta, x_n) = -\frac{1}{N}\sum_{c=1}^{C}\sum_{n=1}^{N}W_c\times y^c_n \times \log(\hat{y}^c_n)\]
-where $\hat{y}^c_i$  is the output of model and $y^c_i$ is the target that the model should return, $W_c$ is the weight of class $c$. Since the data set face the imbalanced problem then I applied the class weight for the loss. This formula below is used to calculate the class weight:
+where $\hat{y}^c_i$  is the output of model and $y^c_i$ is the target that the model should return, $W_c$ is the weight of class $c$. Since the data set face the imbalanced problem then class weight for the loss is applied. This formula below is used to calculate the class weight:
 \[W = N \odot D\]
 \[D = \begin{bmatrix}
 	\frac{1}{C \times  N_1} & \frac{1}{C \times  N_2} & \dots & \frac{1}{C \times  N_n}\\
@@ -393,15 +394,15 @@ where $N$ is the number of training sample, $C$ is the number of class, $N_i$ is
 \section{Results}
 \subsection{Experimental Setup}
 \subsubsection{Training}
-Before training, the data set is split into two sub set for training (90 percent) and validation (90 percent). Test set, otherwise is provided by the HAM10000 data set, contains 857 images. In order to analyze the effect of augmented data on the model, during the training the image data is augmented by the following technique:\\
+Before training, the data set is split into two sub set for training (90 percent) and validation (10 percent). Test set, otherwise is provided by the HAM10000 data set, contains 857 images. In order to analyze the effect of augmented data on the model, during the training the image data is augmented by the following technique:\\
 - Rotation Range: rotate the image in a fixed angle. \\
 - Width and height shift range: Shift the image horizontally and vertically, respectively. \\
-- Zoom Range: zoom in the image to create new image. \\
-- Horizontal and vertical flipping: flipping the image horizontally and vertically to create new form of image.\\
+- Zoom Range:  image to create new image. \\
+- Horizontal and vertical flipping: flipping the image horizontally and vertically to create new fzoom in theorm of image.\\
 Otherwise, all of models is trained with the Adam Optimizer \cite{6980} with the learning rate of $0.001$ which is reduced by a factor of $0.2$ to a minimum learning rate of $0.1 x 10^6$, and the epsilon is set to $0.1$. The initial epochs is set to 250 epochs and the Early Stopping is also applied to stop the training as the accuracy of validation set does not increase after $25$ epochs. Besides, the batch size is set to $32$.
 
 \subsubsection{Tools}
-In order to build and train the model, Keras and TensorFlow library are applied. In detail, Keras is used to build, clone the backbone model which is pre-trained with the image-net data set. Soft-Attention, on the other hand is coded by inheriting the Layer class of TensorFlow. Therefore, the Soft-Attention layer can be combined with the functional API model. Otherwise, the models are trained by NVIDIA RTX TitanV and the data set is pre-processed with the CPU Intel I5 32 processors, RAM 32GB. In detail, the GPU is setup with CUDA 11.6, cuDNN 8.3 and ChipSRT as the requirement of TensorFlow.
+TensorFlow and Keras are two of the most popular framework to build deep learning model. In this research, Keras based on TensorFlow is used to build, clone the backbone model which is pre-trained with the image-net data set. Otherwise, the models are trained by NVIDIA RTX TitanV and the data set is pre-processed with the CPU Intel I5 32 processors, RAM 32GB. In detail, the GPU is setup with CUDA 11.6, cuDNN 8.3 and ChipSRT as the requirement of TensorFlow version 2.7.0.
 \subsubsection{Evaluation Metrics}
 \begin{figure}[!htb]
 	\begin{minipage}{0.48\textwidth}
@@ -415,15 +416,15 @@ In order to build and train the model, Keras and TensorFlow library are applied.
 		\caption{Area Under the Curve}\label{fig:AUC}
 	\end{minipage}
 \end{figure}
-In this paper, the model is evaluated by using the confusion matrix and related metrics. The figure 4 illustrates the presentation of a $2 \times 2$ confusion matrix used for $2$ class. Consider a confusion matrix $A$ with $C$ number of class. Let $A^i$ and $A^j$ is the set of $A$ rows and columns respectively. 
-%\[
-%A = \begin{bmatrix}
-%	a_{11} & a_{12} & \dots & a_{1j} \\
-%	a_{21} & a_{22} & \dots & a_{2j} \\
-%	\vdots & \vdots	&  & \vdots\\
-%	a_{i1} & a_{i2} & \dots & a_{ij} 
-%\end{bmatrix}
-%\]
+The model is evaluated by using the confusion matrix and related metrics. The figure 4 illustrates the presentation of a $2 \times 2$ confusion matrix used for $2$ class. Consider a confusion matrix $A$ with $C$ number of class. Let $A^i$ and $A^j$ is the set of $A$ rows and columns respectively, therefore $A^i_k$ is the element at row i and column k
+\[
+A = \begin{bmatrix}
+	a_{11} & a_{12} & \dots & a_{1j} \\
+	a_{21} & a_{22} & \dots & a_{2j} \\
+	\vdots & \vdots	&  & \vdots\\
+	a_{i1} & a_{i2} & \dots & a_{ij} 
+\end{bmatrix}
+\]
 The True Positive(TP) of all class in this case is the main diagonal of the matrix $A$. The following method are used to calculate the False Positives(FP), False Negatives(FN), and True Negatives(TN) of all class:
 \[
 FP = -TP + \sum_{k=1}^{i}A^i_k \hspace{1cm} FN = -TP + \sum_{k=1}^{j}A^j_k
@@ -442,74 +443,45 @@ Precision or positive predictive value (PPV) is the probability of a positive te
 The last metric is the $AUC$ score standing for Area Under the Curve which is the Receiver Operating Curve (ROC) that indicate the probability of TP versus the probability of FP.  
 
 \subsection{Discussion} 
-The accuracy of all model is presented in the figure below:
+\begin{comment}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{Definitions/ACCALL}
+		\caption{Accuracy of all models trained in this research}
+		\label{fig:accall}
+	\end{figure}
+\end{comment}
 
-\begin{table}[H]
-	\centering
-	\begin{tabular}{| c | c | c | c |}
-		\hline
-		InceptionResNetV2 & DenseNet201 & ResNet50 & VGG16 \\
-		\hline
-		0.79 & 0.84 & 0.76 & 0.77\\
-		\hline
-	\end{tabular}
-	\caption{Accuracy of the model with augmented data}
-	\label{table:Acc-Augment-Model}
-\end{table}
+According to the Figure 10, it is clear that the model trained with metadata has a higher accuracy than the model trained with augmented data only. While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.79$ and $0.84$ respectively, their training with metadata are $0.90$ and $0.89$, respectively. Furthermore, Resnet50 trained with metadata data has the accuracy that outperform the Resnet50 trained with augmented data and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, even though has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.86$, $0.86$, respectively. 
 
-\begin{table}[H]
-	\centering
-	\begin{tabular}{| c | c | c | c | c |}
-		\hline
-		InceptionResNetV2 & DenseNet201 & ResNet50 & Resnet152 & MobileNetV2\\
-		\hline
-		0.90 & 0.89 & 0.70 & 0.57 & 0.81\\
-		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{| c | c | c | c |}
-		\hline
-		MobileNetV3Large & MobileNetV3Small & NasNetLarge & NasNetMobile\\
-		0.84 & 0.78 & 0.86 & 0.86\\
-		\hline
-	\end{tabular}
-	\caption{Accuracy of the model with metadata}
-	\label{table:Acc-Metadata-Model}
-\end{table}
-
-According to the Table 4 and 5, it is clear that the model trained with metadata has a higher accuracy than the model trained with augmented data only. While InceptionResNetV2 and DenseNet201 trained with augmented data have accuracy of $0.79$ and $0.84$ respectively, their training with metadata has both the accuracy of $0.89$. Furthermore, Resnet50 trained with augmented data has the accuracy that outperform the Resnet50 and is twice as high as Resnet152 trained with metadata. On the other hand, mobile model including MobileNetV2, MobileNetV3Large, and NasNetMobile, even though has a much smaller number of parameters and depth than the other model, they have a quite good accuracy of $0.81$, $0.84$, $0.86$, respectively. 
-
-Moreover, the model trained with augmented data does not only have low accuracy but their f1-score and the recall score also are imbalanced according to figure 10. As a results, augmented data model does not classify well on all class as InceptionResNetV2 trained on augmented data have f1-score on class df and akiec is just above $0.3$ and $0.4$, separately while InceptionResNetV2 trained on metadata and the new weight loss can classify well in a balanced way arcoding to the figure 11. However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the imbalanced term. Since this data set is not balanced, therefore using augmented data can make the model more  bias to the class which has larger sample. Using the metadata, though still make the model bias, it does contributes to the improvement of  the performance of the model.
+Moreover, the model trained with augmented data does not only have low accuracy but their f1-score and the recall score also are imbalanced according to figure 10, 11, 12, 13. As a results, augmented data model does not classify well on all class as InceptionResNetV2 trained on augmented data have f1-score on class df and akiec is just above $0.3$ and $0.4$, separately while InceptionResNetV2 trained on metadata and the new weight loss can classify well in a balanced way arcoding to the figure 12. However, only DenseNet201, InceptionResNetV2, and NasNetLarge whose depth are equal or larger than 400 have balanced f1-score on class. The others still face the imbalanced term. Since this data set is not balanced, therefore using augmented data can make the model more  bias to the class which has larger sample. Using the metadata, though still make the model bias, it does contributes to the improvement of  the performance of the model.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Definitions/f1 AD}
-	\caption{F1 Score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. }
-	\label{fig:f1 AD}
+	\includegraphics[width=1\linewidth]{Definitions/den f1}
+	\caption{The comparison between f1 scores of DenseNet201 trained with augmented data and the one trained with metadata and weight loss}
+	\label{fig:den f1}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Definitions/f1 MD WL}
-	\caption{The f1-score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.1}
-	\label{fig:f1 MD WL}
+	\includegraphics[width=1\linewidth]{Definitions/in f1}
+	\caption{The comparison between f1 scores of InceptionResNetV2 trained with augmented data and the one trained with metadata and weight loss}
+	\label{fig:incep f1}
 \end{figure}
 
-This problem is also true with the recall score according to table 7. DenseNet201, InceptionResNetV2, trained with augmented data has expected value of recall of $0.56$, $0.69$, respectively, while the combination of DenseNet201, Metadata and the new weight loss function achieve the expected value of recall: $0.82$. Therefore, metadata does improve the model performance by reducing the amount of data needed for achieving higher results. On the other hand, the reason why the model become much more balanced is the weighted loss function. Weight loss function has ability to solve the imbalanced class samples by adding a weight related to the number of samples in each class. DenseNet201, InceptionResNetV2 trained with the new weighted loss function have recall in akiec of $0.85$. $0.82$, respectively, as opposed to their training in akiec without weighted loss function: $0.65$ and $0.37$. 
+This problem is also true with the recall score according to fugure 13. DenseNet201, InceptionResNetV2, trained with augmented data has expected value of recall of $0.56$, $0.69$, respectively, while the combination of DenseNet201, Metadata and the new weight loss function achieve the expected value of recall: $0.82$. Therefore, metadata does improve the model performance by reducing the amount of data needed for achieving higher results. On the other hand, the reason why the model become much more balanced is the weighted loss function. Weight loss function has ability to solve the imbalanced class samples by adding a weight related to the number of samples in each class. DenseNet201, InceptionResNetV2 trained with the new weighted loss function have recall in akiec of $0.85$. $0.82$, respectively, as opposed to their training in akiec without weighted loss function: $0.65$ and $0.37$. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Definitions/re AD}
-	\caption{Recall score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2}
-	\label{fig:re AD}
+	\includegraphics[width=1\linewidth]{Definitions/den re}
+	\caption{The comparison between recal scores of DenseNet201 trained with augmented data and the one trained with metadata and weight loss}
+	\label{fig:den recall}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Definitions/re MD WL}
-	\caption{The recall score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2}
-	\label{fig:re MD WL}
+	\includegraphics[width=1\linewidth]{Definitions/in re}
+	\caption{The comparison between recall scores of InceptionResNetV2 trained with augmented data and the one trained with metadata and weight loss}
+	\label{fig:incep recall}
 \end{figure}
 
 Another interesting point found during the experiment is that MobileNetV2, MobileNetV3 and NasNetMobile have small number of parameters and depth, though have relative good performance. MobileV3large, MobileV3Small, NasNetLarge and NasNetMobile outperform others on classifying class df with the recall score of $0.92$, $1$, $0.92$, $0.92$, separately according to the  table A4 appendix C.2.  It's transparent that MobileNetV3Large and NasNetMobile are the two best performance model. Nevertheless, MobileNetV3Large has less number of parameters and depth than NasNetMobile.
@@ -533,7 +505,7 @@ Another interesting point found during the experiment is that MobileNetV2, Mobil
 	\label{table:optimized-performance-mobile-model}
 \end{table}
 
-The table 7 shows that the MobileNetV3Large, though the number of parameters are much smaller than the DenseNet201, InceptionResNetV2, achieve the accuracy nearly to the others. In detail, MobileNetV3Large whose the number of parameters is 5.5 millions which is four and ten times less than DenseNet201 and InceptionResNetV2, respectively. The depth of MobileNetV3Large, on the other hand, is four times less than DenseNet201, InceptionResNetV2 which are 118 hidden layers as opposed to 402, 449 of DenseNet201 and InceptionResNetV2, separately. Although, the MobileNetV3Larege only achieve the accuracy of 0.86 the time need for prediction is 10 and 30 times less than the other opponents. If the MobileNetV3Large need a harder process of parameter hyper-tuning to achieve a better result, which is also the future target of this research.
+The table 5 shows that the MobileNetV3Large, though the number of parameters are much smaller than the DenseNet201, InceptionResNetV2, achieve the accuracy nearly to the others. In detail, MobileNetV3Large whose the number of parameters is 5.5 millions which is four and ten times less than DenseNet201 and InceptionResNetV2, respectively. The depth of MobileNetV3Large, on the other hand, is four times less than DenseNet201, InceptionResNetV2 which are 118 hidden layers as opposed to 402, 449 of DenseNet201 and InceptionResNetV2, separately. Although, the MobileNetV3Larege only achieve the accuracy of 0.86 the time need for prediction is 10 and 30 times less than the other opponents. If the MobileNetV3Large need a harder process of parameter hyper-tuning to achieve a better result, which is also the future target of this research.
 
 \begin{figure}[H]
 	\centering
@@ -542,7 +514,7 @@ The table 7 shows that the MobileNetV3Large, though the number of parameters are
 	\label{fig:ADvsDC-AUC}
 \end{figure}
 
-The figure 14 shows the AUC score of the three models InceptionResNetV2, Densenet201, and ResNet50 which is trained with only augmented data or metadata. It's transparent that the InceptionResNetV2 and DenseNet201 have higher AUC-score trained with metadata: 0.974 and 0.971 as opposed to 0.972 and 0.93, respectively. ResNet50 trained with augmented data, on the other hand have higher auc-score: 0.95 as compared to 0.93 of ResNet50 trained with metadata. Overall, InceptionResNetV2 trained with metadata reach the peak with the auc-score of 0.974. The InceptionResNetV2 trained with metadata is also compared with the others to find out the best models trained. According to the figure 15, the InceptionResNetV2 still hit the peak of 0.974 auc-score. ResNet152, otherwise is the worst model with the auc-score of 0.87. Other models, on the other hand have the approximately same of auc-score. 
+The figure 15 shows the AUC score of the three models InceptionResNetV2, Densenet201, and ResNet50 which is trained with only augmented data or metadata. It's transparent that the InceptionResNetV2 and DenseNet201 have higher AUC-score trained with metadata: 0.974 and 0.971 as opposed to 0.972 and 0.93, respectively. ResNet50 trained with augmented data, on the other hand have higher auc-score: 0.95 as compared to 0.93 of ResNet50 trained with metadata. Overall, InceptionResNetV2 trained with metadata reach the peak with the auc-score of 0.974. The InceptionResNetV2 trained with metadata is also compared with the others to find out the best models trained. According to the figure 15, the InceptionResNetV2 still hit the peak of 0.974 auc-score. ResNet152, otherwise is the worst model with the auc-score of 0.87. Other models, on the other hand have the approximately same of auc-score. 
 
 \begin{figure}[H]
 	\centering
@@ -551,19 +523,34 @@ The figure 14 shows the AUC score of the three models InceptionResNetV2, Densene
 	\label{fig:vsallAUC}
 \end{figure}
 
-After the experiment, the InceptionResNetV2 is chose to compare with the other SOTA models. 
-
-\begin{table}
-	\begin{tabular}{| p{3cm} | c | c | c | c | c |}
+After reviewing, the InceptionResNetV2 is found to be the best model trained. Futhermore, the InceptionResNetV2 is compared with the other state of the art researched model. According to the table 8, there are six research that use the same data set: HAM10000 but different approaches. These models used in that research are also SOTA models sorted in ascending order. The table shows that the accuracy of the combination of InceptionResNetV2 with Soft-Attention, metadata and weight loss in this research is less than the InceptionResNetV2 with Soft-Attention and augmented data: 0.90 compared to 0.93 respectively. However, since Soumyyak et al use data augmentation for all class of an imbalanced data set, the f1-score and recall score are much lower. This is because the model in that research can only classify well on NV and VASC class which have the highest number of samples. On the other hand, the InceptionResNetV2 in this research also outperform the other model according to 5 indicator: accuracy, precision, f1-score, recall score, and auc score. 
+\FloatBarrier
+\begin{table}[H]
+	\begin{tabular}{| p{4cm} | c | c | c | c | c |}
 		\hline
 		Model & Accuracy & Precision & f1-score & recall & auc-score\\
 		\hline
-		s
+		Our Proposed & 0.9	& 0.86 &\textbf{0.86} & \textbf{0.81} & 0.974\\
+		\hline
+		InceptionResNetV2\cite{03358} & 0.93 & 0.89 & 0.75 & 0.71 & 0.97\\
+		\hline
+		\cite{03798} & - & 0.88 & 0.77 & 0.74 & - \\
+		\hline
+		\cite{09418} & 0.88 & - & - & - & - \\
+		\hline
+		\cite{01284} & 0.86 & - & - & - & - \\
+		\hline
+		GradCam and Kernel SHAP\cite{06612} & 0.88 & - & - & - & - \\
+		\hline
+		Student and Teacher\cite{03225} & 0.85 & 0.76 & 0.76 & - & - \\
+		\hline
 	\end{tabular}
+	\caption{Comparative Analysis}
+	\label{table:comparative-analysis}
 \end{table} 
 
 \section{Conclusions}
-In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. On the other hand, I also try to construct an optimized and balanced model that can be used on mobile phone or electronic devices. The experiment shown that metadata improve the model performance, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using aforementioned weighted loss function. Using weighted loss function make the expected value of model f1-score increase. At the end of the experiment, mobile model is found that can achieve great performance without either the large number of parameters or depth. 
+In this paper, my objective is to analyze the effect of metadata on the performance of model as well as identifying whether metadata can make the model less imbalanced or not. On the other hand, an optimized and balanced model that can be used on mobile phone or electronic devices is also constructed. The experiment shown that metadata improve the model performance, the factor that make the model much more imbalanced is the augmented data. This problem can be solve quite absolutely by using aforementioned weighted loss function. Using weighted loss function make the expected value of model f1-score increase. At the end of the experiment, mobile model is found that can achieve great performance without either the large number of parameters or depth. 
 
 \vspace{6pt} 
 
@@ -576,7 +563,7 @@ In this paper, my objective is to analyze the effect of metadata on the performa
 % \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\authorcontributions{In this paper, I am the only author, therefore I need to do all things including research, implementation, analyze data, writing draft resolution}
+\authorcontributions{Conceptualization, D.N. and K.D.; methodology, D.N. and K.D.; software, K.D.; validation, D.N., D.B. and K.D.; formal analysis, D.N. and K.D.; investigation, D.N., D.B. and K.D.; resources, D.N.; data curation, K.D.; writing---original draft preparation, K.D.; writing---review and editing, D.N. and D.B.; visualization, K.D.; supervision, D.N. and D.B.; project administration, D.N. All authors have read and agreed to the published version of the manuscript.}
 
 \funding{This research received no external funding}
 

@@ -2,13 +2,10 @@
 \providecommand*\new@tpo@label[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
-\global\let\oldcontentsline\contentsline
-\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
-\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -78,7 +75,6 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Materials}{3}{subsection.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Image Data}{3}{subsubsection.2.1.1}\protected@file@percent }
 \citation{10417}
-\citation{03358}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Data Distribution in HAM10000. This table illustrate the distribution of all class in the data set. The detail name of the skin disease in the data set can be found at the Abbreviations\relax }}{4}{table.caption.2}\protected@file@percent }
 \newlabel{table:data-distribution}{{2}{4}{Data Distribution in HAM10000. This table illustrate the distribution of all class in the data set. The detail name of the skin disease in the data set can be found at the Abbreviations\relax }{table.caption.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example image of each class\relax }}{4}{figure.caption.3}\protected@file@percent }
@@ -88,10 +84,12 @@
 \newlabel{table:metadata sample}{{3}{4}{Metadata example in the data set\relax }{table.caption.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Methodology}{4}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Overall Architecture}{4}{subsubsection.2.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overall Model Architecture\relax }}{5}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:main-model}{{2}{5}{Overall Model Architecture\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overall Model Architecture. This figure show the overall structure of the backbone model (non mobile-based model) including DenseNet201, InceptionResNetV2, ResNet50, ResNet152, and NasNetLarge. The detail structure and information can be found at the Apendix A\relax }}{5}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:model-structure}{{3}{5}{Overall Model Architecture. This figure show the overall structure of the backbone model (non mobile-based model) including DenseNet201, InceptionResNetV2, ResNet50, ResNet152, and NasNetLarge. The detail structure and information can be found at the Apendix A\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overall Model Architecture\relax }}{4}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:main-model}{{2}{4}{Overall Model Architecture\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overall Original Model Architecture. This figure show the overall structure of the backbone model (non mobile-based model) including DenseNet201, InceptionResNetV2, ResNet50, ResNet152, and NasNetLarge. The detail structure and information can be found at the Apendix \ref {appendix-table:detailed structure model}\relax }}{5}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:model-structure}{{3}{5}{Overall Original Model Architecture. This figure show the overall structure of the backbone model (non mobile-based model) including DenseNet201, InceptionResNetV2, ResNet50, ResNet152, and NasNetLarge. The detail structure and information can be found at the Apendix \ref {appendix-table:detailed structure model}\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Overall Mobile-based Model Architecture. This figure show the overall structure of the mobile-based backbone model including MobileNetV2, MobileNetV3Small, MobileNetV3Large, and NasNetMobile. The detail structure and information can be found at the Apendix \ref {appendix-table:detailed mobile model structure}\relax }}{5}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:mobile-model-structure}{{4}{5}{Overall Mobile-based Model Architecture. This figure show the overall structure of the mobile-based backbone model including MobileNetV2, MobileNetV3Small, MobileNetV3Large, and NasNetMobile. The detail structure and information can be found at the Apendix \ref {appendix-table:detailed mobile model structure}\relax }{figure.caption.7}{}}
 \citation{06993}
 \citation{03385}
 \citation{05027}
@@ -102,11 +100,6 @@
 \citation{07012}
 \citation{03910}
 \citation{08375}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Overall Mobile-based Model Architecture. This figure show the overall structure of the mobile-based backbone model including MobileNetV2, MobileNetV3Small, MobileNetV3Large, and NasNetMobile. The detail structure and information can be found at the Apendix B\relax }}{6}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:mobile-model-structure}{{4}{6}{Overall Mobile-based Model Architecture. This figure show the overall structure of the mobile-based backbone model including MobileNetV2, MobileNetV3Small, MobileNetV3Large, and NasNetMobile. The detail structure and information can be found at the Apendix B\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Input Schema}{6}{subsubsection.2.2.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Input Schema\relax }}{6}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:input-schema}{{5}{6}{Input Schema\relax }{figure.caption.8}{}}
 \citation{06993}
 \citation{00567}
 \citation{04861}
@@ -117,24 +110,27 @@
 \citation{07012}
 \citation{03358}
 \citation{07261}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Input Schema}{6}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Input Schema\relax }}{6}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:input-schema}{{5}{6}{Input Schema\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Backbone Model}{6}{subsubsection.2.2.3}\protected@file@percent }
 \citation{03044}
 \citation{202017}
 \citation{03358}
 \citation{08513}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Backbone Model}{7}{subsubsection.2.2.3}\protected@file@percent }
+\citation{03358}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Size and Parameters and Depth of backbone model used in this paper. This table summarizes the properties of the backbone models. The size column illustrates how many space need to store the model in megabyte. The parameters column demonstrate the number of parameters in the associated model. The last column, depth show the number of hidden layers in that model. Parameters and Depth are two crucial element to evaluate the optimized model stated in the Objective section.\relax }}{7}{table.caption.9}\protected@file@percent }
 \newlabel{table:model-summary}{{4}{7}{Size and Parameters and Depth of backbone model used in this paper. This table summarizes the properties of the backbone models. The size column illustrates how many space need to store the model in megabyte. The parameters column demonstrate the number of parameters in the associated model. The last column, depth show the number of hidden layers in that model. Parameters and Depth are two crucial element to evaluate the optimized model stated in the Objective section.\relax }{table.caption.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Soft-Attention}{7}{subsubsection.2.2.4}\protected@file@percent }
-\citation{03358}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Soft-Attention Module}{7}{subsubsection.2.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Soft-Attention Module\relax }}{7}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:soft-attention}{{6}{7}{Soft-Attention Module\relax }{figure.caption.10}{}}
 \citation{6980}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Soft-Attention Module\relax }}{8}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:soft-attention}{{6}{8}{Soft-Attention Module\relax }{figure.caption.10}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Soft-Attention Module\relax }}{8}{figure.caption.11}\protected@file@percent }
 \newlabel{fig:soft-attention-block}{{7}{8}{Soft-Attention Module\relax }{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}Loss Function}{8}{subsubsection.2.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{9}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Experimental Setup}{9}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Training}{9}{subsubsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{8}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Experimental Setup}{8}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Training}{8}{subsubsection.3.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Tools}{9}{subsubsection.3.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Evaluation Metrics}{9}{subsubsection.3.1.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Confusion Matrix\relax }}{9}{figure.caption.12}\protected@file@percent }
@@ -142,35 +138,39 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Area Under the Curve\relax }}{9}{figure.caption.12}\protected@file@percent }
 \newlabel{fig:AUC}{{9}{9}{Area Under the Curve\relax }{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Discussion}{10}{subsection.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Accuracy of the model with augmented data\relax }}{10}{table.caption.13}\protected@file@percent }
-\newlabel{table:Acc-Augment-Model}{{5}{10}{Accuracy of the model with augmented data\relax }{table.caption.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Accuracy of the model with metadata\relax }}{10}{table.caption.15}\protected@file@percent }
-\newlabel{table:Acc-Metadata-Model}{{6}{10}{Accuracy of the model with metadata\relax }{table.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces F1 Score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. \relax }}{11}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:f1 AD}{{10}{11}{F1 Score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. \relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The f1-score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.1\relax }}{11}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:f1 MD WL}{{11}{11}{The f1-score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.1\relax }{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Recall score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }}{12}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:re AD}{{12}{12}{Recall score on each class of each model. The class contain AKIEC, BCC, BKL, DF, MEL, NV, VASC which is denoted in the abbreviation section. The models showed in the above bar chart include DenseNet201 and InceoptionResNetV2 which are the two best model after hyper tuning. AD means the two models are trained with augmented data created during the training, there is neither no metadata nor weight loss contribution. The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces The recall score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }}{12}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:re MD WL}{{13}{12}{The recall score on each class of two models: DenseNet201 and InceptionResNetV2 which are trained with the MetaData (MD) and the Weight Loss (WL) function. In this case, there is no contribution from the augmented data.The detail architecture of the model can be seen at the appendix section A. The f1-score performance results of other models can be seen at appendix section C.2\relax }{figure.caption.19}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces How Performance of MobileNetV3Large be optimized\relax }}{13}{table.caption.20}\protected@file@percent }
-\newlabel{table:optimized-performance-mobile-model}{{7}{13}{How Performance of MobileNetV3Large be optimized\relax }{table.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces ROC AUC Score. This figure illustrate the AUC score associated with models including models trained with augmented data and models trained with metadata\relax }}{13}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:ADvsDC-AUC}{{14}{13}{ROC AUC Score. This figure illustrate the AUC score associated with models including models trained with augmented data and models trained with metadata\relax }{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces ROC AUC Score of all model trained in this paper.\relax }}{14}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:vsallAUC}{{15}{14}{ROC AUC Score of all model trained in this paper.\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The comparison between f1 scores of DenseNet201 trained with augmented data and the one trained with metadata and weight loss\relax }}{11}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:den f1}{{10}{11}{The comparison between f1 scores of DenseNet201 trained with augmented data and the one trained with metadata and weight loss\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The comparison between f1 scores of InceptionResNetV2 trained with augmented data and the one trained with metadata and weight loss\relax }}{11}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:incep f1}{{11}{11}{The comparison between f1 scores of InceptionResNetV2 trained with augmented data and the one trained with metadata and weight loss\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces The comparison between recal scores of DenseNet201 trained with augmented data and the one trained with metadata and weight loss\relax }}{12}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:den recall}{{12}{12}{The comparison between recal scores of DenseNet201 trained with augmented data and the one trained with metadata and weight loss\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces The comparison between recall scores of InceptionResNetV2 trained with augmented data and the one trained with metadata and weight loss\relax }}{12}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:incep recall}{{13}{12}{The comparison between recall scores of InceptionResNetV2 trained with augmented data and the one trained with metadata and weight loss\relax }{figure.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces How Performance of MobileNetV3Large be optimized\relax }}{13}{table.caption.17}\protected@file@percent }
+\newlabel{table:optimized-performance-mobile-model}{{5}{13}{How Performance of MobileNetV3Large be optimized\relax }{table.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces ROC AUC Score. This figure illustrate the AUC score associated with models including models trained with augmented data and models trained with metadata\relax }}{13}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:ADvsDC-AUC}{{14}{13}{ROC AUC Score. This figure illustrate the AUC score associated with models including models trained with augmented data and models trained with metadata\relax }{figure.caption.18}{}}
+\citation{03358}
+\citation{03798}
+\citation{09418}
+\citation{01284}
+\citation{06612}
+\citation{03225}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces ROC AUC Score of all model trained in this paper.\relax }}{14}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:vsallAUC}{{15}{14}{ROC AUC Score of all model trained in this paper.\relax }{figure.caption.19}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Comparative Analysis\relax }}{14}{table.caption.20}\protected@file@percent }
+\newlabel{table:comparative-analysis}{{6}{14}{Comparative Analysis\relax }{table.caption.20}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{14}{section.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {A}Appendix\nobreakspace  {}A}{16}{appendix.A.}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }}{16}{table.caption.23}\protected@file@percent }
-\newlabel{appendix-table:detailed structure model}{{A1}{16}{Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }{table.caption.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }}{16}{table.caption.21}\protected@file@percent }
+\newlabel{appendix-table:detailed structure model}{{A1}{16}{Details Structure of Models except Mobile models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. GAP stands for Global Average Pooling. FC stands for Fully-Connected Layer\relax }{table.caption.21}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {B}Appendix\nobreakspace  {}B}{17}{appendix.B.}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A2}{\ignorespaces Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }}{17}{table.caption.24}\protected@file@percent }
-\newlabel{appendix-table:detailed mobile model structure}{{A2}{17}{Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }{table.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A2}{\ignorespaces Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }}{17}{table.caption.22}\protected@file@percent }
+\newlabel{appendix-table:detailed mobile model structure}{{A2}{17}{Details Structure of Mobile based Models. SA stands for Soft-Attention, SA Module denotes whether that model use Soft-Attention Module. SE which stands for Squeeze-And-Excite shows whether that block has Squeeze-And-Excite. \relax }{table.caption.22}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {C}Appendix\nobreakspace  {}C}{18}{appendix.C.}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Appendix\nobreakspace  {}C}{18}{subsection.C.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A3}{\ignorespaces F1-Score of each class: akiec, bcc, bkl, df, mel, nv, vasc which are denoted in the abbreviation. The last column is the expected value of f1-score from each model. All model in the first column is the models trained in this research. The term "with Augmented Data" means that model is trained with data augmenting during the training, there is no metadata or weight loss contribution. The term "with Metadata and WeightLoss" means that the model is trained with metadata including age, gender, localization and the weight loss function, there is no augmented data contribution\relax }}{18}{table.caption.25}\protected@file@percent }
-\newlabel{table:F1-score-summary}{{A3}{18}{F1-Score of each class: akiec, bcc, bkl, df, mel, nv, vasc which are denoted in the abbreviation. The last column is the expected value of f1-score from each model. All model in the first column is the models trained in this research. The term "with Augmented Data" means that model is trained with data augmenting during the training, there is no metadata or weight loss contribution. The term "with Metadata and WeightLoss" means that the model is trained with metadata including age, gender, localization and the weight loss function, there is no augmented data contribution\relax }{table.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A3}{\ignorespaces F1-Score of each class: akiec, bcc, bkl, df, mel, nv, vasc which are denoted in the abbreviation. The last column is the expected value of f1-score from each model. All model in the first column is the models trained in this research. The term "with Augmented Data" means that model is trained with data augmenting during the training, there is no metadata or weight loss contribution. The term "with Metadata and WeightLoss" means that the model is trained with metadata including age, gender, localization and the weight loss function, there is no augmented data contribution\relax }}{18}{table.caption.23}\protected@file@percent }
+\newlabel{table:F1-score-summary}{{A3}{18}{F1-Score of each class: akiec, bcc, bkl, df, mel, nv, vasc which are denoted in the abbreviation. The last column is the expected value of f1-score from each model. All model in the first column is the models trained in this research. The term "with Augmented Data" means that model is trained with data augmenting during the training, there is no metadata or weight loss contribution. The term "with Metadata and WeightLoss" means that the model is trained with metadata including age, gender, localization and the weight loss function, there is no augmented data contribution\relax }{table.caption.23}{}}
 \citation{04381}
 \citation{02244}
 \citation{02244}
@@ -181,12 +181,12 @@
 \bibcite{09365}{{4}{year}{{Author2}}{{}}}
 \bibcite{10348}{{5}{year}{{Author2}}{{}}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {C.2}Appendix\nobreakspace  {}C}{19}{subsection.C.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A4}{\ignorespaces Recall score of each class and the expected value of recall score from each model\relax }}{19}{table.caption.26}\protected@file@percent }
-\newlabel{table:recall-score-summary}{{A4}{19}{Recall score of each class and the expected value of recall score from each model\relax }{table.caption.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A4}{\ignorespaces Recall score of each class and the expected value of recall score from each model\relax }}{19}{table.caption.24}\protected@file@percent }
+\newlabel{table:recall-score-summary}{{A4}{19}{Recall score of each class and the expected value of recall score from each model\relax }{table.caption.24}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Appendix\nobreakspace  {}C}{19}{subsection.C.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A5}{\ignorespaces Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }}{19}{table.caption.27}\protected@file@percent }
-\newlabel{table:mobile-performance}{{A5}{19}{Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }{table.caption.27}{}}
-\@writefile{toc}{\contentsline {section}{References}{19}{table.caption.27}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A5}{\ignorespaces Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }}{19}{table.caption.25}\protected@file@percent }
+\newlabel{table:mobile-performance}{{A5}{19}{Deeper analyzing of mobile model. This table illustrate the other indicators of the four mobile-based models including MobileNetV2, MobileNetV3Small, MobileNetV3Large, NasNetMobile. The indicators are Accuracy, Balanced Accuracy, Precision, F1-score, Sensitivity, Specificity, and ROC - AUC score. All of them are average indicator\relax }{table.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{References}{19}{table.caption.25}\protected@file@percent }
 \bibcite{06612}{{6}{year}{{Author2}}{{}}}
 \bibcite{10417}{{7}{year}{{Author2}}{{}}}
 \bibcite{05045}{{8}{year}{{Author2}}{{}}}
