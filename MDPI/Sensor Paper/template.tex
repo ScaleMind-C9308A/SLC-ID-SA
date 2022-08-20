@@ -73,30 +73,26 @@
 
 %=================================================================
 % Full title of the paper (Capitalized)
-\Title{DIAGNOSTIC SUPPORT OF SKIN LESION
-	CLASSIFICATION USING CNN AND SOFT
-	ATTENTION}
+\Title{SKIN LESION CLASSIFICATION ON IMBALANCED DATA USING DEEP LEARNING WITH SOFT ATTENTION}
 
 % MDPI internal command: Title for citation in the left column
-\TitleCitation{DIAGNOSTIC SUPPORT OF SKIN LESION
-	CLASSIFICATION USING CNN AND SOFT
-	ATTENTION}
+\TitleCitation{SKIN LESION CLASSIFICATION ON IMBALANCED DATA USING DEEP LEARNING WITH SOFT ATTENTION}
 
 % Author Orchid ID: enter ID or remove command
-\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
-\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+\newcommand{\orcidauthorA}{0000-0001-7152-0191} % Add \orcidA{} behind the author's name
+\newcommand{\orcidauthorB}{0000-0001-9934-7474} % Add \orcidB{} behind the author's name
 \newcommand{\orcidauthorC}{0000-0002-2566-5637} % Add \orcidC{} behind the author's name
 
 % Authors, for the paper (add full first names)
-\Author{Viet Dung Nguyen $^{1,\dagger}$\orcidA{}, Ngoc Dung Bui $^{2,\dagger}$\orcidB{} and Khoi Do Hoang $^{3,\dagger}$\orcidC{}}
+\Author{Viet Dung Nguyen $^{1,\dagger, *}$\orcidA{}, Ngoc Dung Bui $^{2,\dagger}$\orcidB and Hoang Khoi Do  $^{1,\dagger}$\orcidC{}}
 
 %\longauthorlist{yes}
 
 % MDPI internal command: Authors, for metadata in PDF
-\AuthorNames{Dung Viet Nguyen, Ngoc Dung Bui and Khoi Do Hoang}
+\AuthorNames{Viet Dung Nguyen, Ngoc Dung Bui and Hoang Khoi Do}
 
 % MDPI internal command: Authors, for citation in the left column
-\AuthorCitation{Nguyen, D.; Bui, D.; Khoi, D.}
+\AuthorCitation{Nguyen, V.D.; Bui, N.D.; Do, H.K.}
 % If this is a Chicago style journal: Lastname, Firstname, Firstname Lastname, and Firstname Lastname.
 
 % Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
@@ -107,23 +103,21 @@ $^{2}$ \quad Faculty of Information Technology, University of Transport and Comm
 $^{3}$ \quad School of Electrical and Electronic Engineering, Hanoi university of Science and Technology, Vietnam}
 
 % Contact information of the corresponding author
-\corres{Correspondence: dung.nguyenviet1@hust.edu.vn; Tel.:  +84-9834-443-22 (D.N.)}
+\corres{Correspondence: dung.nguyenviet1@hust.edu.vn; Tel.:  +84-9834-443-22 (N.V.D.)}
 
 % Current address and/or shared authorship
-\firstnote{Current address: 1st Dai Co Viet Street, Ha Noi, Viet Nam} 
+\firstnote{Current address: 1st Dai Co Viet Street, Ha Noi, Vietnam} 
 % The commands \thirdnote{} till \eighthnote{} are available for further notes 
 
 %\simplesumm{} % Simple summary
 
 %\conference{} % An extended version of a conference paper
 
-% Abstract (Do not insert blank lines, i.e. \\) 
-\abstract{Today, the rapid development of industrial zones leads to an increased incidence of skin	diseases because of polluted air. According to a report by the American Cancer Society, it is estimated that in 2022 there will be about 100,000 people suffering from skin cancer and more than 7600 of these people will not survive. In the context that doctors at provincial hospitals and health facilities are overloaded, doctors at lower levels lack experience and having	a tool to support doctors in the process of diagnosing skin diseases quickly and accurately is essential. Along with the strong development of artificial intelligence technologies, many solutions to support the diagnosis of skin diseases have been researched and developed. In this paper, a combination of SOTA model such as DenseNet, InceptionNet, ResNet, NasNet, and MobileNet and Soft-Attention is proposed. Furthermore, personal information including age and gender are also used. It is worth to note that a new loss function	that takes into account the data imbalance is also proposed. Experimental results on data set HAM10000 show that using InceptionResNetV2 with Soft-Attention and new loss function gives 90 percent accuracy, mean of precision, f1-score, recall-score, and AUC scores of 0.81, 0.81, 0.82, and 0.989, respectively. Besides, using MobileNetV3Large combined with Soft-Attention and new loss function, even though the number of parameters is 11 times less, the number of hidden layers is 4 times less, it achieves 0.86 accuracy and 30 times faster diagnosis than DenseNet201.
-}
+% Abstract (Do not insert blank lines, i.e. \\) s
+\abstract{Today, the rapid development of industrial zones leads to an increased incidence of skin	diseases because of polluted air. According to a report by the American Cancer Society, it is estimated that in 2022 there will be about 100,000 people suffering from skin cancer and more than 7600 of these people will not survive. In the context that doctors at provincial hospitals and health facilities are overloaded, doctors at lower levels lack experience and having	a tool to support doctors in the process of diagnosing skin diseases quickly and accurately is essential. Along with the strong development of artificial intelligence technologies, many solutions to support the diagnosis of skin diseases have been researched and developed. In this paper, a combination of SOTA model such as DenseNet, InceptionNet, ResNet, NasNet, and MobileNet and Soft-Attention is proposed. Furthermore, personal information including age and gender are also used. It is worth to note that a new loss function	that takes into account the data imbalance is also proposed. Experimental results on data set HAM10000 show that using InceptionResNetV2 with Soft-Attention and new loss function gives 90 percent accuracy, mean of precision, f1-score, recall-score, and AUC scores of 0.81, 0.81, 0.82, and 0.989, respectively. Besides, using MobileNetV3Large combined with Soft-Attention and new loss function, even though the number of parameters is 11 times less, the number of hidden layers is 4 times less, it achieves 0.86 accuracy and 30 times faster diagnosis than InceptionResNetV2.}
 
 % Keywords
-\keyword{AI Diagnosis, Skin Sancer, Skin Lesion
-	Classification, Deep Learning, Machine Learning)} 
+\keyword{Skin Lesions, Classification, Deep Learning, Soft-Attention, Imbalance)} 
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
@@ -171,7 +165,7 @@ Skin cancer is one of the most common cancers leading to worldwide death. Every 
 
 Recently, deep learning particularly, and machine learning in general algorithms have emerged to achieve excellent performance on various tasks, especially in skin disease diagnosis tasks. AI-enabled computer-aided diagnostics (CAD) has solutions in three main categories: Diagnosis, Prognosis, and Medical Treatment. Medical imaging, including ultrasound, computed tomography, magnetic resonance imaging, and X-ray image is used extensively in clinical practice. In Diagnosis, Artificial Intelligence (AI) algorithms are applied for disease detection to save progress execution before these diagnosis results are considered by a doctor. In Prognosis, AI algorithms are used to predict the survival rate of a patient based on his/her history and medical data. In Medical Treatment, AI models are applied to build solutions to a specific disease, medicine revolution is an example. In various studies, AI algorithms have provided various end-to-end solutions to the detection of abnormalities such as breast cancer, brain tumors, lung cancer, esophageal cancer, skin lesions, and foot ulcers across multiple image modalities of medical imaging \cite{11872}.
 
-In order to adapt the rise in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet \cite{06993}, EfficientNet \cite{04861}, Inception \cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet \cite{03385} \cite{05027}, and NasNet \cite{07012}. Some of these models which have been used as a backbone model in this paper will be discussed in the Related Work section.
+To adapt the rise in skin cancer case, AI algorithms over the last decade has a great performance. Some typical models that can be mentioned are DenseNet \cite{06993}, EfficientNet \cite{04861}, Inception \cite{00567}, MobileNets\cite{04861}\cite{04381}\cite{02244}, ResNet \cite{03385} \cite{05027}, and NasNet \cite{07012}. Some of these models which have been used as a backbone model in this paper will be discussed in the Related Work section.
 
 \subsection{Related Works}
 Skin lesion classification is not a new area, since there are many great performance models constructed. One of the most cutting-edge technologies that have been used is Soft-Attention as stated in \cite{03358}. Soumyyak et al construct several models formed by the combination of a backbone model including DenseNet201 \cite{06993}, InceptionResNetV2 \cite{00567}, ResNet50 \cite{03385} \cite{05027}, VGG16 \cite{1556} and Soft-Attention layer. Their approach is to add the Soft-Attention layer at the end or the middle of the backbone model. For ResNet50 and VGG16, the Soft-Attention layer is added after the third residual block and CNN block, respectively. DenseNet201 and InceptionResNetV2, otherwise concatenate with the Soft-Attention before a fully-connected layer, and then soft-max layer.
@@ -188,9 +182,9 @@ Another state of the art is GradCam and Kernel SHAP \cite{06612}, Kyle Young et 
 
 On the other hand, there are also many state of the art whose great performance on skin lesion classification. The Student and Teacher Model is also a high performance model in 2021 \cite{03225}, which is created by Xiaohan Xing et al as the combination of two model which share the memory with each other. Therefore, they can take full advantage of what others learn. 
 
-SkinLinkNet \cite{12602} and WonderM \cite{03426} are both tested the effect of segmentation on skin lesion classification problem created by Amirreza et al and Yeong Chan et al, respectively. In WonderM, the method used is padding the image so that the image has the shape increased from (450,600) to (600, 600). In SkinLinkNet, instead resize the image down to (448, 448). Both of SkinLinkNet and WonderM use UNet to do the segmentation task, though they use EfficientNetB0 and DenseNet to do the classification task, respectively. 
+SkinLinkNet \cite{12602} and WonderM \cite{03426} are both tested the effect of segmentation on skin lesion classification problem created by Amirreza et al and Yeong Chan et al, respectively. In WonderM, the method used is padding the image so that the image has the shape increased from (450, 600) to (600, 600). In SkinLinkNet, instead resize the image down to (448, 448). Both of SkinLinkNet and WonderM use UNet to do the segmentation task, though they use EfficientNetB0 and DenseNet to do the classification task, respectively. 
 
-Another approach is using metadata including gender, age, and capturing position as stated in  \cite{03910} by Nil Gessert et al. The metadata is fed into fully connected neural network after being encoded into one-hot vector. All missing data point of age is set to 0. In order to overcome the missing data problem, the research apply one-hot encoding to the group but the initial validation is poor performance then numerical encoding is applied.
+Another approach is using metadata including gender, age, and capturing position as stated in  \cite{03910} by Nil Gessert et al. The metadata is fed into fully connected neural network after being encoded into one-hot vector. All missing data point of age is set to 0. To overcome the missing data problem, the research apply one-hot encoding to the group but the initial validation is poor performance then numerical encoding is applied.
 
 On the other hand, skin lesion classification problems are not only applied by Deep Learning but also Machine Learning. Random Forest, XGBoost, and Support Vector Machines are tested by  \cite{03798} of Rishu Garg et al. Besides, Isolation Forest is applied before the soft-max activation of the deep learning model to detect out of distribution skin lesion images as stated in \cite{10348} by Amirreza Rezvantalab et al. Matrix Transformation, besides is also applied before the soft-max activation function in \cite{05045} by Michele Alberti et al. 
 
@@ -283,7 +277,7 @@ The whole architecture of the model is represented in the Figure \ref{fig:main-m
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Definitions/MainModel - Model Form}
+	\includegraphics[width=0.8\linewidth]{Definitions/MainModel - Model Form}
 	\caption{Overall Model Architecture}
 	\label{fig:main-model}
 \end{figure}
@@ -354,16 +348,16 @@ In this paper, the backbone models used in this paper are DenseNet201 \cite{0699
 \end{table}
 
 \subsubsection{Soft-Attention Module}
-Applying the Soft-Attention layer in deep learning is not a new approach. Soft-Attention has been used in various applications: image caption generation in \cite{03044} and handwriting verification in \cite{202017} respectively. In skin lesion classification, Soft-Attention is used to increase the performance of the model as described in \cite{03358}. Soft-Attention can ignore irrelevant areas of the image by multiplying the corresponding feature maps with low weights. The function below describes the flow of the Soft-Attention module:
+Soft-Attention has been used in various applications: image caption generation such as \cite{03044} or handwriting verification \cite{202017}. Soft-Attention can ignore irrelevant areas of the image by multiplying the corresponding feature maps with low weights. Soft-Attention is described in below equation:
 \[
 f_{sa} = \gamma t\sum_{k=1}^{K}softmax(W_k * t)
 \]
-In order to apply Soft-Attention, there are two main steps. Firstly, the input tensor is put in grid-based feature extraction from the high-resolution image, where each grid cell is analyzed in the whole slide to generate a feature map \cite{08513}. This feature map called $t \in R^{h \times w \times d}$ where $h, w, \text{and } d$ is the shape of tensor generated by a Convolution Neural Network(CNN), is then input to a 3D convolution layer whose weights is $W_k \in R^{h \times w \times d \times K}$. The output of this convolution is normalized using the soft-max function to generate K (a constant value) attention maps. These $K$ attention maps are aggregated to produce a weight function called $\alpha$. This $\alpha$ function is then multiplied with feature tensor $t$ and scaled by $\gamma$, a learnable scalar. Finally, the output of Soft-Attention function $f_{sa}$ is the concatenation of the beginning feature tensor $t$ and the scaled attention maps. 
+The Figure \ref{fig:soft-attention} shows the two main steps of applying Soft-Attention is applied in two main steps. Firstly, the input tensor is put in grid-based feature extraction from the high-resolution image, where each grid cell is analyzed in the whole slide to generate a feature map \cite{08513}. This feature map called $t \in R^{h \times w \times d}$ where $h, w, \text{and } d$ is the shape of tensor generated by a Convolution Neural Network (CNN), is then input to a 3D convolution layer whose weights is $W_k \in R^{h \times w \times d \times K}$. The output of this convolution is normalized using the soft-max function to generate K (a constant value) attention maps. These $K$ attention maps are aggregated to produce a weight function called $\alpha$. This $\alpha$ function is then multiplied with feature tensor $t$ and scaled by $\gamma$, a learnable scalar. Finally, the output of Soft-Attention function $f_{sa}$ is the concatenation of the beginning feature tensor $t$ and the scaled attention maps. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{Definitions/SoftAttention}
-	\caption{Soft-Attention Module}
+	\caption{Soft-Attention Layer}
 	\label{fig:soft-attention}
 \end{figure}
 
@@ -395,11 +389,11 @@ where $N$ is the number of training sample, $C$ is the number of class, $N_i$ is
 \section{Results}
 \subsection{Experimental Setup}
 \subsubsection{Training}
-Before training, the data set is split into two sub set for training (90 percent) and validation (10 percent). Test set, otherwise is provided by the HAM10000 data set, contains 857 images. In order to analyze the effect of augmented data on the model, during the training the image data is augmented by the following technique:\\
+Before training, the data set is split into two sub set for training (90 percent) and validation (10 percent). Test set, otherwise is provided by the HAM10000 data set, contains 857 images. To analyze the effect of augmented data on the model, during the training the image data is augmented by the following technique:\\
 - Rotation Range: rotate the image in a fixed angle. \\
 - Width and height shift range: Shift the image horizontally and vertically, respectively. \\
-- Zoom Range:  image to create new image. \\
-- Horizontal and vertical flipping: flipping the image horizontally and vertically to create new fzoom in theorm of image.\\
+- Zoom Range:  Zoom in or zoom out the image to create new image. \\
+- Horizontal and vertical flipping: Flipping the image horizontally and vertically to create new image.\\
 Otherwise, all of models is trained with the Adam Optimizer \cite{6980} with the learning rate of $0.001$ which is reduced by a factor of $0.2$ to a minimum learning rate of $0.1 x 10^6$, and the epsilon is set to $0.1$. The initial epochs is set to 250 epochs and the Early Stopping is also applied to stop the training as the accuracy of validation set does not increase after $25$ epochs. Besides, the batch size is set to $32$.
 
 \subsubsection{Tools}
@@ -437,7 +431,7 @@ TN_c = \sum_{i=1}^{C}\sum_{j=1}^{C}a_{ij} - \left[ \sum_{k=1}^{i}A^i_{i=c k} + \
 \]
 Then, the model is evaluated by the following metrics:
 \[\text{Sensitivity(Sens)} = \frac{TP}{TP + FN} \hspace{1cm} \text{Specificity(Spec)} = \frac{TN}{TN + FP}\]
-where Sensitivity and specificity mathematically describe the accuracy of a test which reports the presence or absence of a condition. Individuals for which the condition is satisfied are considered "positive" and those for which it is not are considered "negative". Sensitivity or true positive rate refers to the probability of a positive test, conditioned on truly being positive while Specificity  or true negative rate refers to the probability of a negative test, conditioned on truly being negative.
+where Sensitivity and Specificity mathematically describe the accuracy of a test which reports the presence or absence of a condition. Individuals for which the condition is satisfied are considered "positive" and those for which it is not are considered "negative". Sensitivity or true positive rate refers to the probability of a positive test, conditioned on truly being positive while Specificity  or true negative rate refers to the probability of a negative test, conditioned on truly being negative.
 \[\text{Precision} = \frac{TP}{TP + FP} \hspace{1cm} \text{F1 Score} = \frac{2 \times TP}{2 \times TP + FP + FN + TN}\]
 Precision or positive predictive value (PPV) is the probability of a positive test conditioned on both truly being positive or negative. F1-score, on the other hand refers the harmonic mean of precision and recall which mean the higher the f1-score is, the higher both precision and recall is. Besides, the expected value of precision, f1-score and recall-score are also applied because of the multi-class problem.
 \[\text{Accuracy} = \frac{TP + TN}{TP + FP + FN + TN} \hspace{1cm} \text{Balanced Accuracy} = \frac{\text{Sens} + \text{Spec}}{2}\]
@@ -618,7 +612,7 @@ In this research, our proposed is to construct a model as a combination of backb
 % \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\authorcontributions{Conceptualization, D.N. and K.D.; methodology, D.N. and K.D.; software, K.D.; validation, D.N., D.B. and K.D.; formal analysis, D.N. and K.D.; investigation, D.N., D.B. and K.D.; resources, D.N.; data curation, K.D.; writing---original draft preparation, K.D.; writing---review and editing, D.N. and D.B.; visualization, K.D.; supervision, D.N. and D.B.; project administration, D.N. All authors have read and agreed to the published version of the manuscript.}
+\authorcontributions{Conceptualization, V.D.N. and H.K.D.; methodology, V.D.N. and H.K.D.; software, K.D.; validation, V.D.N., N.D.B. and H.K.D.; formal analysis, V.D.N. and H.K.D.; investigation, V.D.N., N.D.B. and H.K.D.; resources, V.D.N.; data curation, H.K.D.; writing---original draft preparation, H.K.D.; writing---review and editing, V.D.N. and N.D.B.; visualization, H.K.D.; supervision, V.D.N. and N.D.B.; project administration, V.D.N. All authors have read and agreed to the published version of the manuscript.}
 
 \funding{This research received no external funding}
 
