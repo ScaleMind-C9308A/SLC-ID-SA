@@ -98,9 +98,9 @@
 % Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
 
 \address{
-$^{1}$ \quad School of Electrical and Electronic Engineering, Hanoi university of Science and Technology, Vietnam\\
-$^{2}$ \quad Faculty of Information Technology, University of Transport and Communications, Vietnam\\
-$^{3}$ \quad School of Electrical and Electronic Engineering, Hanoi university of Science and Technology, Vietnam}
+$^{1}$ \quad School of Electrical and Electronic Engineering, Hanoi university of Science and Technology, Vietnam; dung.nguyenviet1@hust.edu.vn\\
+$^{2}$ \quad Faculty of Information Technology, University of Transport and Communications, Vietnam; dnbui@utc.edu.vn\\
+$^{3}$ \quad School of Electrical and Electronic Engineering, Hanoi university of Science and Technology, Vietnam; khoi.dh200322@sis.hust.edu.vn}
 
 % Contact information of the corresponding author
 \corres{Correspondence: dung.nguyenviet1@hust.edu.vn; Tel.:  +84-9834-443-22 (N.V.D.)}
@@ -563,17 +563,17 @@ The Table \ref{table:overall-auc} shows the AUC score of the three models Incept
 	\label{table:overall-auc}
 \end{table}
 
-Besides the comparison between original weight loss based model and the new weight loss based model is also conducted on the three best performance model including InceptionResNetV2, DenseNet201, MobileNetV3. After the experiment, it is found out that the new weight loss function dose not only contribute to the model to overcome the data imbalance problem but it also make the accuracy increase. The performance of models is described in the Table \ref{table:loss-comparision}
+Besides the comparison between original weight loss calculated by the sample percentage of each class model and the new weight loss based model is also conducted on the three best performance model including InceptionResNetV2, DenseNet201, MobileNetV3. After the experiment, it is found out that the new weight loss function dose not only contribute to the model to overcome the data imbalance problem but it also make the accuracy increase. The performance of models is described in the Table \ref{table:loss-comparision}
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{| l | c | c |}
+	\begin{tabular}{| l | c | c | c |}
 		\hline
-		Model & Original Loss Accuracy & New Loss Accuracy\\
+		Model & No Weight & Original Loss Accuracy & New Loss Accuracy\\
 		\hline
-		InceptionResNetV2 & 0.74 & 0.90\\
-		DenseNet201 & 0.81 & 0.89\\
-		MobileNetV3 & 0.80 & 0.86\\
+		InceptionResNetV2 & 0.74 & 0.79 & 0.90\\
+		DenseNet201 & 0.81 & 0.84 & 0.89\\
+		MobileNetV3 & 0.79 & 0.80 & 0.86\\
 		\hline
 	\end{tabular}
 	\caption{Loss based model accuracy comparison}
