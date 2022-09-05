@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.30) (preloaded format=pdflatex 2022.8.13)  19 AUG 2022 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.30) (preloaded format=pdflatex 2022.8.13)  30 AUG 2022 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,7 +1010,7 @@ Package: placeins 2005/04/18  v 2.2
 
 Excluding comment 'comment')
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 155.
+h' as default language. on input line 150.
 
 (D:\Program Files\BasicMikTex\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
@@ -1127,7 +1127,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip185
 )
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 15
-5.
+0.
 
 (D:\Program Files\BasicMikTex\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1138,24 +1138,24 @@ Package natbib Warning: Citation `02357' multiply defined.
 )
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
  (D:\Program Files\BasicMikTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count372
@@ -1172,19 +1172,19 @@ LaTeX Font Info:    ... okay on input line 155.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 155.
-LaTeX Info: Redefining \microtypecontext on input line 155.
-Package microtype Info: Applying patch `item' on input line 155.
-Package microtype Info: Applying patch `toc' on input line 155.
-Package microtype Info: Applying patch `eqnum' on input line 155.
-Package microtype Info: Applying patch `footnote' on input line 155.
+(lastpage)             ! on input line 150.
+LaTeX Info: Redefining \microtypecontext on input line 150.
+Package microtype Info: Applying patch `item' on input line 150.
+Package microtype Info: Applying patch `toc' on input line 150.
+Package microtype Info: Applying patch `eqnum' on input line 150.
+Package microtype Info: Applying patch `footnote' on input line 150.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 155.
+LaTeX Info: Redefining \showhyphens on input line 150.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1197,7 +1197,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 155.
+or `english'. on input line 150.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1236,66 +1236,66 @@ Package newfloat Info: `float' package detected.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 155.
+Package hyperref Info: Link coloring ON on input line 150.
 (template.out) (template.out)
 \@outlinefile=\write5
 \openout5 = `template.out'.
 
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-55.
+50.
 
 (D:\Program Files\BasicMikTex\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 [][]\T1/ppl/m/n/7 (+20) creativecommons.org/licenses/by/[][]
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-55.
+50.
 (D:\Program Files\BasicMikTex\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-155.
+150.
 
 (D:\Program Files\BasicMikTex\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-155.
+150.
 
 (D:\Program Files\BasicMikTex\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-155.
+150.
 
 (D:\Program Files\BasicMikTex\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 155.
+(Font)              scaled to size 10.42007pt on input line 150.
 
 (D:\Program Files\BasicMikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 155.
+(Font)              scaled to size 7.91925pt on input line 150.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 155.
+(Font)              scaled to size 6.25204pt on input line 150.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 155.
+(Font)              scaled to size 10.42007pt on input line 150.
 
 (D:\Program Files\BasicMikTex\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 155.
+(Font)              scaled to size 7.91925pt on input line 150.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 155.
+(Font)              scaled to size 6.25204pt on input line 150.
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-155.
+150.
 
 (D:\Program Files\BasicMikTex\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1308,21 +1308,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (D:\Program Files\BasicMikTex\tex/latex/microtype\mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 155.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 150.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
-(Font)                  U/msb/m/n --> U/msb/m/n on input line 155.
+(Font)                  U/msb/m/n --> U/msb/m/n on input line 150.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
-(Font)                  U/msb/m/n --> U/msb/m/n on input line 155.
+(Font)                  U/msb/m/n --> U/msb/m/n on input line 150.
 Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 15
-5.
-Package marginnote Info: right page because not two side mode on input line 155
+0.
+Package marginnote Info: right page because not two side mode on input line 150
 .
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 [][]\T1/ppl/m/n/7 (+20) creativecommons.org/licenses/by/[][]
  []
 
-Package marginnote Info: xpos seems to be 167.01753pt on input line 155.
+Package marginnote Info: xpos seems to be 167.01753pt on input line 150.
 Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    date: 2022-07-27 18:13:14
 (epstopdf)                    size: 736802 bytes
@@ -1332,7 +1332,7 @@ Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    size: 43966 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=Definitions/logo-mdp
 i-eps-converted-to.pdf Definitions/logo-mdpi.eps>
-(epstopdf)             \includegraphics on input line 155.
+(epstopdf)             \includegraphics on input line 150.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1342,31 +1342,31 @@ pdfTeX warning: pdflatex.exe (file ./Definitions/logo-mdpi-eps-converted-to.pdf
 File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-mdpi-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
-put line 155.
+put line 150.
 (pdftex.def)             Requested size: 43.16885pt x 28.45274pt.
 <Definitions/logo-orcid.pdf, id=127, 102.3825pt x 102.3825pt>
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 155.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 150.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 155.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 150.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 File: Definitions/logo-orcid.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid.pdf>
-Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 155.
+Package pdftex.def Info: Definitions/logo-orcid.pdf  used on input line 150.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 155.
+(Font)              scaled to size 8.33606pt on input line 150.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 155.
+(Font)              scaled to size 5.21004pt on input line 150.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 155.
+(Font)              scaled to size 8.33606pt on input line 150.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 155.
+(Font)              scaled to size 5.21004pt on input line 150.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-55.
+50.
 (D:\Program Files\BasicMikTex\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1397,32 +1397,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 []|\T1/ppl/m/n/10 (+20) Deep
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 []|\T1/ppl/m/n/10 (+20) Machine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 []|\T1/ppl/m/n/10 (+20) Data Aug-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 []|\T1/ppl/m/n/10 (+20) HAM10000,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 []|\T1/ppl/m/n/10 (+20) HAM10000,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 \T1/ppl/m/n/10 (+20) BCN-20000,
  []
 
@@ -1435,18 +1435,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [3]
-<Definitions/DataDistribution.png, id=236, 395.22656pt x 83.5622pt>
+<Definitions/DataDistribution.png, id=237, 395.22656pt x 83.5622pt>
 File: Definitions/DataDistribution.png Graphic file (type png)
 <use Definitions/DataDistribution.png>
 Package pdftex.def Info: Definitions/DataDistribution.png  used on input line 2
-56.
+51.
 (pdftex.def)             Requested size: 394.35522pt x 83.37837pt.
-<Definitions/MainModel - Model Form.png, id=241, 1184.17406pt x 680.5425pt>
+<Definitions/MainModel - Model Form.png, id=242, 1184.17406pt x 680.5425pt>
 File: Definitions/MainModel - Model Form.png Graphic file (type png)
 <use Definitions/MainModel - Model Form.png>
 Package pdftex.def Info: Definitions/MainModel - Model Form.png  used on input 
-line 285.
-(pdftex.def)             Requested size: 197.17761pt x 113.3127pt.
+line 280.
+(pdftex.def)             Requested size: 315.48538pt x 181.30862pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1456,19 +1456,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[4 <./Definitions/DataDistribution.png> <./Definitions/MainModel - Model Form.p
-ng>]
-<Definitions/Model Structure.png, id=252, 1300.86pt x 650.43pt>
+[4 <./Definitions/DataDistribution.png>]
+<Definitions/Model Structure.png, id=253, 1300.86pt x 650.43pt>
 File: Definitions/Model Structure.png Graphic file (type png)
 <use Definitions/Model Structure.png>
-Package pdftex.def Info: Definitions/Model Structure.png  used on input line 29
-4.
+Package pdftex.def Info: Definitions/Model Structure.png  used on input line 28
+9.
 (pdftex.def)             Requested size: 394.35522pt x 197.175pt.
-<Definitions/Mobile Model Structure.png, id=255, 1300.86pt x 650.43pt>
+<Definitions/Mobile Model Structure.png, id=256, 1300.86pt x 650.43pt>
 File: Definitions/Mobile Model Structure.png Graphic file (type png)
 <use Definitions/Mobile Model Structure.png>
 Package pdftex.def Info: Definitions/Mobile Model Structure.png  used on input 
-line 302.
+line 297.
 (pdftex.def)             Requested size: 394.35522pt x 197.175pt.
 
 
@@ -1479,18 +1478,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[5 <./Definitions/Model Structure.png> <./Definitions/Mobile Model Structure.pn
+[5 <./Definitions/MainModel - Model Form.png> <./Definitions/Model Structure.pn
 g>]
-<Definitions/Input Schema.png, id=275, 996.72375pt x 267.24844pt>
+<Definitions/Input Schema.png, id=276, 996.72375pt x 267.24844pt>
 File: Definitions/Input Schema.png Graphic file (type png)
 <use Definitions/Input Schema.png>
-Package pdftex.def Info: Definitions/Input Schema.png  used on input line 316.
+Package pdftex.def Info: Definitions/Input Schema.png  used on input line 311.
 (pdftex.def)             Requested size: 394.35522pt x 105.73528pt.
-
-Overfull \hbox (7.5087pt too wide) in paragraph at lines 322--323
-[]\T1/ppl/m/n/10 (-20) In this pa-per, the back-bone mod-els used in this pa-pe
-r are DenseNet201[[]], Inception[[]],
- []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1500,18 +1494,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[6 <./Definitions/Input Schema.png>]
-<Definitions/SoftAttention.png, id=298, 1349.04pt x 394.47375pt>
+[6 <./Definitions/Mobile Model Structure.png>]
+<Definitions/SoftAttention.png, id=299, 1349.04pt x 394.47375pt>
 File: Definitions/SoftAttention.png Graphic file (type png)
 <use Definitions/SoftAttention.png>
-Package pdftex.def Info: Definitions/SoftAttention.png  used on input line 364.
+Package pdftex.def Info: Definitions/SoftAttention.png  used on input line 359.
 
 (pdftex.def)             Requested size: 394.35522pt x 115.30937pt.
-<Definitions/SoftAttentionBlock.png, id=300, 619.56468pt x 385.44pt>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[7 <./Definitions/Input Schema.png>]
+<Definitions/SoftAttentionBlock.png, id=314, 619.56468pt x 385.44pt>
 File: Definitions/SoftAttentionBlock.png Graphic file (type png)
 <use Definitions/SoftAttentionBlock.png>
 Package pdftex.def Info: Definitions/SoftAttentionBlock.png  used on input line
- 373.
+ 368.
 (pdftex.def)             Requested size: 197.17761pt x 122.66696pt.
 
 
@@ -1522,31 +1526,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[7 <./Definitions/SoftAttention.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[8 <./Definitions/SoftAttentionBlock.png>]
+[8 <./Definitions/SoftAttention.png> <./Definitions/SoftAttentionBlock.png>]
 <Definitions/Confusion-matrix.png, id=322, 483.8075pt x 295.1025pt>
 File: Definitions/Confusion-matrix.png Graphic file (type png)
 <use Definitions/Confusion-matrix.png>
 Package pdftex.def Info: Definitions/Confusion-matrix.png  used on input line 4
-10.
+05.
 (pdftex.def)             Requested size: 208.21884pt x 127.00417pt.
 
-Overfull \hbox (18.93002pt too wide) in paragraph at lines 410--411
+Overfull \hbox (18.93002pt too wide) in paragraph at lines 405--406
  [][] 
  []
 
 <Definitions/AUC.png, id=323, 235.88126pt x 215.80624pt>
 File: Definitions/AUC.png Graphic file (type png)
 <use Definitions/AUC.png>
-Package pdftex.def Info: Definitions/AUC.png  used on input line 415.
+Package pdftex.def Info: Definitions/AUC.png  used on input line 410.
 (pdftex.def)             Requested size: 132.50159pt x 121.22606pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1558,17 +1553,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9 <./Definitions/Confusion-matrix.png> <./Definitions/AUC.png>]
 Excluding 'comment' comment.
-<Definitions/den f1.png, id=330, 963.6pt x 542.025pt>
-File: Definitions/den f1.png Graphic file (type png)
-<use Definitions/den f1.png>
-Package pdftex.def Info: Definitions/den f1.png  used on input line 461.
-(pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
-<Definitions/in f1.png, id=331, 963.6pt x 542.025pt>
-File: Definitions/in f1.png Graphic file (type png)
-<use Definitions/in f1.png>
-Package pdftex.def Info: Definitions/in f1.png  used on input line 467.
-(pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1578,15 +1562,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [10]
-<Definitions/den re.png, id=336, 963.6pt x 542.025pt>
-File: Definitions/den re.png Graphic file (type png)
-<use Definitions/den re.png>
-Package pdftex.def Info: Definitions/den re.png  used on input line 476.
+<Definitions/den f1.png, id=343, 963.6pt x 542.025pt>
+File: Definitions/den f1.png Graphic file (type png)
+<use Definitions/den f1.png>
+Package pdftex.def Info: Definitions/den f1.png  used on input line 485.
 (pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
-<Definitions/in re.png, id=337, 963.6pt x 542.025pt>
-File: Definitions/in re.png Graphic file (type png)
-<use Definitions/in re.png>
-Package pdftex.def Info: Definitions/in re.png  used on input line 482.
+<Definitions/in f1.png, id=344, 963.6pt x 542.025pt>
+File: Definitions/in f1.png Graphic file (type png)
+<use Definitions/in f1.png>
+Package pdftex.def Info: Definitions/in f1.png  used on input line 491.
 (pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
 
 
@@ -1597,8 +1581,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[11 <./Definitions/den f1.png> <./Definitions/in f1.png>]
-Overfull \hbox (0.77069pt too wide) in paragraph at lines 491--504
+[11 <./Definitions/den f1.png>]
+Overfull \hbox (9.33409pt too wide) in paragraph at lines 496--497
+[]\T1/ppl/m/n/10 (-20) This prob-lem is also true with the re-call score ac-cor
+d-ing to Fig-ure [][]12[][] and [][]13[][]. DenseNet201,
+ []
+
+<Definitions/den re.png, id=356, 963.6pt x 542.025pt>
+File: Definitions/den re.png Graphic file (type png)
+<use Definitions/den re.png>
+Package pdftex.def Info: Definitions/den re.png  used on input line 500.
+(pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
+<Definitions/in re.png, id=357, 963.6pt x 542.025pt>
+File: Definitions/in re.png Graphic file (type png)
+<use Definitions/in re.png>
+Package pdftex.def Info: Definitions/in re.png  used on input line 507.
+(pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[12 <./Definitions/in f1.png> <./Definitions/den re.png>]
+Overfull \hbox (0.77069pt too wide) in paragraph at lines 516--529
  [][] 
  []
 
@@ -1610,33 +1618,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[12 <./Definitions/den re.png> <./Definitions/in re.png>]
-<Definitions/ADvsMD.png, id=354, 963.6pt x 542.025pt>
-File: Definitions/ADvsMD.png Graphic file (type png)
-<use Definitions/ADvsMD.png>
-Package pdftex.def Info: Definitions/ADvsMD.png  used on input line 512.
-(pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
-
-Overfull \hbox (6.44713pt too wide) in paragraph at lines 517--518
-[]\T1/ppl/m/n/10 (-20) The fig-ure 15 shows the AUC score of the three mod-els 
-In-cep-tion-Res-NetV2, Densenet201,
- []
-
-<Definitions/vsALL.png, id=355, 963.6pt x 542.025pt>
-File: Definitions/vsALL.png Graphic file (type png)
-<use Definitions/vsALL.png>
-Package pdftex.def Info: Definitions/vsALL.png  used on input line 521.
-(pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[13 <./Definitions/ADvsMD.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[13 <./Definitions/in re.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
 []|\T1/ppl/m/n/10 (+20) GradCam and Ker-nel
  []
 
@@ -1648,421 +1631,437 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[14 <./Definitions/vsALL.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+[14]
+<Definitions/img_class_nevus_mela.png, id=390, 963.6pt x 542.025pt>
+File: Definitions/img_class_nevus_mela.png Graphic file (type png)
+<use Definitions/img_class_nevus_mela.png>
+Package pdftex.def Info: Definitions/img_class_nevus_mela.png  used on input li
+ne 614.
+(pdftex.def)             Requested size: 394.35522pt x 221.81815pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[15 <./Definitions/img_class_nevus_mela.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
 
  []
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 616.
+(Font)              scaled to size 9.37807pt on input line 682.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 616.
+(Font)              scaled to size 7.29405pt on input line 682.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 616.
+(Font)              scaled to size 9.37807pt on input line 682.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 616.
+(Font)              scaled to size 7.29405pt on input line 682.
 
-Overfull \hbox (1.77545pt too wide) in paragraph at lines 650--650
+Overfull \hbox (1.77545pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (-20) DenseNet-
  []
 
 
-Overfull \hbox (1.77545pt too wide) in paragraph at lines 650--650
+Overfull \hbox (1.77545pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (-20) DenseNet-
  []
 
 
-Overfull \hbox (0.82628pt too wide) in paragraph at lines 650--650
+Overfull \hbox (0.82628pt too wide) in paragraph at lines 716--716
 \T1/ppl/b/n/9 (-20) ResNetV2| 
  []
 
 
-Overfull \hbox (0.82628pt too wide) in paragraph at lines 650--650
+Overfull \hbox (0.82628pt too wide) in paragraph at lines 716--716
 \T1/ppl/b/n/9 (-20) ResNetV2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) ResNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 \T1/ppl/b/n/9 (+20) 152 +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) NasNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) NasNet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 \T1/ppl/b/n/9 (+20) Large +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Pooling
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Inception
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Conv2D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Normal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Residual
  []
 
 
-Overfull \hbox (5.65434pt too wide) in paragraph at lines 650--650
+Overfull \hbox (5.65434pt too wide) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (-20) DenseBlock
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 650--650
+Underfull \hbox (badness 1565) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 650--650
+Underfull \hbox (badness 1565) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 650--650
+Underfull \hbox (badness 1565) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 650--650
+Underfull \hbox (badness 1565) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 650--650
+Underfull \hbox (badness 1565) in paragraph at lines 716--716
 []|\T1/ppl/b/n/9 (+20) SA Mod-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []|\T1/ppl/m/n/9 (+20) Dropout
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 650--650
+Underfull \hbox (badness 10000) in alignment at lines 716--716
 [][][][][][][][][][] 
  []
 
@@ -2074,213 +2073,213 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[15]
-Overfull \hbox (4.1478pt too wide) in paragraph at lines 677--677
+[16]
+Overfull \hbox (4.1478pt too wide) in paragraph at lines 743--743
 []|\T1/ppl/b/n/9 (-20) MobileNetV2| 
  []
 
 
-Overfull \hbox (4.1478pt too wide) in paragraph at lines 677--677
+Overfull \hbox (4.1478pt too wide) in paragraph at lines 743--743
 []|\T1/ppl/b/n/9 (-20) MobileNetV2
  []
 
 
-Overfull \hbox (1.30278pt too wide) in paragraph at lines 677--677
+Overfull \hbox (1.30278pt too wide) in paragraph at lines 743--743
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (1.30278pt too wide) in paragraph at lines 677--677
+Overfull \hbox (1.30278pt too wide) in paragraph at lines 743--743
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (1.30278pt too wide) in paragraph at lines 677--677
+Overfull \hbox (1.30278pt too wide) in paragraph at lines 743--743
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (4.1478pt too wide) in paragraph at lines 677--677
+Overfull \hbox (4.1478pt too wide) in paragraph at lines 743--743
 []|\T1/ppl/b/n/9 (-20) MobileNetV3
  []
 
 
-Overfull \hbox (5.70396pt too wide) in paragraph at lines 677--677
+Overfull \hbox (5.70396pt too wide) in paragraph at lines 743--743
 []|\T1/ppl/b/n/9 (-20) NasNetMobile
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 3x3 3 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 3x3 3 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 5x5 SE 8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 5x5 SE 8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 3x3 4 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 3x3 4 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 3x3 SE 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 3x3 SE 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) bottleneck
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \T1/ppl/m/n/9 (+20) 5x5 SE 3
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 677--677
+Underfull \hbox (badness 3954) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) Conv2D 1x1
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 677--677
+Underfull \hbox (badness 3954) in paragraph at lines 743--743
 []|\T1/ppl/m/n/9 (+20) Conv2D 1x1
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 677--677
+Underfull \hbox (badness 10000) in alignment at lines 743--743
 [][][][][][][][] 
  []
 
@@ -2292,71 +2291,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[16]
-Overfull \hbox (5.17386pt too wide) in paragraph at lines 691--691
-[]|\T1/ppl/m/n/10 (-20) akiec| 
- []
-
-
-Overfull \hbox (1.87138pt too wide) in paragraph at lines 691--691
-[]|\T1/ppl/m/n/10 (-20) vasc| 
- []
-
-
-Overfull \hbox (4.6516pt too wide) in paragraph at lines 691--692
-[]|\T1/ppl/m/n/10 (-20) Mean| 
- []
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 695--695
-[]|\T1/ppl/m/n/10 (+20) InceptionResNetV2 with Aug-
- []
-
-
-Underfull \hbox (badness 2799) in paragraph at lines 705--705
-[]|\T1/ppl/m/n/10 (+20) Resnet50 with Meta-data and
- []
-
-
-Underfull \hbox (badness 1584) in paragraph at lines 717--717
-[]|\T1/ppl/m/n/10 (+20) NasNetMobile with Meta-data
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
 [17]
-Overfull \hbox (5.17386pt too wide) in paragraph at lines 729--729
+Overfull \hbox (5.17386pt too wide) in paragraph at lines 757--757
 []|\T1/ppl/m/n/10 (-20) akiec| 
  []
 
 
-Overfull \hbox (1.87138pt too wide) in paragraph at lines 729--729
+Overfull \hbox (1.87138pt too wide) in paragraph at lines 757--757
 []|\T1/ppl/m/n/10 (-20) vasc| 
  []
 
 
-Overfull \hbox (4.6516pt too wide) in paragraph at lines 729--730
+Overfull \hbox (4.6516pt too wide) in paragraph at lines 757--758
 []|\T1/ppl/m/n/10 (-20) Mean| 
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 733--733
+Underfull \hbox (badness 1348) in paragraph at lines 761--761
 []|\T1/ppl/m/n/10 (+20) InceptionResNetV2 with Aug-
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 743--743
+Underfull \hbox (badness 2799) in paragraph at lines 771--771
 []|\T1/ppl/m/n/10 (+20) Resnet50 with Meta-data and
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 755--755
+Underfull \hbox (badness 1584) in paragraph at lines 783--783
 []|\T1/ppl/m/n/10 (+20) NasNetMobile with Meta-data
  []
 
@@ -2369,6 +2330,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [18]
+Overfull \hbox (5.17386pt too wide) in paragraph at lines 795--795
+[]|\T1/ppl/m/n/10 (-20) akiec| 
+ []
+
+
+Overfull \hbox (1.87138pt too wide) in paragraph at lines 795--795
+[]|\T1/ppl/m/n/10 (-20) vasc| 
+ []
+
+
+Overfull \hbox (4.6516pt too wide) in paragraph at lines 795--796
+[]|\T1/ppl/m/n/10 (-20) Mean| 
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 799--799
+[]|\T1/ppl/m/n/10 (+20) InceptionResNetV2 with Aug-
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 809--809
+[]|\T1/ppl/m/n/10 (+20) Resnet50 with Meta-data and
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 821--821
+[]|\T1/ppl/m/n/10 (+20) NasNetMobile with Meta-data
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -2386,13 +2376,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[20
+[20]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[21
 pdfTeX warning (ext4): destination with the same identifier (name{cite.02357}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.979 
-      ] 
+l.1045 
+       ] 
 AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2402,7 +2401,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[21]
+[22]
 
 Package natbib Warning: There were multiply defined citations.
 
@@ -2413,28 +2412,29 @@ Package natbib Warning: Citation(s) may have changed.
 
 )
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 34FBB2C63062734FF90D33E0EEBB9532;3366.
+(rerunfilecheck)             Checksum: E400317276B8EA1C1149E538A133A6DB;3366.
  ) 
 Here is how much of TeX's memory you used:
- 32408 strings out of 477992
- 603189 string characters out of 2834928
- 970043 words of memory out of 3000000
- 49940 multiletter control sequences out of 15000+600000
- 548208 words of font info for 455 fonts, out of 8000000 for 9000
+ 32386 strings out of 477992
+ 603037 string characters out of 2834928
+ 969519 words of memory out of 3000000
+ 49932 multiletter control sequences out of 15000+600000
+ 547760 words of font info for 445 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,13n,120p,4341b,813s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Khoi Do\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 ss0500.pk>{D:/Program Files/BasicMikTex/fonts/enc/dvips/base/8r.enc}<D:/Program
- Files/BasicMikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/
-BasicMikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/BasicMik
-Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/BasicMikTex/fon
-ts/type1/public/mathpazo/fplmr.pfb><D:/Program Files/BasicMikTex/fonts/type1/pu
-blic/mathpazo/fplmri.pfb><D:/Program Files/BasicMikTex/fonts/type1/urw/palatino
-/uplb8a.pfb><D:/Program Files/BasicMikTex/fonts/type1/urw/palatino/uplr8a.pfb><
-D:/Program Files/BasicMikTex/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (21 pages, 921992 bytes).
+ Files/BasicMikTex/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/Program Files
+/BasicMikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/BasicM
+ikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/BasicMikTex/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/BasicMikTex/fonts/typ
+e1/public/mathpazo/fplmr.pfb><D:/Program Files/BasicMikTex/fonts/type1/public/m
+athpazo/fplmri.pfb><D:/Program Files/BasicMikTex/fonts/type1/urw/palatino/uplb8
+a.pfb><D:/Program Files/BasicMikTex/fonts/type1/urw/palatino/uplr8a.pfb><D:/Pro
+gram Files/BasicMikTex/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on template.pdf (22 pages, 2259576 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 99650 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 99645 words of extra memory for PDF output out of 106986 (max. 10000000)
 
