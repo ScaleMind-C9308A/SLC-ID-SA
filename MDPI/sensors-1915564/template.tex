@@ -192,46 +192,53 @@ Another approach is using metadata including gender, age, and capturing position
 On the other hand, skin lesion classification problems are not only applied by Deep Learning but also Machine Learning. Random Forest, XGBoost, and Support Vector Machines are tested by \mbox{\cite{03798}} of Rishu Garg et al. Besides, Isolation Forest is applied before the soft-max activation of the deep learning model to detect out of distribution skin lesion images as stated in \mbox{\cite{10348}} by Amirreza Rezvantalab et al. Matrix Transformation, besides is also applied before the soft-max activation function in \mbox{\cite{05045}} by Michele Alberti et al.}
 
 {Skin lesion classification is not a new area, since there are many great performance models constructed, recent years. The skin classification approaches can be divided into two main approaches: Deep Learning and Machine Learning. Both approaches gain great performance. Data Augmentation and Feature Extractor, otherwise are two main supporters that make the model better.
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{| c | p{1.5cm} | p{1.5cm} | p{2cm} | p{1.5cm} | p{2cm} |}
-			\hline
-			Research & Deep Learning & Machine Learning & Data 
-			Augmentation & Feture Extraction & Data set\\
-			\hline
-			\cite{03358} & x & & x & & HAM10000\\
-			\hline
-			\cite{03798} & x & x & x & x & HAM10000\\
-			\hline
-			\cite{10348} & x & x & x & & HAM10000, $PH^2$\\
-			\hline
-			\cite{09418} & x & & x & & HAM10000\\
-			\hline
-			\cite{01284} & x & & x & & HAM10000\\
-			\hline
-			\cite{06612} & x & & x & x & HAM10000, BCN-20000, MSK\\
-			\hline
-			\cite{03225} & x & & x & & HAM10000\\
-			\hline
-			\cite{12602} & x & & x & & HAM10000\\
-			\hline
-			\cite{03426} & x & & x & & HAM10000\\
-			\hline
-			\cite{03910} & x & & x & & HAM10000\\
-			\hline
-			\cite{05045} & & x & x & x & HAM10000\\
-			\hline
-		\end{tabular}
-		\caption{Related Works Summary.}
-		\label{table:related-work-summary}
-	\end{table}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| c | p{1.5cm} | p{1.5cm} | p{2cm} | p{1.5cm} | p{2cm} | p{1cm} |}
+		\hline
+		Work & Deep Learning & Machine Learning & Data 
+		Augmentation & Feature Extractor & Data set & Result\\
+		\hline
+		\cite{03358} & Classify & & x & & HAM10000 & 0.93 (ACC)\\
+		\hline
+		\cite{03798} & Classify & Classify & x & x & HAM10000 & 0.9 (ACC)\\
+		\hline
+		\cite{10348} & Classify & Classify & x & & HAM10000, $PH^2$ & \\
+		\hline
+		\cite{09418} & Classify & & x & & HAM10000 & 0.88 (ACC)\\
+		\hline
+		\cite{01284} & Classify & & x & & HAM10000 & 0.86 (ACC)\\
+		\hline
+		\cite{06612} & Classify & & x & x & HAM10000, BCN-20000, MSK & 0.85 (ACC)\\
+		\hline
+		\cite{03225} & Classify & & x & & HAM10000 & 0.85 (ACC)\\
+		\hline
+		\cite{12602} & Classify & & x & & HAM10000 & 0.92 (AUC)\\
+		\hline
+		\cite{03426} & Classify & & x & & HAM10000 & 0.92 (AUC)\\
+		\hline
+		\cite{03910} & Classify & & x & & HAM10000 & 0.74 (recall)\\
+		\hline
+		\cite{05045} & & Classify & x & x & HAM10000 & \\
+		\hline
+		\cite{2101.133} & Classify&  & x &  & HAM10000 & 0.92 (ACC)\\
+		\hline
+		\cite{22750} & Seg&  &  &  & HAM10000 & 0.99 (ACC)\\
+		\hline
+		\cite{9445180} & Seg &  &  &  & HAM10000 & 0.97 (ACC)\\
+		\hline
+	\end{tabular}
+	\caption{Related Works Summary.}
+	\label{table:related-work-summary}
+\end{table}
 \subsubsection{Deep Learning Approach}
 In Deep Learning, one of the most cutting-edge technologies that have been used is Soft-Attention as stated in \mbox{\cite{03358}}. Soumyyak et al construct several models formed by the combination of a backbone model including DenseNet201 \mbox{\cite{06993}}, InceptionResNetV2 \mbox{\cite{00567}}, ResNet50 \mbox{\cite{03385} \cite{05027}}, VGG16 \mbox{\cite{1556}} and Soft-Attention layer. Their approach is to add the Soft-Attention layer at the end or the middle of the backbone model. For ResNet50 and VGG16, the Soft-Attention layer is added after the third residual block and CNN block, respectively. DenseNet201 and InceptionResNetV2, otherwise concatenate with the Soft-Attention before a fully-connected layer, and then soft-max layer. Soumyyak et al proposed method gain a greate performance and also outperform many other studies with the accuracy of 0.93 and the precision of 0.92. However using the Data Augmentation on an imbalanced data set make the model cannot classify well on all of the classes, therefore their model got the recall and f1-score of 0.71 and 0.75, respectively. In this research, our proposed method also consider this problem and solve it.
 
-Using those above backbones has been tried by many previous papers. Rishu Garg et al \mbox{\cite{03798}} uses transfer learning approach with CNN based model: ResNet50 and VGG16 which are pretrained with ImageNet data set. Besides, they also use data augmentation to avoid the imbalance of the data set. Histogram Equalization is also used to increase the contrast of the skin lesions before feeding into the Machine Learning algorithms including Random Forest, XGBoost, Support Vector Machine.	Histogram Equalization can be consider as a heat map that takes the main feature as the number of occurrences of the same value pixel. This approach also gain great performance with the accuracy of 0.90 and the precision of 0.88. However this approach can be bias since the one skin image of the data set contain the skin lesion at the center and the background skin so that histogram may treat background with more number of occurrence of the same pixel value. In this research, our proposed method use the Soft-Attention which can create a heat map feature of the lesion. Otherwise, Rishu Garg et al proposed method also face the problem of imbalanced classifying due to the imbalanced data set with the f1-score and recall is 0.77 and 0.74, respectively.
+Using those above backbones has been tried by many previous researches. Rishu Garg et al \mbox{\cite{03798}} uses transfer learning approach with CNN based model: ResNet50 and VGG16 which are pretrained with ImageNet data set. Besides, they also use data augmentation to avoid the imbalance of the data set. Histogram Equalization is also used to increase the contrast of the skin lesions before feeding into the Machine Learning algorithms including Random Forest, XGBoost, Support Vector Machine.	Histogram Equalization can be consider as a heat map that takes the main feature as the number of occurrences of the same value pixel. This approach also gain great performance with the accuracy of 0.90 and the precision of 0.88. However this approach can be bias since the one skin image of the data set contain the skin lesion at the center and the background skin so that histogram may treat background with more number of occurrence of the same pixel value. In this research, our proposed method use the Soft-Attention which can create a heat map feature of the lesion. Otherwise, Rishu Garg et al proposed method also face the problem of imbalanced classifying due to the imbalanced data set with the f1-score and recall is 0.77 and 0.74, respectively.
 
-Amirreaza et al \mbox{\cite{10348}} do not only use those above backbone model but also used InceptionV3 \mbox{\cite{00567}} model. In that research, the dataset HAM10000 and $PH^2$ are combined to create a 8 classes data set. Before feeding into the Deep CNN models, the image is resized to (224, 224) for DenseNet201, ResNet152, InceptionResNetV2 and (229, 229) for InceptionV3. The best ROC AUC values for melanoma and basal
-cell carcinoma are 0.94 (ResNet152) and 0.93 (DenseNet201).
+Instead of using the whole imbalanced data set, Abayomi-alli et al decide to separate the data set into two subset, one contains only melanoma and the other one contains the rest \mbox{\cite{2101.133}}. Before feeding the data to classify the melanoma, the training data is then augmented by SMOTE method. SMOTE creates artificial instances by oversampling the minority class. SMOTE recognizes k-minority class neighbors that are near to each minority class sample by using the covariance matrix. This approach got the accuracy, recall and f1-score of 0.92, 0.87 and 0.82, respectively.
+
+Amirreaza et al \mbox{\cite{10348}} do not only use those above backbone model but also used InceptionV3 \mbox{\cite{00567}} model. In that research, the dataset HAM10000 and $PH^2$ are combined to create a 8 classes data set. Before feeding into the Deep CNN models, the image is resized to (224, 224) for DenseNet201, ResNet152, InceptionResNetV2 and (229, 229) for InceptionV3. The best ROC AUC values for melanoma and basal cell carcinoma are 0.94 (ResNet152) and 0.93 (DenseNet201).
 
 Another paper that uses the backbone models is \mbox{\cite{09418}}, Hemanth et al decide to use EfficientNet \mbox{\cite{11946}} and SeNET \mbox{\cite{01507}} instead and CutOut \mbox{\cite{04552v2}} method which involves creating holes of different sizes on the images i.e. technically making a random portion of image inactive during data augmentation process. Although this approach get the accuracy of 0.88, it may be bias due to the CutOut method since this method can create a hole overlap the skin lesion field. The method accuracy is also low due to the data augmentation process. 
 
@@ -244,6 +251,8 @@ On the other hand, there are also many state of the art whose great performance 
 SkinLinkNet \mbox{\cite{12602}} and WonderM \mbox{\cite{03426}} are both tested the effect of segmentation on skin lesion classification problem created by Amirreza et al and Yeong Chan et al, respectively. In WonderM, the method used is padding the image so that the image has the shape increased from (450, 600) to (600, 600). In SkinLinkNet, instead resize the image down to (448, 448). Both of SkinLinkNet and WonderM use UNet to do the segmentation task, though they use EfficientNetB0 and DenseNet to do the classification task, respectively. This approach get the AUC score of 0.92.
 
 Another approach is using metadata including gender, age, and capturing position as stated in \mbox{\cite{03910}} by Nil Gessert et al. The metadata is fed into fully connected neural network after being encoded into one-hot vector. All missing data point of age is set to 0. To overcome the missing data problem, the research apply one-hot encoding to the group but the initial validation is poor performance then numerical encoding is applied. The metadata is then fed into two block networks, each one containing a Dense Layer, a Batch Normalization, a ReLU activation function, and a Dropout. After all the feature vector extract from image is then concatenate with the feature vector extracted from metadata. Otherwise, the data augmentation is also applied. This approach got the recall score of 0.74. The low recall score may be due to the imbalanced data set.
+
+Abnormal, skin lesion segmentation, on the other hand, also play an important role in skin lesion classification. Nawaz et al create a framework for Melanoma segmentation \mbox{\cite{22750}}. Their proposed method is Unet model but using the backbone is densenet77 and all residual block is changed into dense block which contains a sequence of Convolution and an Average Pooling. This melanoma segmentation approach got the accuracy of 0.99. Kadry et al, otherwise, using Unet model with VGG deep convolution layer, pooling on the skip connection. This approach can completely extract the whole lesion, though overlap by hair. This approach got the accuracy of 0.97.
 
 \subsubsection{Machine Learning Approach}
 In Machine Learning, there are also many approaches. Since the image data is quite complex for Machine Learning algorithm, therefore using feature extractor or feature preprocessing to another form of data is recommended.
@@ -658,7 +667,7 @@ The Table \ref{table:overall-auc} shows the AUC score of the three models Incept
 		\hline
 		MobileNetV2 & 0.95 & \textbf{0.97}\\
 		\hline
-		MobileNetV3Small & - & \textbf{0.96}\\
+		MobileNetV3Small & 0.67 & \textbf{0.96}\\
 		\hline
 		MobileNetV3Large & 0.96 & \textbf{0.97}\\
 		\hline
@@ -736,7 +745,7 @@ However, there is still some drawbacks of the model that the InceptionResNetV2 c
 \end{figure}
 
 \section{Conclusions}
-In this research, our proposed is to construct a model as a combination of backbone models and Soft-Attention. Moreover, the model takes two inputs including image data and metadata. besides, a new weight loss function is applied to figure out the data imbalance problem. Finally, the combination of InceptionResNetV2, Soft-Attention, and Metadata is the best model. Although the accuracy and the precision of the model are not the highest, the f1-score, recall, and AUC-score is the highest and the most balanced indicator. Therefore, InceptionResnetV2 can classify well in all classes including low samples classes. Otherwise, during the experiment, the combination of MobileNetV3, Soft-Attention, and Metadata achieve an accuracy that is nearly the same as InceptionResNetV2, though with fewer number parameters and depth. Therefore the infer time is much less than the InceptionResNetV2. This result opens the door to constructing a great performance model that can be applied to mobile, IoT devices. \add[H.K.D]{As the result, proposed method and others still face the problem of badly distinguish between melanoma and black nevus because in some cases, the melanoma and the nevus image has the same lesion size and color.}
+In this research, our proposed is to construct a model as a combination of backbone models and Soft-Attention. Moreover, the model takes two inputs including image data and metadata. besides, a new weight loss function is applied to figure out the data imbalance problem. Finally, the combination of InceptionResNetV2, Soft-Attention, and Metadata is the best model with the accuracy of 0.9. Although the accuracy and the precision of the model are not the highest, the f1-score, recall, and AUC-score of 0.86, 0.81 and 0.975, respectively is the highest and the most balanced indicator. Therefore, InceptionResnetV2 can classify well in all classes including low samples classes. Otherwise, during the experiment, the combination of MobileNetV3, Soft-Attention, and Metadata achieve an accuracy of 0.86 that is nearly the same as InceptionResNetV2, though with fewer number parameters and depth. Therefore the infer time is much less than the InceptionResNetV2. This result opens the door to constructing a great performance model that can be applied to mobile, IoT devices. \add[H.K.D]{As the result, proposed method and others still face the problem of badly distinguish between melanoma and black nevus because in some cases, the melanoma and the nevus image has the same lesion size and color.}
 \vspace{6pt} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -756,7 +765,7 @@ In this research, our proposed is to construct a model as a combination of backb
 
 \informedconsent{Not applicable}
 
-\dataavailability{The code and the data analysis report can be found here: \\https://github.com/KhoiDOO/Skin-Disease-Detection-HAM100000.git} 
+\dataavailability{The code and the data analysis report can be found here: \\https://github.com/ScaleMind-C9308A/Skin-Disease-Detection-HAM100000.git} 
 
 \acknowledgments{}
 
@@ -1178,6 +1187,26 @@ USING COLOR BASED IMAGE RETRIEVAL TECHNIQUE
 {\em IJMA} 
 {\bf 2012}.
 
+\bibitem[Author2(year)]{2101.133}
+OLUSOLA OLUWAKEMI ABAYOMI-ALLI, ROBERTAS DAMAŠEVIČIUS,,
+SANJAY MISRA, RYTIS MASKELIŪNAS, ADEBAYO ABAYOMI-ALLI Malignant skin melanoma detection using image augmentation by oversampling in nonlinear lower-dimensional embedding manifold
+{\em TUBITAK} 
+{\bf 2021}.
+
+\bibitem[Author2(year)]{22750}
+Marriam Nawaz, Tahira Nazir, Momina Masood, Farooq Ali, 
+Muhammad Attique Khan, Usman Tariq, Naveera Sahar,
+Robertas Damaševicius Melanoma segmentation: A framework of improved
+DenseNet77 and UNET convolutional neural network
+{\em Wiley} 
+{\bf 2022}.
+
+\bibitem[Author2(year)]{9445180}
+Seifedine Kadry, David Taniar, Robertas Damaševičius, Venkatesan Rajinikanth, Isah A. Lawal,
+Robertas Damaševicius Extraction of Abnormal Skin Lesion from
+Dermoscopy Image using VGG-SegNet
+{\em Wiley} 
+{\bf 2022}.
 \end{thebibliography}
 
 % If authors have biography, please use the format below
