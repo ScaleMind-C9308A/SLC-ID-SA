@@ -117,7 +117,7 @@ $^{3}$ \quad School of Electrical and Electronic Engineering, Hanoi University o
 %\conference{} % An extended version of a conference paper
 
 % Abstract (Do not insert blank lines, i.e. \\) s
-\abstract{Today, the rapid development of industrial zones leads to an increased incidence of skin	diseases because of polluted air. According to a report by the American Cancer Society, it is estimated that in 2022 there will be about 100,000 people suffering from skin cancer and more than 7600 of these people will not survive. In the context that doctors at provincial hospitals and health facilities are overloaded, doctors at lower levels lack experience and having	a tool to support doctors in the process of diagnosing skin diseases quickly and accurately is essential. Along with the strong development of artificial intelligence technologies, many solutions to support the diagnosis of skin diseases have been researched and developed. In this paper, a combination of \add[H.K.D]{one} SOTA model \change[H.K.D]{such as}{including} DenseNet, InceptionNet, ResNet, NasNet,  MobileNet and Soft-Attention is proposed. Furthermore, personal information including age and gender are also used. It is worth to note that a new loss function	that takes into account the data imbalance is also proposed. Experimental results on data set HAM10000 show that using InceptionResNetV2 with Soft-Attention and new loss function gives 90 percent accuracy, mean of precision, f1-score, recall-score, and AUC scores of 0.81, 0.81, 0.82, and 0.989, respectively. Besides, using MobileNetV3Large combined with Soft-Attention and new loss function, even though the number of parameters is 11 times less, the number of hidden layers is 4 times less, it achieves 0.86 accuracy and 30 times faster diagnosis than InceptionResNetV2.}
+\abstract{Today, the rapid development of industrial zones leads to an increased incidence of skin	diseases because of polluted air. According to a report by the American Cancer Society, it is estimated that in 2022 there will be about 100,000 people suffering from skin cancer and more than 7600 of these people will not survive. In the context that doctors at provincial hospitals and health facilities are overloaded, doctors at lower levels lack experience and having	a tool to support doctors in the process of diagnosing skin diseases quickly and accurately is essential. Along with the strong development of artificial intelligence technologies, many solutions to support the diagnosis of skin diseases have been researched and developed. In this paper, a combination of \add[H.K.D]{one} SOTA model \change[H.K.D]{such as}{including} DenseNet, InceptionNet, ResNet, NasNet,  MobileNet and Soft-Attention is proposed. Furthermore, personal information including age and gender are also used. It is worth to note that a new loss function	that takes into account the data imbalance is also proposed. Experimental results on data set HAM10000 show that using InceptionResNetV2 with Soft-Attention and new loss function gives 90 percent accuracy, mean of precision, f1-score, recall-score, and AUC scores of 0.81, 0.81, 0.82, and 0.99, respectively. Besides, using MobileNetV3Large combined with Soft-Attention and new loss function, even though the number of parameters is 11 times less, the number of hidden layers is 4 times less, it achieves 0.86 accuracy and 30 times faster diagnosis than InceptionResNetV2.}
 
 % Keywords
 \keyword{Skin Lesions, Classification, Deep Learning, Soft-Attention, Imbalance} 
@@ -655,9 +655,9 @@ The Table \ref{table:overall-auc} shows the AUC score of the three models Incept
 		\hline
 		Model & AUC(AD) & AUC(MD)\\ 
 		\hline
-		InceptionResNetV2 & 0.971 & \textbf{0.975}\\
+		InceptionResNetV2 & 0.971 & \textbf{0.99}\\
 		\hline
-		DenseNet201 & 0.93 & \textbf{0.97}\\
+		DenseNet201 & 0.93 & \textbf{0.99}\\
 		\hline
 		ResNet50 & \textbf{0.95} & 0.93 \\
 		\hline
@@ -679,16 +679,9 @@ The Table \ref{table:overall-auc} shows the AUC score of the three models Incept
 \end{table}
 
 \begin{figure}[!htb]
-	\begin{minipage}{0.48\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{Definitions/ROC/densenet201}
-		\caption{DenseNet201 Class ROC}\label{fig:densenet201auc}
-	\end{minipage}\hfill
-	\begin{minipage}{0.48\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{Definitions/ROC/irv2}
-		\caption{InceptionResNetV2 Class ROC}\label{fig:irv2auc}
-	\end{minipage}
+	\centering
+	\includegraphics[width=1\linewidth]{Definitions/ROC/denvsirv2}
+	\caption{ROC of DenseNet201 and InceptionResNetV2}\label{fig:densenet201auc}
 \end{figure}
 
 Besides the comparison between original weight loss calculated by the sample percentage of each class model and the new weight loss based model is also conducted on the three best performance model including InceptionResNetV2, DenseNet201, MobileNetV3. After the experiment, it is found out that the new weight loss function dose not only contribute to the model to overcome the data imbalance problem but it also make the accuracy increase. The performance of models is described in the Table \ref{table:loss-comparision}
@@ -716,9 +709,9 @@ After reviewing, the InceptionResNetV2 is found to be the best model trained. Fu
 		\hline
 		Model & Accuracy & Precision & f1-score & recall & auc-score\\
 		\hline
-		Our Proposed & 0.9	& 0.86 &\textbf{0.86} & \textbf{0.81} & 0.975\\
+		Our Proposed & 0.9	& 0.86 &\textbf{0.86} & \textbf{0.81} & \textbf{0.99}\\
 		\hline
-		InceptionResNetV2\cite{03358} & 0.93 & 0.89 & 0.75 & 0.71 & 0.97\\
+		InceptionResNetV2\cite{03358} & 0.93 & 0.89 & 0.75 & 0.71 & \textbf{0.99}\\
 		\hline
 		\cite{03798} & - & 0.88 & 0.77 & 0.74 & - \\
 		\hline
