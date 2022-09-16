@@ -28,6 +28,10 @@ Keywords: Skin Lesions, Classification, Deep Learning, Soft-Attention, Imbalance
   year={2022}
 }
 
+# Results
+## Soft Attention maps of Skin lesion in Inception ResNet V2 on HAM10000 data
+![alt text](https://github.com/ScaleMind-C9308A/Skin-Disease-Detection-HAM100000/MDPI/sensors-1915564/Definitions/ROC/denvsirv2.png?raw=true)
+
 # Datasets
 
 **HAM10000  dataset**:
