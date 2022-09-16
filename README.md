@@ -31,7 +31,7 @@ Keywords: Skin Lesions, Classification, Deep Learning, Soft-Attention, Imbalance
 # Results
 ### ROC of InceptionResNetV2 and DenseNet on HAM10000
 <p align="center">
-   <img width="300" src="[http://material-bread.org/logo-shadow.svg](https://github.com/ScaleMind-C9308A/Skin-Disease-Detection-HAM100000/blob/main/MDPI/sensors-1915564/Definitions/ROC/denvsirv2.png)" alt="ROC">
+   <img width="300" src="http://material-bread.org/logo-shadow.svg](https://github.com/ScaleMind-C9308A/Skin-Disease-Detection-HAM100000/blob/main/MDPI/sensors-1915564/Definitions/ROC/denvsirv2.png)" alt="ROC">
 </p>
   
 # Datasets
